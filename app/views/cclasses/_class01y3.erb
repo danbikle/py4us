@@ -1,0 +1,78 @@
+<code class='bash'>
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ ls -la yahoo500.py 
+-rw-rw-r-- 1 dan dan 653 Nov 30 16:42 yahoo500.py
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ which python
+/home/dan/anaconda3/bin/python
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ python yahoo500.py 
+> /home/dan/py4us/public/class01/yahoo500.py(12)&lt;module>()
+-> prices_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC')
+(Pdb) 
+(Pdb) 
+(Pdb) help
+
+Documented commands (type help &lt;topic>):
+========================================
+EOF    c          d        h         list      q        rv       undisplay
+a      cl         debug    help      ll        quit     s        unt      
+alias  clear      disable  ignore    longlist  r        source   until    
+args   commands   display  interact  n         restart  step     up       
+b      condition  down     j         next      return   tbreak   w        
+break  cont       enable   jump      p         retval   u        whatis   
+bt     continue   exit     l         pp        run      unalias  where    
+
+Miscellaneous help topics:
+==========================
+exec  pdb
+
+(Pdb) list
+list
+  7  	
+  8  	# I should stop the script here and start the debugger:
+  9  	pdb.set_trace()
+ 10  	
+ 11  	# I should get the prices and use pandas to read them into a DataFrame:
+ 12  ->	prices_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC')
+ 13  	
+ 14  	# I should use the head() method to display some of the prices:
+ 15  	prices_df.head()
+ 16  	
+ 17  	# I should write the prices to a CSV file in /tmp:
+(Pdb) n
+> /home/dan/py4us/public/class01/yahoo500.py(15)&lt;module>()
+-> prices_df.head()
+(Pdb) n
+> /home/dan/py4us/public/class01/yahoo500.py(18)&lt;module>()
+-> prices_df.to_csv('/tmp/prices_gspc.csv', float_format='%4.2f', index=False)
+(Pdb) prices_df.tail()
+             Date   Open   High    Low  Close   Volume  Adj Close
+16832  1950-01-09  17.08  17.08  17.08  17.08  2520000      17.08
+16833  1950-01-06  16.98  16.98  16.98  16.98  2010000      16.98
+16834  1950-01-05  16.93  16.93  16.93  16.93  2550000      16.93
+16835  1950-01-04  16.85  16.85  16.85  16.85  1890000      16.85
+16836  1950-01-03  16.66  16.66  16.66  16.66  1260000      16.66
+(Pdb) n
+> /home/dan/py4us/public/class01/yahoo500.py(23)&lt;module>()
+-> 'bye'
+(Pdb) c
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ head /tmp/prices_gspc.csv 
+Date,Open,High,Low,Close,Volume,Adj Close
+2016-11-29,2200.76,2210.46,2198.15,2204.66,3706560000,2204.66
+2016-11-28,2210.21,2211.14,2200.36,2201.72,3505650000,2201.72
+2016-11-25,2206.27,2213.35,2206.27,2213.35,1584600000,2213.35
+2016-11-23,2198.55,2204.72,2194.51,2204.72,3418640000,2204.72
+2016-11-22,2201.56,2204.80,2194.51,2202.94,3957940000,2202.94
+2016-11-21,2186.43,2198.70,2186.43,2198.18,3607010000,2198.18
+2016-11-18,2186.85,2189.89,2180.38,2181.90,3572400000,2181.90
+2016-11-17,2178.61,2188.06,2176.65,2187.12,3809160000,2187.12
+2016-11-16,2177.53,2179.22,2172.20,2176.94,3830590000,2176.94
+dan@e80:~/py4us/public/class01 $ 
+dan@e80:~/py4us/public/class01 $ 
+</code>
+

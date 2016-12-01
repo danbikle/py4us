@@ -9,6 +9,40 @@
   %pre
     =render 'class01y2'
 
+%p I ran the script and saw this:
+
+.syntax
+  %pre
+    =render 'class01y3'
+
+%p The above output should teach me these techniques:
+
+%ul
+  %li I can use the ls command to verify my script exists.
+  %li I can use the which command to verify I am using Anaconda-Python.
+  %li
+    I run a Python script with syntax like this:
+    .syntax
+      %pre
+        %code.bash python yahoo500.py
+  %li
+    The Python debugger is called with this syntax:
+    .syntax
+      %pre
+        %code.python pdb.set_trace()
+  %li
+    The Python debugger will stop my script and allow me to interact with it.
+  %li The list command tells me where I am inside my script.
+  %li The list command points to the next line which will run.
+  %li The n command runs the next line (and then stops).
+  %li pd.read_csv() can be used to get CSV data from the web.
+  %li I can use prices_df to capture the CSV data.
+  %li I can use prices_df.head() to see some of the data.
+  %li I can use prices_df.to_csv() to copy the data into a file.
+  %li I can ask the (Pdb) to run any Python command I want.
+  %li The data in prices_df is like spreadsheet data.
+  %li After the script is finished I can use the Linux-head command to see some of the data.
+  
 %p
   %a(href='class01#p1')
     Class01 Lab
