@@ -1,4 +1,3 @@
-<code class='bash'>
 # plot1.py
 
 # This script should Plot S&P 500 Prices For 2016-11
@@ -25,5 +24,3 @@ prices2_df.plot.line(title="My Plot")
 plt.show()
 
 'bye'
-</code>
-
