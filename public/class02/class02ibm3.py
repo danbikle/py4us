@@ -2,6 +2,7 @@
 
 # This script should Create a list of 2016-11 IBM prices
 # This script should Create a list of dates of those prices
+# This script should Create a plot of the prices
 
 # Ref:
 # https://finance.yahoo.com/quote/IBM/history?p=IBM
