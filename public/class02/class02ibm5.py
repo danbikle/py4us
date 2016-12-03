@@ -1,7 +1,7 @@
 # class02ibm5.py
 
 # This script should Create a list of 2016-11 IBM prices.
-# I should List the first 4 prices
+# I should List the first 4 prices.
 
 # Ref:
 # https://finance.yahoo.com/quote/IBM/history?p=IBM
