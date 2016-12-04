@@ -5,6 +5,9 @@
 # Ref:
 # https://finance.yahoo.com/quote/FB/history?p=FB
 
+# Demo:
+# python class02fb10.py
+
 import pdb
 
 prices_l = [
