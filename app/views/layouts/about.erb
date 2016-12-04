@@ -24,11 +24,7 @@
 
     <!-- element below should be div.container which comes from erb files in ../posts/ -->
     <%= yield %>
-
-    <hr />
-    <footer>
-      <p> &copy; py4.us 1999-3000</p>
-    </footer>
+    <%=render('layouts/bottom_links')%>
     
     <!-- Bootstrap core JavaScript
     ================================================== -->
