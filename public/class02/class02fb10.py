@@ -1,6 +1,6 @@
 # class02fb10.py
 
-# This script should Create a list of 2016-11 FB prices
+# This script should Create a list of 2016-11 FB prices and dates
 
 # Ref:
 # https://finance.yahoo.com/quote/FB/history?p=FB
