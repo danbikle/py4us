@@ -1,4 +1,4 @@
-# class02fb11.py
+# class02fb12.py
 
 # This script should Use a For-Loop to sort the prices for plotting
 
@@ -34,10 +34,13 @@ prices_l = [
     ,129.5
 ]
 
-len_prices_i = len(prices_l)
+len_i = len(prices_l)
 
-for i_i in range(len_prices_i-1,-1,-1):
-    print(i_i)
-    print(prices_l[i_i])
+prices4plot_l = []
+for p_i in range(len_i-1,-1,-1):
+    print(p_i)
+    prices4plot_l.append(prices_l[p_i])
+
+print(prices4plot_l)
 
 'bye'

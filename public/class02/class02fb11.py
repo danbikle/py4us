@@ -41,6 +41,7 @@ for price in prices_l:
 print('Method 2:')
 len_i = len(prices_l)
 for p_i in range(0, len_i, 1):
+    print(p_i)
     print(prices_l[p_i])
 
 'bye'
