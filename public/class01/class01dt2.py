@@ -125,13 +125,13 @@ print(my_df)
 
 # I should convert String to DateTime:
 from datetime import datetime
-my_s = '2016-12-01 13:59:59'
+my_s  = '2016-12-01 13:59:59'
 my_dt = datetime.strptime(my_s, '%Y-%m-%d %H:%M:%S')
 print(my_dt)
 
 # I should convert DateTime to String:
 my_dt = datetime.now()
-my_s = datetime.strftime(my_dt, '%Y-%m-%d %H:%M:%S')
+my_s  = datetime.strftime(my_dt, '%Y-%m-%d %H:%M:%S')
 print(my_s)
 
 # I should convert DateTime to List
