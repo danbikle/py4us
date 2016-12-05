@@ -44,5 +44,14 @@ my_s = '1'
 my_i = int(my_s)
 print(my_i)
 
+# I should convert True to Integer:
+my_b = True
+my_i = int(my_b)
+print(my_i)
+
+# I should convert False to Integer:
+my_b = False
+my_i = int(my_b)
+print(my_i)
 
 'bye'
