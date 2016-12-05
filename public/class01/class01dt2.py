@@ -54,4 +54,24 @@ my_b = False
 my_i = int(my_b)
 print(my_i)
 
+# I should convert 1 from Integer to Boolean:
+my_i = 1
+my_b = bool(my_i)
+print(my_b)
+
+# I should convert 0 from Integer to Boolean:
+my_i = 0
+my_b = bool(my_i)
+print(my_b)
+
+# I should convert 3.3 from Float to Boolean:
+my_f = 3.3
+my_b = bool(my_f)
+print(my_b)
+
+# I should convert 0.0 from Float to Boolean:
+my_f = 0.0
+my_b = bool(my_f)
+print(my_b)
+
 'bye'
