@@ -9,6 +9,7 @@
 # float()
 # int()
 # str()
+# bool()
 
 import pdb
 # Maybe, I should run this script in the debugger:
@@ -73,5 +74,53 @@ print(my_b)
 my_f = 0.0
 my_b = bool(my_f)
 print(my_b)
+
+# I should convert 'hello' from String to List:
+my_s = 'hello'
+my_l = list(my_s)
+print(my_l)
+
+# I should convert List to String:
+my_l = ['h', 'e', 'l', 'l', 'o']
+my_s = ''.join(my_l)
+print(my_s)
+
+# I should convert List to Numpy Array:
+import numpy as np
+my_l = [0.1, 1.2, 2.3]
+my_a = np.array(my_l)
+print(my_a)
+
+# I should convert Numpy Array to List:
+my_l = my_a.tolist()
+print(my_l)
+
+# I should convert List to Pandas Series:
+import pandas as pd
+my_l  = [0.1, 1.2, 2.3]
+my_sr = pd.Series(my_l)
+print(my_sr)
+
+# I should convert Pandas Series to List
+import pandas as pd
+my_l  = my_sr.tolist()
+print(my_l)
+
+# I should convert Dictionary of Lists to Pandas DataFrame:
+my_l  = [0.1, 1.2, 2.3]
+ur_l  = [0.2, 3.4, 4.5]
+my_d  = {'col1':my_l, 'col2':ur_l}
+my_df = pd.DataFrame(my_d)
+print(my_df)
+
+# I should convert Pandas DataFrame to Numpy Array:
+my_a  = np.array(my_df)
+print(my_a)
+
+# I should convert Numpy Array to Pandas DataFrame:
+my_df = pd.DataFrame(my_a)
+print(my_df)
+my_df.columns = ['col1','col2']
+print(my_df)
 
 'bye'
