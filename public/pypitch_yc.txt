@@ -1,0 +1,66 @@
+Marketing Task 2016-12-08 Y Combinator Pitch For "Hands on Python 3.5"
+
+Luda,
+
+I have enclosed a message I want to pitch to Y Combinator News site:
+
+https://news.ycombinator.com/
+
+Please offer any feedback which might make my message more effective.
+
+Sincerely,
+Dan Bikle
+
+sub: 2017 Adult Ed.: "Hands on Python 3.5"
+
+Hello World,
+
+I invite you to a new Python Class:
+
+"Hands on Python 3.5"
+
+Saturdays 10am to 2pm Jan 07 through Feb 25
+
+Brought to you by Santa Clara Adult Education.
+
+The cost is $300 for 8 weeks of instruction.
+
+https://register.asapconnected.com/CourseDetail.aspx?CourseId=126730&ext=1
+
+Prerequisite: Basic knowledge of Python
+
+Class Description:
+
+In a computer-lab environment we build software projects from most popular Anaconda Python packages.
+
+Why Anaconda?
+
+Anaconda is a high quality Python distribution constructed by a team of experienced engineers.
+
+This is a project based learning opportunity. You can work solo or try to find a coding partner.
+
+If you want to learn Python better, you could use this class and Anaconda Python packages.
+
+Or, maybe use this class to build projects from Python packages.
+
+If your project is awesome, you could turn it into a startup.
+
+In the class you will get feedback from peers and advice from an expert software instructor.
+
+Half of class-time will be lecture, half will be hands-on lab.
+
+During the week, between classes, you will have access to online help from the instructor and other students.
+
+All the students will be encouraged to use the same VirtualBox Ubuntu 16 environment with the aim of reducing cross-platform problems.
+
+But, do your development on a Mac or PC if you want.
+
+Additionally the class will provide you an Ubuntu 16 AWS AMI if you want to develop and collaborate over the internet.
+
+After the 8 week session, you might have some new coding friends who want to will help you learn more.
+
+Most Anaconda Packages are listed below:
+
+https://docs.continuum.io/anaconda/pkg-docs
+
+Maybe you will see something worthy of study in the above list.
