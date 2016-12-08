@@ -1,0 +1,141 @@
+
+Hello World,
+
+I invite you to a new Python Class:
+
+"Hands on Python 3.5"
+
+Saturdays 10m to 2pm Jan 07 through Feb 25
+
+Brought to you by Santa Clara Adult Education.
+
+The cost is $300 for 8 weeks of instruction.
+
+Class Description:
+
+In a computer-lab environment we build software projects from most popular Anaconda Python packages.
+
+Why Anaconda?
+
+Anaconda is a high quality Python distribution constructed by a team of experienced engineers.
+
+If you are using a copy of vanilla Python with packages installed by you, then you are doing it wrong.
+
+This is a project based learning opportunity. You can work solo or try to find a coding partner.
+
+If you want to learn Python better, you could use this class and Anaconda Python packages to do that.
+
+If you already know some Python, use this class to build projects from Python packages.
+
+If your project is awesome, you could turn it into a startup.
+
+In the class you will get feedback from peers and advice from an expert software instructor.
+
+Half of class-time will be lecture, half will be hands-on lab.
+
+During the week, between classes, you will have access to online help from the instructor and other students.
+
+All the students will be encouraged to use the same VirtualBox Ubuntu 16 environment with the aim reducing cross-platform problems.
+
+Students who share the same development environment will find collaboration easier.
+
+Additionally the class will provide you an Ubuntu 16 AWS AMI if you want to develop and collaborate over the internet.
+
+Most Anaconda Packages are listed below:
+
+https://docs.continuum.io/anaconda/pkg-docs
+
+Popular Anaconda Packages are listed below:
+
+anaconda-navigator        1.3.1                    py35_0  
+
+babel                     2.3.4                    py35_0  
+
+beautifulsoup4            4.5.1                    py35_0  
+
+blaze                     0.10.1                   py35_0  
+
+bokeh                     0.12.2                   py35_0  
+
+bottleneck                1.1.0               np111py35_0  
+
+cloudpickle               0.2.1                    py35_0  
+
+cryptography              1.5                      py35_0  
+
+cython                    0.24.1                   py35_0  
+
+datashape                 0.5.2                    py35_0  
+
+decorator                 4.0.10                   py35_0  
+
+docutils                  0.12                     py35_2  
+
+fastcache                 1.0.2                    py35_1  
+
+flask                     0.11.1                   py35_0  
+
+gstreamer                 1.8.0                         0  
+
+hdf5                      1.8.17                        1  
+
+imagesize                 0.7.1                    py35_0  
+
+itsdangerous              0.24                     py35_0  
+
+jinja2                    2.8                      py35_1  
+
+jsonschema                2.5.1                    py35_0  
+
+jupyter                   1.0.0                    py35_3  
+
+markupsafe                0.23                     py35_2  
+
+matplotlib                1.5.3               np111py35_0  
+
+mkl                       11.3.3                        0  
+
+mpmath                    0.19                     py35_1  
+
+notebook                  4.2.3                    py35_0  
+
+numba                     0.28.1              np111py35_0  
+
+numpy                     1.11.1                   py35_0  
+
+pandas                    0.18.1              np111py35_0  
+
+
+pytables                  3.2.3.1             np111py35_0  
+
+pytz                      2016.6.1                 py35_0  
+
+pyyaml                    3.12                     py35_0  
+
+redis-py                  2.10.5                   py35_0  
+
+requests                  2.11.1                   py35_0  
+
+rope                      0.9.4                    py35_1  
+
+scikit-learn              0.17.1              np111py35_2  
+
+scipy                     0.18.1              np111py35_0  
+
+sphinx                    1.4.6                    py35_0  
+
+spyder                    3.0.0                    py35_0  
+
+sqlalchemy                1.0.13                   py35_0  
+
+statsmodels               0.6.1               np111py35_1  
+
+terminado                 0.6                      py35_0  
+
+tornado                   4.4.1                    py35_0  
+
+unicodecsv                0.14.1                   py35_0  
+
+wheel                     0.29.0                   py35_0  
+
+
