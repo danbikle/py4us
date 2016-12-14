@@ -1,0 +1,8 @@
+bikle101+py4@gmail.com
+
+[remote "origin"]
+	url = dan@u80:py4us
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "heroku"]
+	url = https://git.heroku.com/py4.git
+	fetch = +refs/heads/*:refs/remotes/heroku/*
