@@ -1,0 +1,28 @@
+%h2 Class01 Answer:
+
+%ul
+  %li What is a Training Environment?
+  %li What is a Development Environment?
+  %li What is a Production Environment?
+  %li Should I try to make and keep them similar?
+
+%p Yes, I should try to make and keep them similar.
+
+%p The opinions and some reasons are described at the URL displayed below:
+%p
+  %a(href='https://12factor.net/dev-prod-parity' target='x')
+    https://12factor.net/dev-prod-parity
+%p The above page tells me to avoid 'gaps' between Development and Production.
+%p If I don't know which OS underpins Production, I should assume that it is Linux.
+%p It is very rare that a Production app will run on a Mac.
+%p Due to licensing costs it is very rare that a Production Python app will run on windows.
+%p To me this means that I should do my training and development on Linux.
+
+%p If you write software on Mac or windows and then deploy that software to Linux in Production, and then if that software malfunctions due to the OS-gap, you should be seen as ineffective.
+
+%p Bugs caused by OS-gap are easily avoided, you should avoid them.
+
+%p
+  %a(href='class01#q1')
+    Class01 Questions
+
