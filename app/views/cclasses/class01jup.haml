@@ -1,0 +1,59 @@
+%h2 Jupyter?
+
+%p You can learn a bit about Jupyter at the URL listed below:
+%p
+  %a(href='http://jupyter.org/' target='x')
+    http://jupyter.org/
+%p I see Jupyter as a mashup of a Python interpreter and Web technology.
+
+%p I can use Jupyter to expose some Python syntax to a group of people who are running browsers who then want to see that syntax run in their browswers.
+
+%p I bumped into Jupyter in two types of situations.
+
+%p The first type is what I call the presentation-scenario.
+
+%p If I present a small amount Python based content to a room full of Python programmers, Jupyter might be a good fit for that task.
+
+%p The second type is what I call the development-scenario.
+
+%p In this situation I need to write some code to deliver a feature in a production app.
+
+%p Is the production app running in Jupyter?
+
+%p Probably not.
+
+%p So to me it's obvious that Jupyter makes a poor development environment.
+
+%p Also the code editor in Jupyter offers strange behavior.
+
+%p When I study the jupyter.org page above, I see a pitch that I should use Jupyter to help me run my Production apps.
+
+%p In early 2016 I worked with a startup which bought the Jupyter sales pitch.
+
+%p A big problem with Jupyter is that it creates notebook-files which are opaque; I cannot see inside them.
+
+%p So, it was difficult to connect my mind to changes in the notebook-files to enhancements or bug-fixes listed in our project management system.
+
+%p Another problem is the notebook-files would change after we ran the syntax inside them.
+
+%p Why would they change?
+
+%p Because they contain a mix of software and data output by the software.
+
+%p It's obvious to me that bug-free software should not change.
+
+%p These changing notebook files created havoc within our Git repositories.
+
+%p We constantly had to wrestle with the question, "What is fixed? What is broken?".
+
+%p The main thing I learned is that Jupyter is well suited for giving some types of presentations.
+
+%p When I run a project, I mandate that deployed software live in a normal tree of folders and files on production servers.
+
+%p Those folders and files should only change due to a git pull (or clone).
+
+%p Any change commited to the Production git repo should fix a bug or implement an enhancement.
+
+%p
+  %a(href='class01#q1')
+    Class01 Questions
