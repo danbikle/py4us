@@ -1,0 +1,13 @@
+<code class='bash'>
+cd ~/Downloads
+wget https://download.jetbrains.com/python/pycharm-community-2016.3.1.tar.gz
+tar zxf pycharm-community-2016.3.1.tar.gz 
+mv pycharm-community-2016.3.1 ~
+cd ~
+ln -s pycharm-community-2016.3.1 pycharm
+echo 'export PATH=${HOME}/pycharm/bin:$PATH' >> ~/.bashrc
+bash
+ll pycharm/bin/
+pycharm.sh
+</code>
+
