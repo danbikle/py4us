@@ -1,0 +1,44 @@
+<code class='bash'>
+py4@ub100:~ $ 
+py4@ub100:~ $ 
+py4@ub100:~ $ which python
+/home/py4/anaconda3/bin/python
+py4@ub100:~ $ 
+py4@ub100:~ $ which jupyter
+/home/py4/anaconda3/bin/jupyter
+py4@ub100:~ $ 
+py4@ub100:~ $ jupyter -h
+usage: jupyter [-h] [--version] [--config-dir] [--data-dir] [--runtime-dir] [--paths] [--json]
+               [subcommand]
+
+Jupyter: Interactive Computing
+
+positional arguments:
+  subcommand     the subcommand to launch
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --version      show the jupyter command's version and exit
+  --config-dir   show Jupyter config dir
+  --data-dir     show Jupyter data dir
+  --runtime-dir  show Jupyter runtime dir
+  --paths        show all Jupyter paths. Add --json for machine-readable format.
+  --json         output paths as machine-readable json
+
+Available subcommands: console kernelspec migrate nbconvert nbextension notebook qtconsole
+serverextension troubleshoot trust
+py4@ub100:~ $ 
+py4@ub100:~ $ jupyter notebook
+[I 17:43:16.269 NotebookApp] [nb_conda_kernels] enabled, 2 kernels found
+[I 17:43:16.275 NotebookApp] Writing notebook server cookie secret to /run/user/1005/jupyter/notebook_cookie_secret
+[I 17:43:20.387 NotebookApp] [nb_anacondacloud] enabled
+[I 17:43:20.497 NotebookApp] [nb_conda] enabled
+[I 17:43:21.235 NotebookApp] ✓ nbpresent HTML export ENABLED
+[W 17:43:21.236 NotebookApp] ✗ nbpresent PDF export DISABLED: No module named 'nbbrowserpdf'
+[I 17:43:21.250 NotebookApp] Serving notebooks from local directory: /home/py4
+[I 17:43:21.250 NotebookApp] 0 active kernels 
+[I 17:43:21.250 NotebookApp] The Jupyter Notebook is running at: http://localhost:8888/
+[I 17:43:21.250 NotebookApp] Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[21572:21572:1219/174328:ERROR:sandbox_linux.cc(343)]
+  InitializeSandbox() called with multiple threads in process gpu-process. 
+</code>
