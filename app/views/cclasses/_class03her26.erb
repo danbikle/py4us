@@ -1,0 +1,68 @@
+<code class='bash'>
+dan@e80:~ $ cd ~
+dan@e80:~ $ 
+dan@e80:~ $ git clone https://github.com/danbikle/flask11
+Cloning into 'flask11'...
+remote: Counting objects: 103, done.        
+remote: Compressing objects: 100% (47/47), done.        
+remote: Total 103 (delta 51), reused 101 (delta 49), pack-reused 0        
+Receiving objects: 100% (103/103), 20.29 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (51/51), done.
+Checking connectivity... done.
+dan@e80:~ $ 
+dan@e80:~ $ cd flask11
+dan@e80:~/flask11 $ 
+dan@e80:~/flask11 $ heroku create
+Creating app... done, radiant-dusk-99271
+https://radiant-dusk-99271.herokuapp.com/ | https://git.heroku.com/radiant-dusk-99271.git
+dan@e80:~/flask11 $ 
+dan@e80:~/flask11 $ git push heroku master
+Counting objects: 103, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (45/45), done.
+Writing objects: 100% (103/103), 20.29 KiB | 0 bytes/s, done.
+Total 103 (delta 51), reused 103 (delta 51)
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: 
+remote: -----> Python app detected        
+remote: -----> Installing python-3.5.2        
+remote:      $ pip install -r requirements.txt        
+remote:        Collecting flask (from -r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading Flask-0.12-py2.py3-none-any.whl (82kB)        
+remote:        Collecting gunicorn (from -r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 2))        
+remote:          Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)        
+remote:        Collecting itsdangerous>=0.21 (from flask->-r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading itsdangerous-0.24.tar.gz (46kB)        
+remote:        Collecting Werkzeug>=0.7 (from flask->-r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading Werkzeug-0.11.11-py2.py3-none-any.whl (306kB)        
+remote:        Collecting click>=2.0 (from flask->-r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading click-6.6-py2.py3-none-any.whl (71kB)        
+remote:        Collecting Jinja2>=2.4 (from flask->-r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading Jinja2-2.8-py2.py3-none-any.whl (263kB)        
+remote:        Collecting MarkupSafe (from Jinja2>=2.4->flask->-r /tmp/build_630f513563e33e77cdfe4a43a439645b/requirements.txt (line 1))        
+remote:          Downloading MarkupSafe-0.23.tar.gz        
+remote:        Installing collected packages: itsdangerous, Werkzeug, click, MarkupSafe, Jinja2, flask, gunicorn        
+remote:          Running setup.py install for itsdangerous: started        
+remote:            Running setup.py install for itsdangerous: finished with status 'done'        
+remote:          Running setup.py install for MarkupSafe: started        
+remote:            Running setup.py install for MarkupSafe: finished with status 'done'        
+remote:        Successfully installed Jinja2-2.8 MarkupSafe-0.23 Werkzeug-0.11.11 click-6.6 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24        
+remote: 
+remote: -----> Discovering process types        
+remote:        Procfile declares types -> web        
+remote: 
+remote: -----> Compressing...        
+remote:        Done: 56.1M        
+remote: -----> Launching...        
+remote:        Released v3        
+remote:        https://radiant-dusk-99271.herokuapp.com/ deployed to Heroku        
+remote: 
+remote: Verifying deploy... done.        
+To https://git.heroku.com/radiant-dusk-99271.git
+ * [new branch]      master -> master
+dan@e80:~/flask11 $ 
+dan@e80:~/flask11 $ 
+dan@e80:~/flask11 $ 
+</code>
+
