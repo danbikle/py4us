@@ -6,7 +6,7 @@
 
 %ul
   %li What is Flask?
-  %li How to serve static HTML file with Flask?
+  %li How to serve a static HTML file with Flask?
   %li What is the URL-path of a static HTML file?
   %li Why    change the URL-path of a static HTML file?
   %li How to change the URL-path of a static HTML file?
@@ -53,4 +53,38 @@
   %li Deploy above repo to Heroku
   %li
     %a(href='/cclasses/class03her10') Answer
-  
+
+%h2#fs Lab Problems (Flask-routing):
+%ul
+  %li Create a folder named "fl11" to hold a new Flask app
+  %li In fl11,   create a folder named: "static"
+
+  %li Copy a favicon.ico file into fl11/static/
+  %li
+    .syntax
+      %pre
+        %code.bash curl http://flask11.herokuapp.com/favicon.ico > ~/fl11/static/favicon.ico
+	  
+  %li In static, create a file   named: "blog.html"
+  %li In fl11,   create a python script named: "fl11.py"
+  %li Put this syntax in it:
+  %li
+    .syntax
+      %pre
+        =render 'class03fl11a'
+	
+  %li Run the python script:
+  %li
+    .syntax
+      %pre
+        %code.bash python fl11.py
+  %li Use a browser to study blog.html at the URL listed below:
+  %li
+    http://localhost:5000
+  %li I followed the above steps and I saw this:
+  %li
+    %img(src='/class03/fl11.png')
+    
+  %li Deploy fl11 to Heroku
+  %li
+    %a(href='/cclasses/class03her11') Answer

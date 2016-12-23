@@ -1,0 +1,57 @@
+%h2 Class03 Answer:
+%h2 Deploy fl11 to Heroku
+
+%p I did this lab and it required several steps.
+
+%p Each step was simple.
+
+%p I started by running some shell commands:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl11
+      echo python-3.5.2       > runtime.txt
+      echo flask              > requirements.txt
+      echo gunicorn          >> requirements.txt
+      echo web: gunicorn wsgi > Procfile
+      echo __pycache__        > .gitignore
+%p I added another file named: "wsgi.py" to the fl11 folder:
+
+.syntax
+  %pre
+    =render 'class03her13'
+
+%p Then I commited the fl11 folder to a git repository:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl11
+      git init
+      git add .
+      git commit -am hello
+
+%p Then, I deployed fl11 to Heroku:
+
+.syntax
+  %pre
+    =render 'class03her20'
+
+%p I saw this:
+
+.syntax
+  %pre
+    =render 'class03her21'
+
+%p I tried this URL:
+%p
+  %a(href='https://frozen-dawn-30599.herokuapp.com/static/blog.html' target='x')
+    https://frozen-dawn-30599.herokuapp.com/static/blog.html
+%p I saw this:
+%img(src='/class03/h305.png')
+%hr/
+%p
+  %a(href='class03#fs')
+    Class03 Lab
+
