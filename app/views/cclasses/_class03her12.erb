@@ -1,0 +1,64 @@
+<code class='bash'>
+her@e80:~ $ 
+her@e80:~ $ 
+her@e80:~ $ git clone https://github.com/danbikle/flask10
+Cloning into 'flask10'...
+remote: Counting objects: 89, done.        
+remote: Compressing objects: 100% (52/52), done.        
+remote: Total 89 (delta 46), reused 73 (delta 30), pack-reused 0        
+Unpacking objects: 100% (89/89), done.
+Checking connectivity... done.
+her@e80:~ $ cd flask10
+her@e80:~/flask10 $ heroku create
+Creating app... done, blooming-badlands-27268
+https://blooming-badlands-27268.herokuapp.com/ | https://git.heroku.com/blooming-badlands-27268.git
+her@e80:~/flask10 $ git push heroku master
+Counting objects: 89, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (82/82), done.
+Writing objects: 100% (89/89), 17.99 KiB | 0 bytes/s, done.
+Total 89 (delta 43), reused 0 (delta 0)
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: 
+remote: -----> Python app detected        
+remote: -----> Installing python-3.5.2        
+remote:      $ pip install -r requirements.txt        
+remote:        Collecting flask (from -r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading Flask-0.12-py2.py3-none-any.whl (82kB)        
+remote:        Collecting gunicorn (from -r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 2))        
+remote:          Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)        
+remote:        Collecting click>=2.0 (from flask->-r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading click-6.6-py2.py3-none-any.whl (71kB)        
+remote:        Collecting Jinja2>=2.4 (from flask->-r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading Jinja2-2.8-py2.py3-none-any.whl (263kB)        
+remote:        Collecting itsdangerous>=0.21 (from flask->-r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading itsdangerous-0.24.tar.gz (46kB)        
+remote:        Collecting Werkzeug>=0.7 (from flask->-r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading Werkzeug-0.11.11-py2.py3-none-any.whl (306kB)        
+remote:        Collecting MarkupSafe (from Jinja2>=2.4->flask->-r /tmp/build_52880f8abdcb7d772fbd7bcb0e265b7c/requirements.txt (line 1))        
+remote:          Downloading MarkupSafe-0.23.tar.gz        
+remote:        Installing collected packages: click, MarkupSafe, Jinja2, itsdangerous, Werkzeug, flask, gunicorn        
+remote:          Running setup.py install for MarkupSafe: started        
+remote:            Running setup.py install for MarkupSafe: finished with status 'done'        
+remote:          Running setup.py install for itsdangerous: started        
+remote:            Running setup.py install for itsdangerous: finished with status 'done'        
+remote:        Successfully installed Jinja2-2.8 MarkupSafe-0.23 Werkzeug-0.11.11 click-6.6 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24        
+remote: 
+remote: -----> Discovering process types        
+remote:        Procfile declares types -> web        
+remote: 
+remote: -----> Compressing...        
+remote:        Done: 56M        
+remote: -----> Launching...        
+remote:        Released v3        
+remote:        https://blooming-badlands-27268.herokuapp.com/ deployed to Heroku        
+remote: 
+remote: Verifying deploy... done.        
+To https://git.heroku.com/blooming-badlands-27268.git
+ * [new branch]      master -> master
+her@e80:~/flask10 $ 
+her@e80:~/flask10 $ 
+her@e80:~/flask10 $ 
+</code>
+
