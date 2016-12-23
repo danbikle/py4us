@@ -1,0 +1,88 @@
+<code class='bash'>
+her@e80:~/fl10 $ 
+her@e80:~/fl10 $ git init
+Initialized empty Git repository in /home/her/fl10/.git/
+her@e80:~/fl10 $ git add .
+her@e80:~/fl10 $ git commit -am  hello
+[master (root-commit) 87c1f75] hello
+ 6 files changed, 26 insertions(+)
+ create mode 100644 Procfile
+ create mode 100644 fl10.py
+ create mode 100644 requirements.txt
+ create mode 100644 runtime.txt
+ create mode 100644 static/blog.html
+ create mode 100644 wsgi.py
+her@e80:~/fl10 $       echo __pycache__ > .gitignore
+her@e80:~/fl10 $ git add .;git commit -am  more
+[master bab8fac] more
+ 1 file changed, 1 insertion(+)
+ create mode 100644 .gitignore
+her@e80:~/fl10 $ ll
+total 40
+drwxrwxr-x  4 her her 4096 Dec 22 20:15 ./
+drwxr-xr-x 10 her her 4096 Dec 22 20:08 ../
+-rw-rw-r--  1 her her  258 Dec 22 20:07 fl10.py
+drwxrwxr-x  8 her her 4096 Dec 22 20:15 .git/
+-rw-rw-r--  1 her her   12 Dec 22 20:15 .gitignore
+-rw-rw-r--  1 her her   19 Dec 22 20:12 Procfile
+-rw-rw-r--  1 her her   15 Dec 22 20:12 requirements.txt
+-rw-rw-r--  1 her her   13 Dec 22 20:11 runtime.txt
+drwxrwxr-x  2 her her 4096 Dec 22 20:10 static/
+-rw-rw-r--  1 her her   84 Dec 22 20:12 wsgi.py
+her@e80:~/fl10 $ heroku whoami
+dan101bikle101@yahoo.com
+her@e80:~/fl10 $ 
+her@e80:~/fl10 $ 
+her@e80:~/fl10 $ heroku create
+Creating app... done, frozen-dawn-30599
+https://frozen-dawn-30599.herokuapp.com/ | https://git.heroku.com/frozen-dawn-30599.git
+her@e80:~/fl10 $ git push heroku master
+
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (12/12), 1.06 KiB | 0 bytes/s, done.
+Total 12 (delta 1), reused 0 (delta 0)
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: 
+remote: -----> Python app detected        
+remote: -----> Installing python-3.5.2        
+remote:      $ pip install -r requirements.txt        
+remote:        Collecting flask (from -r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading Flask-0.12-py2.py3-none-any.whl (82kB)        
+remote:        Collecting gunicorn (from -r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 2))        
+remote:          Downloading gunicorn-19.6.0-py2.py3-none-any.whl (114kB)        
+remote:        Collecting click>=2.0 (from flask->-r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading click-6.6-py2.py3-none-any.whl (71kB)        
+remote:        Collecting Jinja2>=2.4 (from flask->-r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading Jinja2-2.8-py2.py3-none-any.whl (263kB)        
+remote:        Collecting Werkzeug>=0.7 (from flask->-r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading Werkzeug-0.11.11-py2.py3-none-any.whl (306kB)        
+remote:        Collecting itsdangerous>=0.21 (from flask->-r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading itsdangerous-0.24.tar.gz (46kB)        
+remote:        Collecting MarkupSafe (from Jinja2>=2.4->flask->-r /tmp/build_5cc52ba3891baf2a2124247500bf3429/requirements.txt (line 1))        
+remote:          Downloading MarkupSafe-0.23.tar.gz        
+remote:        Installing collected packages: click, MarkupSafe, Jinja2, Werkzeug, itsdangerous, flask, gunicorn        
+remote:          Running setup.py install for MarkupSafe: started        
+remote:            Running setup.py install for MarkupSafe: finished with status 'done'        
+remote:          Running setup.py install for itsdangerous: started        
+remote:            Running setup.py install for itsdangerous: finished with status 'done'        
+remote:        Successfully installed Jinja2-2.8 MarkupSafe-0.23 Werkzeug-0.11.11 click-6.6 flask-0.12 gunicorn-19.6.0 itsdangerous-0.24        
+remote: 
+remote: -----> Discovering process types        
+remote:        Procfile declares types -> web        
+remote: 
+remote: -----> Compressing...        
+remote:        Done: 56.1M        
+remote: -----> Launching...        
+remote:        Released v3        
+remote:        https://frozen-dawn-30599.herokuapp.com/ deployed to Heroku        
+remote: 
+remote: Verifying deploy... done.        
+To https://git.heroku.com/frozen-dawn-30599.git
+ * [new branch]      master -> master
+her@e80:~/fl10 $ her@e80:~/fl10 $ 
+her@e80:~/fl10 $ 
+her@e80:~/fl10 $ 
+</code>
