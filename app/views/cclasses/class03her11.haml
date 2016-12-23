@@ -36,7 +36,9 @@
 
 .syntax
   %pre
-    =render 'class03her20'
+    %code.bash
+      heroku create
+      git push heroku master
 
 %p I saw this:
 
@@ -46,10 +48,11 @@
 
 %p I tried this URL:
 %p
-  %a(href='https://frozen-dawn-30599.herokuapp.com/static/blog.html' target='x')
-    https://frozen-dawn-30599.herokuapp.com/static/blog.html
+  %a(href='https://salty-badlands-41997.herokuapp.com' target='x')
+    https://salty-badlands-41997.herokuapp.com
+  
 %p I saw this:
-%img(src='/class03/h305.png')
+%img(src='/class03/h22.png')
 %hr/
 %p
   %a(href='class03#fs')
