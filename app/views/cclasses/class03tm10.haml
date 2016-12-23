@@ -1,1 +1,45 @@
-%h1 under construction
+%h2 Class03 Answer:
+%h2 Create a simple template-app which displays the value of a Python String
+
+%p I approached this problem with the concept of "Outside-In".
+
+%p This approach asks me to to create software which is on the outside first.
+
+%p Then I build more software along a path towards the inside.
+
+%p I started by creating a folder:
+
+.syntax
+  %pre
+    %code.bash mkdir ~/fl12
+
+%p I studied this URL:
+
+%p
+  %a(href='http://flask.pocoo.org/docs/0.12/quickstart/#rendering-templates' target='x')
+    http://flask.pocoo.org/docs/0.12/quickstart/#rendering-templates
+
+%p I created another folder:
+
+.syntax
+  %pre
+    %code.bash mkdir ~/fl12/templates
+
+%p I created a "template" named ~/fl12/templates/template1.html with this syntax:
+
+.syntax
+  %pre
+    =render 'class03tm10a'
+
+%p That completed the "Outside".
+
+%p I started on the "Inside" by writing a script name ~/fl12/fl12.py which is displayed below:
+
+.syntax
+  %pre
+    =render 'class03tm10b'
+
+%p
+  %a(href='class03#tm')
+    Class03 Lab
+
