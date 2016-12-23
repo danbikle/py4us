@@ -41,11 +41,30 @@
 
 %p That completed the "Outside".
 
+%p I look at it and see it telling me that the "Inside" needs to supply a variable named: mypython_string_s
+
 %p I created the "Inside" by writing a script name ~/fl12/fl12.py which is displayed below:
 
 .syntax
   %pre
     =render 'class03tm10b'
+
+%p To finish this exercise, I ran two shell commands to start the Flask server:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl12
+      python fl12.py
+
+%p Next, I visited this URL:
+
+%p http://localhost:5000/template1
+
+%p I saw this:
+
+%img(src='/class03/tm10.png')
+%hr/
 
 %p
   %a(href='class03#tm')
