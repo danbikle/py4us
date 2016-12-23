@@ -1,0 +1,30 @@
+%h2 Class03 Answer:
+%h2 Demonstrate how to reuse the template of links between several templates
+
+%p I called mylinks.html from the other file in f12 which is template1.html:
+
+.syntax
+  %pre
+    =render 'class03tm14a'
+
+%p To finish this exercise, I ran two shell commands to start the Flask server:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl12
+      python fl12.py
+
+%p Next, I visited this URL:
+
+%p http://localhost:5000/template1
+
+%p I saw this:
+
+%img(src='/class03/tm14.png')
+%hr/
+
+%p
+  %a(href='class03#tm')
+    Class03 Lab
+
