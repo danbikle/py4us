@@ -1,0 +1,64 @@
+%h2 Class03 Answer:
+%h2 Deploy fl10 to Heroku
+
+%p I did this lab and it required several steps.
+
+%p Each step was simple.
+
+%p I added a file named: "runtime.txt" to the fl10 folder:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl10
+      echo python-3.5.2 > runtime.txt
+
+%p The above file declares the version of Python which Heroku should use to run my app.
+
+%p I added another file named: "requirements.txt" to the fl10 folder:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl10
+      echo flask >     requirements.txt
+      echo gunicorn >> requirements.txt
+
+%p The above file declares that I want Heroku to install the above packages.
+
+%p I added another file named: "Procfile" to the fl10 folder:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~/fl10
+      echo web: gunicorn wsgi > Procfile
+
+%p The above file declares that I want Heroku to run the Gunicorn webserver to serve my app.
+
+%p I added another file named: "wsgi.py" to the fl10 folder:
+
+.syntax
+  %pre
+    =render 'class03her4'
+
+%p The above file helps Gunicorn to find and serve my app.
+
+%p I created an account at heroku.com which allows me to deploy small apps there for free.
+
+%p Next, I installed the Heroku CLI:
+
+.syntax
+  %pre
+    =render 'class03her2'
+
+%p Then, I deployed fl10 to Heroku:
+
+.syntax
+  %pre
+    =render 'class03her3'
+
+%p
+  %a(href='class03#fs')
+    Class03 Lab
+

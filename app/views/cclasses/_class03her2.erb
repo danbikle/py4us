@@ -1,0 +1,8 @@
+<code class='bash'>
+cd ~
+wget https://cli-assets.heroku.com/branches/stable/heroku-linux-amd64.tar.gz
+tar zxf heroku-linux-amd64.tar.gz
+echo 'export PATH=${HOME}/heroku/bin:$PATH' >> ~/.bashrc
+bash
+heroku auth:login
+</code>
