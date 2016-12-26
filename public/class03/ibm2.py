@@ -24,6 +24,6 @@ soup       = bs4.BeautifulSoup(entire_page_s, 'lxml')
 div_qhi_sp = soup.find(id="quote-header-info")
 div_qhi_s  = str(div_qhi_sp)
 print('Some text from quote-header-info element is displayed below:')
-print(div_qhi_s[0:10])
+print(div_qhi_s[0:80])
 
 'bye'
