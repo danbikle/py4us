@@ -1,0 +1,42 @@
+%h2 Class03 Answer:
+%h2 Copy some Yahoo-HTML into served HTML syntax
+
+%p An example of some Yahoo-HTML which I want to copy is displayed below:
+
+%img(src='/class03/y1.png')
+
+%p Notice that the CSS which styles the HTML is simple:
+
+.syntax
+  %pre
+    %code.css id="quote-header-info"
+
+%p I can find the above HTML at the URL listed below:
+
+%p
+  %a(href='https://finance.yahoo.com/quote/IBM' target='x')
+    https://finance.yahoo.com/quote/IBM
+  
+
+%p Example syntax which loads the entire page from the above URL is listed below:
+
+.syntax
+  %pre
+    =render 'class03tm26a'
+
+%p Example syntax which copies the HTML I want is listed below:
+
+.syntax
+  %pre
+    =render 'class03tm26b'
+
+%p Example syntax which copies the HTML into the template I want to serve is listed below:
+
+.syntax
+  %pre
+    =render 'class03tm26c'
+
+%p
+  %a(href='class03#tm')
+    Class03 Lab
+
