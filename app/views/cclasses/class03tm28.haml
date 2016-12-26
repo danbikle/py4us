@@ -1,1 +1,37 @@
-%h1 Under Construction
+%h2 Class03 Answer:
+%h2 Copy some Yahoo-HTML into served HTML syntax based on user input
+
+%p Like the previous exercise, I should divide the solution into two pieces.
+
+%p As before, I start with the "Outside" which is the template.
+
+%p I decide to use most of the template syntax I had used in the previous exercise:
+
+.syntax
+  %pre
+    =render 'class03tm28a'
+
+%p For the inside, I should use the idea that the user will supply a ticker value as a path-token in the URL field.
+
+%p This idea was implemented in an earlier exercise so I have some syntax I should reuse:
+
+.syntax
+  %pre
+    =render 'class03tm28b'
+
+%p Next, I started the Flask server:
+
+.syntax
+  %pre
+    %code.bash python fl12.py
+
+%p Then, I tried three different ticker values:
+
+%img(src='/class03/y10.png')
+%hr/
+
+%img(src='/class03/y11.png')
+%hr/
+
+%img(src='/class03/y12.png')
+%hr/
