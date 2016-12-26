@@ -1,0 +1,60 @@
+<code class='python'>
+# fl12.py
+import os
+from flask import Flask
+from flask import render_template
+application = Flask(__name__)
+
+# Supply Python String to template:
+@application.route("/template1/")
+def template1():
+    mystr_s = 'Hello World via Flask'
+    return render_template('template1.html', mypython_string_s=mystr_s)
+
+# React to a URL path token:
+@application.route("/template2/&lt;tkr>")
+def template2(tkr=None):
+    return render_template('template2.html', tkr=tkr)
+
+# React to a URL parameter.
+# Demo:
+# http://localhost:5000/template3?tkr=IBM
+from flask import request
+@application.route("/template3/")
+def template3():
+    tkr = request.args.get('tkr', 'FB') # FB is default
+    return render_template('template3.html', mystr=tkr)
+
+# I should get some HTML from Yahoo.
+# To get an entire page, I should use requests package.
+# Ref:
+# http://docs.python-requests.org/en/master/
+import requests
+# The package I want to use is BeautifulSoup4
+# Ref:
+# http://www.google.com/search?q=BeautifulSoup4
+import bs4
+@application.route("/template4/")
+def template4():
+    entire_page_rq = requests.get('https://finance.yahoo.com/quote/IBM')
+    entire_page_s  = entire_page_rq.text
+    soup           = bs4.BeautifulSoup(entire_page_s, 'lxml')
+    div_qhi_sp     = soup.find(id="quote-header-info")
+    div_qhi_s      = str(div_qhi_sp)
+    return render_template('template4.html', html_s=div_qhi_s)
+
+# React to a URL path token:
+@application.route("/template5/&lt;tkr>")
+def template5(tkr='FB'):
+    entire_page_rq = requests.get('https://finance.yahoo.com/quote/'+tkr)
+    entire_page_s  = entire_page_rq.text
+    soup           = bs4.BeautifulSoup(entire_page_s, 'lxml')
+    div_qhi_sp     = soup.find(id="quote-header-info")
+    div_qhi_s      = str(div_qhi_sp)
+    return render_template('template5.html', html_s=div_qhi_s)
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
+    application.run(host='0.0.0.0', port=port)
+'bye'
+</code>
