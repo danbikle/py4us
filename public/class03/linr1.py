@@ -1,5 +1,8 @@
 # linr1.py
 
+# Demo:
+# python linr1.py
+
 # This script should do linear regression.
 import numpy as np
 # I should create some simple observations to learn from:
@@ -34,5 +37,16 @@ print(yhat)
 # build_fn: callable function or class instance
 # sk_params: model parameters & fitting parameters
 
+# build_fn should construct, compile and return a Keras model,
+# which will then be used to fit/predict.
+
+# sk_params takes model parameters 
+
+# sk_params could also accept parameters for calling fit, predict, predict_proba
+
+# google:
+# example of keras.wrappers.scikit_learn.KerasRegressor
+
+import keras
 
 'bye'
