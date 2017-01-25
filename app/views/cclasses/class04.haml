@@ -1,1 +1,48 @@
-%h1 Under Construction
+%h1 Class04
+%p
+  In Class04 we work with Flask-RESTul.
+
+%h2#uc Use Cases: Time Series Prediction Recipes
+
+%hr/
+
+%h2#r1 Recipe 1: "Price versus Date Regression"
+
+
+%p Main idea:
+%ul
+  %li Fit a straight line through a time-series of prices.
+  %li Use the line to predict future prices from future dates.
+
+%p Ingredients:
+%ul
+  %li A list of dates and prices (Default: S&P500, Yahoo might work)
+  %li A start-date and end-date            (From end-user)
+  %li A prediction-date after the end-date (From end-user)
+  
+%p Expected Result:
+%ul
+  %li One prediction of a price at prediction-date
+
+%p Steps:
+%ul
+  %li Get sorted list of dates and prices into prices1_df (Yahoo might work)
+  %li Get start_date, end_date, and prediction_date (From end-user)
+  %li Get list of dates and prices into prices2_df between start_date and end_date 
+  %li
+    Create list of integers from prices2_df-dates:
+    %ul
+      %li 0 (or 1) might correspond to earliest date
+  %li Declare that the list of integers to be "X"
+  %li Declare that the corresponding prices be "y"
+  %li
+    Create a Linear Regression model from a suitable API:
+    %ul
+      %li my favorite: Python sklearn.linear_model.LinearRegression
+      %li R has glm()
+  %li Use model to "fit" straight line to X and y data
+  %li
+    Calculate integer which corresponds to prediction_date:
+    %ul
+      %li Integer is number of days prediction_date is after start_date
+  %li Use the straight line to predict price from prediction_date-integer
