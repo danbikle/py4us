@@ -16,6 +16,9 @@
 %p Ingredients:
 %ul
   %li A list of dates and prices (Default: S&P500, Yahoo might work)
+  %li
+    %a(href='http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC' target='x')
+      http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC  
   %li A start-date and end-date            (From end-user)
   %li A prediction-date after the end-date (From end-user)
   
@@ -74,6 +77,9 @@
 %p Ingredients:
 %ul
   %li A list of dates and prices (Default: S&P500, Yahoo might work)
+  %li
+    %a(href='http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC' target='x')
+      http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC
   %li A list of years to test (Default: [2010,2011,2012,2013,2014,2015,2016,2017]) 
   %li Integer number of years to learn from for each test-year (Default: 25)
 
@@ -105,7 +111,7 @@
   %li Create feat_df from prices1_df, pctlead, pctlag1
 
   %li
-    For a test_yr, Steps:
+    For each test_yr, Steps:
     %ul
       %li copy test_yr-observations (about 252) from feat_df into test_yr_df
       %li Declare x_test to be test_yr_df.pctlag1
