@@ -117,3 +117,15 @@
       %li Use the straight line to predict pctlead for each x_test
       %li Copy test_yr_df and predicted pctlead into predictions_df
 
+
+%p Reporting:
+%p Use predictions_df.prediction and predictions_df.pctlead to calculate:
+%ul
+  %li Accuracy (How often the sign of the prediction is True)
+  %li Accuracy above 55% is good
+  %li
+    Effectiveness:
+    %ul
+      %li Sum gain of "up"   predictions
+      %li Sum gain of "down" predictions
+  %li Compare Accuracy and Effectiveness to Accuracy and Effectiveness of "Long-Only" model
