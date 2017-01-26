@@ -104,4 +104,16 @@
       %code.python pctlag1 = 100*(price - previous_price)/previous_price
   %li Create feat_df from prices1_df, pctlead, pctlag1
 
+  %li
+    For a test_yr, Steps:
+    %ul
+      %li copy test_yr-observations (about 252) from feat_df into test_yr_df
+      %li Declare x_test to be test_yr_df.pctlag1
+      %li copy train_i-years of observations before test_yr from feat_df into train_df
+      %li Declare x_train to be train_df.pctlag1
+      %li Declare y_train to be train_df.pctlead
+      %li Create a Linear Regression model
+      %li Use model to "fit" straight line to x_train and y_train
+      %li Use the straight line to predict pctlead for each x_test
+      %li Copy test_yr_df and predicted pctlead into predictions_df
 
