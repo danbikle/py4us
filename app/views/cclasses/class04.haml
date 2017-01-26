@@ -27,14 +27,22 @@
 %p Steps:
 %ul
   %li Get sorted list of dates and prices into prices1_df (Yahoo might work)
+  %li
+    %img(src='/class04/prices1_df2.png')
   %li Get start_date, end_date, and prediction_date (From end-user)
   %li Get list of dates and prices into prices2_df between start_date and end_date 
+  %li
+    %img(src='/class04/prices2_df2.png')
   %li
     Create list of integers from prices2_df-dates:
     %ul
       %li 0 (or 1) might correspond to earliest date
+  %li
+    %img(src='/class04/dates2int2.png')
   %li Declare that the list of integers to be "X"
   %li Declare that the corresponding prices be "y"
+  %li
+    %img(src='/class04/yvsx2.png')
   %li
     Create a Linear Regression model from a suitable API:
     %ul
@@ -42,7 +50,11 @@
       %li R has glm()
   %li Use model to "fit" straight line to X and y data
   %li
+    %img(src='/class04/fittedline2.png')
+  %li
     Calculate integer which corresponds to prediction_date:
     %ul
       %li Integer is number of days prediction_date is after start_date
   %li Use the straight line to predict price from prediction_date-integer
+  %li
+    %img(src='/class04/predictedprice2.png')
