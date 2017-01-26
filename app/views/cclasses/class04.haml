@@ -8,7 +8,6 @@
 
 %h2#r1 Recipe 1: "Price versus Date Regression"
 
-
 %p Main idea:
 %ul
   %li Fit a straight line through a time-series of prices.
@@ -58,3 +57,51 @@
   %li Use the straight line to predict price from prediction_date-integer
   %li
     %img(src='/class04/predictedprice2.png')
+
+%hr/
+%h2#r2 Recipe 2: "Pct-Lead versus Pct-Lag Regression"
+
+%p Main idea:
+%ul
+  %li Build a scatter-plot of Pct-Lead versus Pct-Lag observations
+  %li Fit a straight line through the scatter-plot
+  %li Use the line to predict Pct-Lead from Pct-Lag
+  %li Collect many predictions for many previous years
+  %li Report on accuracy and effectiveness of the many predictions
+  %li Decide if I should trust Pct-Lead-prediction for today
+  %li If yes, predict Pct-Lead from Pct-Lag; then act on prediction
+  
+%p Ingredients:
+%ul
+  %li A list of dates and prices (Default: S&P500, Yahoo might work)
+  %li A list of years to test (Default: [2010,2011,2012,2013,2014,2015,2016,2017]) 
+  %li Integer number of years to learn from for each test-year (Default: 25)
+
+
+%p Steps:
+%ul
+  %li Get sorted list of dates and prices into prices1_df
+  %li
+    %img(src='/class04/prices1_df2.png')
+  %li Get list of years to test 
+  %li
+    Get Integer number of years to learn from for each test-year:
+    %br/
+    call it: train_i
+  %li
+    Generate pctlead from each price:
+    %pre
+      %code.python pctlead = 100*(next_price - price)/price
+  %li
+    Generate pctlag1 from each price:
+    %br/
+    pctlag1 is pctlead, shifted forward in time once:
+    %br/
+    [Yesterday's pctlead is today's pctlag1]
+    %br/
+    Alternative expression:
+    %pre
+      %code.python pctlag1 = 100*(price - previous_price)/previous_price
+  %li Create feat_df from prices1_df, pctlead, pctlag1
+
+
