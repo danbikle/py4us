@@ -1,1 +1,44 @@
-under_const.haml
+%h1 Class05
+%p
+  In Class05 we work with SQLAlchemy, Keras, and Flask-RESTful
+
+%h2#uc Use Cases: Time Series Prediction Recipes
+
+%hr/
+
+%h2#r1 Recipe 1: "Logistic Regression Predictions saved to Postgres"
+
+%p Main idea:
+%ul
+  %li Ask end-user for stock symbol (ticker)
+  %li Ask end-user for year count training size (default: 10)
+  %li Ask end-user for feature names
+  %li Calculate Logistic Regression Predictions for a series of years
+  %li Save Predictions to Postgres DB
+  %li Query Predictions from Postgres DB
+  %li Report Accuracy of Predictions
+  %li Report Effectiveness of Predictions
+
+%p Ingredients:
+%ul
+  %li Ubuntu 16:
+  %li https://drive.google.com/open?id=0Bx3iDDAtxxI4WWFpemh2ZjViVkk
+  %li A list of dates and prices (Default: S&P500, Yahoo might work)
+  %li
+    %a(href='http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC' target='x')
+      http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC  
+  %li Postgres Database Instance
+  %li Postgres Database Role
+  %li Postgres Database 
+
+  
+%p Expected Result:
+%ul
+  %li Ticker Accuracy Report
+  %li Ticker Effectiveness Report
+
+%p Steps:
+%ul
+  %li Under Construction
+  %li ETA: Saturday 2017-02-04
+  
