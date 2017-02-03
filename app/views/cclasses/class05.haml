@@ -266,3 +266,53 @@
         %code  
           conda install psycopg2
           conda install keras
+
+  %li At this point your virtualbox should be ready for the keras10 repo.
+  
+  %li So, clone the keras10 repo with this shell syntax:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~
+          rm -rf keras10
+          git clone https://github.com/danbikle/keras10
+  %li Run the first demo with a simple shell command:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~/keras10
+          python import_keras10.py
+  %li I did the above demo in my virtualbox and I saw this:
+  %li
+    .syntax
+      %pre
+        =render 'class05d1'
+  %li Run the next demo with a simple shell command:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~/keras10
+          \./flask10.bash
+
+  %li The above shell is running a webserver. You should leave it alone.
+  %li I did the above demo in my virtualbox and I saw this:
+  %li
+    .syntax
+      %pre
+        =render 'class05d2'
+  %li The next demo requires another shell. So, start another shell.
+  %li Run the next demo with a simple shell command:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~/keras10
+          bash -x curlem.bash
+  %li I did the above demo in my virtualbox and I saw this:
+  %li
+    .syntax
+      %pre
+        =render 'class05d3'
