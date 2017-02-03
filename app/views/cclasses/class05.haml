@@ -214,3 +214,55 @@
 
   %li Now, here is the tricky part. Many students fail here.
   %li Exit the Database account:
+  %li
+    .syntax
+      %pre
+        %code
+          \q
+
+  %li Exit the postgres Linux account:
+  %li
+    .syntax
+      %pre
+        %code  
+          exit
+
+  %li Ensure that you are in the ann Linux account:
+  %li
+    .syntax
+      %pre
+        %code
+          id
+
+  %li At this point you have a role inside of Postgres named ann which has password: ann
+  %li Next, run these shell commands to install Anaconda:
+  %li
+    .syntax
+      %pre
+        %code
+          id
+          cd ~ann
+          rm -f Anaconda3-4.2.0-Linux-x86_64.sh
+          rm -rf anaconda anaconda3
+          wget https://repo.continuum.io/archive/Anaconda3-4.2.0-Linux-x86_64.sh
+          bash Anaconda3-4.2.0-Linux-x86_64.sh
+          mv anaconda3/bin/curl anaconda3/bin/curl_ana
+          echo 'export PATH=${HOME}/anaconda3/bin:$PATH' >> ~/.bashrc
+          bash
+
+  %li The syntax above is designed to behave well if you run it multiple times
+  %li This means that if you run the above syntax 4 times, you should end up with Anaconda installed
+  %li Next, install some packages into Anaconda:
+  %li
+    .syntax
+      %pre
+        %code
+          conda install -c conda-forge flask-restful
+
+  %li Next, install more packages into Anaconda:
+  %li
+    .syntax
+      %pre
+        %code  
+          conda install psycopg2
+          conda install keras
