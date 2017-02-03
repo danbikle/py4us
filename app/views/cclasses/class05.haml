@@ -168,5 +168,49 @@
     %a(href='http://www.google.com/search?tbm=vid&q=how+to+install+ubuntu16+inside+VirtualBox' target='x')
       http://www.google.com/search?tbm=vid&q=how+to+install+ubuntu16+inside+VirtualBox
   
-  %li After you install Ubuntu16, you should install an account named 'ann'
-  %li Shell commands to install ann account are listed below:
+  %li During installation, I tell Ubuntu that my name is ann.
+  %li If you also do that, then you can skip the next step.
+  %li After you install Ubuntu16, you need an account named 'ann'
+  %li Shell commands to install the ann account are listed below:
+  %li
+    .syntax
+      %pre
+        %code
+          sudo useradd -m -s /bin/bash -G sudo ann
+          sudo passwd ann
+
+  %li Next login as ann
+  %li Next, you should enhance your copy of Ubuntu 16:
+  %li
+    .syntax
+      %pre
+        %code
+          sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev    \
+          libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 curl          \
+          libgdbm-dev libsqlite3-dev gitk postgresql postgresql-server-dev-all aptitude \
+          libpq-dev emacs wget openssh-server libbz2-dev linux-headers-$(uname -r)
+  %li After the above command finishes, you should reboot Ubuntu16
+  %li Next you should create a role inside of Postgres named ann which has password: ann
+  %li The commands below do that:
+  %li
+    .syntax
+      %pre
+        %code
+          sudo su - postgres
+  %li Now, you should be inside the postgres Linux account:
+  %li
+    .syntax
+      %pre
+        %code
+          psql
+
+  %li Now, you should be inside the postgres Database account
+  %li
+    .syntax
+      %pre
+        %code
+          CREATE ROLE ANN WITH LOGIN SUPERUSER PASSWORD 'ann';
+          CREATE DATABASE ann;
+
+  %li Now, here is the tricky part. Many students fail here.
+  %li Exit the Database account:
