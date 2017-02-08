@@ -1,0 +1,17 @@
+# ch18.py
+
+# ref:
+# http://bokeh.pydata.org/en/latest/docs/user_guide/charts.html#box-color
+
+# The color of the box in a BoxPlot can be set to a fixed color using the color parameter:
+
+from bokeh.charts import BoxPlot, output_file, show
+from bokeh.sampledata.autompg import autompg as df
+
+p = BoxPlot(df, values='mpg', label='cyl', color='#00cccc',
+            title="MPG Summary (grouped by CYL)")
+
+output_file("boxplot.html")
+
+show(p)
+
