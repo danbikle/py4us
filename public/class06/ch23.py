@@ -1,0 +1,18 @@
+# ch23.py
+
+# ref:
+# http://bokeh.pydata.org/en/latest/docs/user_guide/charts.html#markers
+
+# The marker used for displaying outliers is controlled by the marker parameter:
+
+from bokeh.charts import BoxPlot, output_file, show
+from bokeh.sampledata.autompg import autompg as df
+
+p = BoxPlot(df, values='mpg', label='cyl', marker='square',
+            title="MPG Summary (grouped by CYL, square marker)")
+
+output_file("boxplot.html")
+
+show(p)
+
+
