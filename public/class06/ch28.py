@@ -1,0 +1,17 @@
+# ch28.py
+
+# ref:
+# http://bokeh.pydata.org/en/latest/docs/user_guide/charts.html#userguide-charts-histogram-bar-color
+
+# It is also possible to control the color of the histogram bins by setting the color parameter:
+
+from bokeh.charts import Histogram, output_file, show
+from bokeh.sampledata.autompg import autompg as df
+
+p = Histogram(df, values='hp', color='navy', title="HP Distribution")
+
+output_file("histogram_color.html")
+
+show(p)
+
+
