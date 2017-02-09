@@ -45,3 +45,28 @@
     %code.bash
       sudo apt-get update
       sudo apt-get upgrade
+
+%p Inside the ann account on this host you will see that I have installed Anaconda Python for you.
+
+%p If you type python at the shell you should see something like this:
+
+.syntax
+  %pre
+    %code.bash
+      ann@ub16aug:~$ 
+      ann@ub16aug:~$ python
+      Python 3.5.2 |Anaconda 4.1.1 (64-bit)| (default, Jul  2 2016, 17:53:06) 
+      [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux
+      Type "help", "copyright", "credits" or "license" for more information.
+      >>> 
+
+%p I can see in the above banner that we have Anaconda 4.1.1 inside the ann account.
+%p It was created during the summer of 2016 and it gives us Python 3.5.2
+%p That combination of Anaconda and Python is well suited for the exercises in this lab.
+
+%p If, however, you want to use a more recent version of Anaconda then run the shell commands listed below:
+
+.syntax
+  %pre
+    =render 'class01ana2'
+    
