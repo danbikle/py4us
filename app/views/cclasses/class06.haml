@@ -416,3 +416,35 @@
 %p Then a browser came to life and served me a page:
 
 %iframe(height='700' width='800' src='/class06/ch11.html')
+
+
+
+%hr/
+%h2#ch12 Lab (ch12.py):
+
+%p This lab shows how to control bar_width
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06ch12'
+
+%p You should copy the above file into /tmp/ch12.py and run it.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li bar_width=0.4
+  %li from bokeh.charts import Bar
+  
+%p I ran /tmp/ch12.py and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python ch12.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='700' width='800' src='/class06/ch12.html')
