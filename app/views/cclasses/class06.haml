@@ -235,6 +235,8 @@
   %li Three figures placed in a gridplot
   %li Hide toolbar via: toolbar_location=None
 
+%p The linked-panning feature works because the figures share the same x.
+
 %p I ran it and saw this in my shell:
 
 .syntax
@@ -263,3 +265,36 @@
   %a(href='http://bokeh9.herokuapp.com/static/b13.html' target='x')
     http://bokeh9.herokuapp.com/static/b13.html
   
+  
+%hr/
+%h2#b14 Lab (b14.py):
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06b14'
+
+%p You should copy the above file into /tmp/b14.py and run it.
+
+%p The behavioral feature of this lab is called 'linked brushing'.
+
+%p You will see the feature after you select rectangle in either plot.
+%p It is easy to understand the feature if your rectangle mathches stacked grid-rectangles.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li How to call ColumnDataSource()
+  %li gridplot()
+
+%p I ran it and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python b14.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='400' width='800' src='/class06/b14.html')
