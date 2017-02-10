@@ -209,3 +209,55 @@
   %a(href='http://bokeh9.herokuapp.com/static/b12.html' target='x')
     http://bokeh9.herokuapp.com/static/b12.html
   
+  
+%hr/
+%h2#b13 Lab (b13.py):
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06b13'
+
+%p You should copy the above file into /tmp/b13.py and run it.
+
+%p The behavioral feature of this lab is called 'linked panning'.
+
+%p You will see the feature after you move one of the waves with your mouse.
+
+%p Some features of the above syntax which I like are listed below:
+%ul
+  %li How to call np.linspace()
+  %li How to get np.pi
+  %li How to call np.sin(), np.cos()
+  %li How to call s2.triangle()
+  %li How to call s3.square()
+
+%p I ran it and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python b13.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='400' width='800' src='/class06/b13.html')
+
+%p I commited it to /tmp/bok10 and pushed it to Heroku:
+
+.syntax
+  %pre
+    %code.bash
+      cp /tmp/b13.html /tmp/bok10/static
+      cd /tmp/bok10/
+      git add .
+      git commit -am more-html
+      git push heroku master
+%p Now we can see it here:
+
+%p
+  %a(href='http://bokeh9.herokuapp.com/static/b13.html' target='x')
+    http://bokeh9.herokuapp.com/static/b13.html
+  
