@@ -343,3 +343,42 @@
 %p Then a browser came to life and served me a page:
 
 %iframe(height='400' width='850' src='/class06/b15.html')
+
+
+  
+%hr/
+%h2#ch10 Lab (ch10.py):
+
+%p This lab introduces Bokeh Charts which is a powerful API even simpler than the examples of bokeh.plotting API discussed above.
+
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06ch10'
+
+%p You should copy the above file into /tmp/ch10.py and run it.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li How to call bokeh.charts.Bar()
+  %li How to copy bokeh.sampledata.autompg into a DataFrame
+
+%p You can find information about the autompg data-set at the URL below:
+%p
+  %a(href='http://www.google.com/search?tbm=isch&q=autompg-data-set' target='x')
+    http://www.google.com/search?tbm=isch&q=autompg-data-set
+  
+  
+%p I ran /tmp/ch10.py and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python ch10.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='700' width='800' src='/class06/ch10.html')
