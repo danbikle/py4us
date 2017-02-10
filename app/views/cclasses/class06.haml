@@ -298,3 +298,48 @@
 %p Then a browser came to life and served me a page:
 
 %iframe(height='400' width='800' src='/class06/b14.html')
+
+
+  
+%hr/
+%h2#b15 Lab (b15.py):
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06b15'
+
+%p You should copy the above file into /tmp/b15.py and run it.
+
+%p The behavioral feature of this lab is called 'linked brushing'.
+
+%p You will see the feature after you select rectangle in either plot.
+%p It is easy to understand the feature if your rectangle mathches stacked grid-rectangles.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li How to call bokeh.sampledata.download()
+  %li How to call dtype=np.datetime64
+  %li How to use x_axis_type="datetime"
+  %li How to calculate a moving-avg with np.convolve()
+  %li How to call np.convolve()
+  %li ref:
+  %li
+    %a(href='https://docs.scipy.org/doc/numpy/reference/generated/numpy.convolve.html' target='x')
+      https://docs.scipy.org/doc/numpy/reference/generated/numpy.convolve.html
+  %li
+    %a(href='https://en.wikipedia.org/wiki/Convolution#Visual_explanation' target='x')
+      https://en.wikipedia.org/wiki/Convolution#Visual_explanation
+  
+%p I ran it and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python b15.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='400' width='850' src='/class06/b15.html')
