@@ -351,6 +351,7 @@
 
 %p This lab introduces Bokeh Charts which is a powerful API even simpler than the examples of bokeh.plotting API discussed above.
 
+%p Often when I want to visualize some data with Bokeh I prefer Bokeh Charts over Bokeh Plotting.
 
 %p I did this lab by creating the file listed below:
 
@@ -362,8 +363,9 @@
 
 %p Some features of the above syntax are listed below:
 %ul
+  %li This Bokeh Charts script contains much less syntax than previous examples.
   %li How to call bokeh.charts.Bar()
-  %li How to copy bokeh.sampledata.autompg into a DataFrame
+  %li How to copy bokeh.sampledata.autompg into a DataFrame.
 
 %p You can find information about the autompg data-set at the URL below:
 %p
@@ -382,3 +384,35 @@
 %p Then a browser came to life and served me a page:
 
 %iframe(height='700' width='800' src='/class06/ch10.html')
+
+
+%hr/
+%h2#ch11 Lab (ch11.py):
+
+%p This lab shows classic group-by and mean aggregation.
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06ch11'
+
+%p You should copy the above file into /tmp/ch11.py and run it.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li agg='mean'
+  %li Implicit group-by of the column which feeds the label-parameter.
+  %li Implicit mapping of mean() to the column which feeds the values-parameter.
+  
+%p I ran /tmp/ch11.py and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python ch11.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='700' width='800' src='/class06/ch11.html')
