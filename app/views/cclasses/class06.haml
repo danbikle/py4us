@@ -162,3 +162,50 @@
   %a(href='http://bokeh9.herokuapp.com/static/b11.html' target='x')
     http://bokeh9.herokuapp.com/static/b11.html
   
+%hr/
+%h2#b12 Lab (b12.py):
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06b12'
+
+%p You should copy the above file into /tmp/b12.py and run it.
+
+%p Some features of the above syntax which I like are listed below:
+%ul
+  %li Demonstration of np.random.random()
+  %li Creation of List of color strings
+  %li mode="cdn" parameter of output_file()
+  %li Large list of tool-types (resize is my favorite)
+  %li Interesting call to p.circle()
+
+%p I ran it and saw this in my shell:
+
+.syntax
+  %pre
+    %code.bash
+      dan@hp77:/tmp $ python b12.py 
+      dan@hp77:/tmp $ Created new window in existing browser session.
+
+%p Then a browser came to life and served me a page:
+
+%iframe(height='700' width='750' src='/class06/b12.html')
+
+%p I commited it to /tmp/bok10 and pushed it to Heroku:
+
+.syntax
+  %pre
+    %code.bash
+      cp /tmp/b12.html /tmp/bok10/static
+      cd /tmp/bok10/
+      git add .
+      git commit -am more-html
+      git push heroku master
+%p Now we can see it here:
+
+%p
+  %a(href='http://bokeh9.herokuapp.com/static/b12.html' target='x')
+    http://bokeh9.herokuapp.com/static/b12.html
+  
