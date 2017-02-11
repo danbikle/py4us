@@ -12,7 +12,7 @@ p = Scatter(df, x='displ', y='hp', marker='square',
             title="HP vs DISPL", legend="top_left",
             xlabel="Displacement", ylabel="Horsepower")
 
-output_file("scatter.html")
+output_file("/tmp/ch35.html")
 
 show(p)
 
