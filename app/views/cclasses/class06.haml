@@ -478,3 +478,38 @@
 %p Then a browser came to life and served me a page:
 
 %iframe(height='700' width='800' src='/class06/ch13.html')
+
+
+%hr/
+%h2#ch14 Lab (ch14.py):
+
+%p This lab shows how to visualize a double-group-by
+
+%p I did this lab by creating the file listed below:
+
+.syntax
+  %pre
+    =render 'class06ch14'
+
+%p You should copy the above file into /tmp/ch14.py and run it.
+
+%p Some features of the above syntax are listed below:
+%ul
+  %li double-group-by
+  %li agg='median'
+  
+%p I ran /tmp/ch14.py and saw this in my shell:
+
+.syntax
+  %pre
+    =render 'class06ch14a'
+
+%p I can see in the above output, origin meaning:
+%ul
+  %li 1 is USA origin
+  %li 2 is Europe origin
+  %li 3 is Japan origin
+  
+%p Then a browser came to life and served me a page:
+
+%iframe(height='700' width='800' src='/class06/ch14.html')
