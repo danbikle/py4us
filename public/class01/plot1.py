@@ -1,24 +1,21 @@
-# plot1.py
+"""
+plot1.py
 
-# This script should Plot S&P 500 Prices For 2016-11
+This script should Plot IBM Prices For 2016-11
+"""
 
-import pandas as pd
+import datetime
 import pdb
 import matplotlib.pyplot as plt
+import pandas_datareader as pdr
 
-# I should get the data:
-prices_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC')
-# pdb.set_trace()
+# I should get the prices:
+start_dt   = datetime.datetime(2016,  1,  1)
+end_dt     = datetime.datetime(2026, 12, 31)
+prices1_df = pdr.DataReader('IBM', 'google', start_dt, end_dt)
 # I should get 2016-11 data:
-pred_sr    = prices_df.Date > '2016-11'
-prices0_df = prices_df.copy()[['Date','Close']][pred_sr]
-
-# I should sort by Date ascending:
-prices1_df = prices0_df.sort_values('Date')
-
-# I should set index to Date column:
-prices2_df = prices1_df.set_index('Date')
-
+pred_sr    = prices1_df.index > '2016-11'
+prices2_df = prices1_df.copy()[['Close']][pred_sr]
 # I should plot:
 prices2_df.plot.line(title="My Plot")
 plt.show()
