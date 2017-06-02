@@ -1,19 +1,23 @@
 <code class='bash'>
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ ls -la yahoo500.py 
--rw-rw-r-- 1 dan dan 653 Nov 30 16:42 yahoo500.py
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ which python
+dan@h78:~/py4/public/class01 $ 
+dan@h78:~/py4/public/class01 $ ls -la pdr1.py 
+-rw-rw-r-- 1 dan dan 705 Jun  1 22:51 pdr1.py
+dan@h78:~/py4/public/class01 $ 
+
+
+
+dan@h78:~/py4/public/class01 $ which python
 /home/dan/anaconda3/bin/python
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ python yahoo500.py 
-> /home/dan/py4us/public/class01/yahoo500.py(12)&lt;module>()
--> prices_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC')
-(Pdb) 
-(Pdb) 
+dan@h78:~/py4/public/class01 $ 
+
+
+
+dan@h78:~/py4/public/class01 $ python pdr1.py 
+> /home/dan/py4/public/class01/pdr1.py(16)&lt;module>()
+-> start_dt  = datetime.datetime(2016,  1,  1)
+
+
+
 (Pdb) help
 
 Documented commands (type help &lt;topic>):
@@ -30,49 +34,85 @@ Miscellaneous help topics:
 ==========================
 exec  pdb
 
+
+
+
 (Pdb) list
-list
-  7  	
-  8  	# I should stop the script here and start the debugger:
-  9  	pdb.set_trace()
- 10  	
- 11  	# I should get the prices and use pandas to read them into a DataFrame:
- 12  ->	prices_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s=%5EGSPC')
- 13  	
- 14  	# I should use the head() method to display some of the prices:
- 15  	prices_df.head()
- 16  	
- 17  	# I should write the prices to a CSV file in /tmp:
+ 11  	import pdb
+ 12  	
+ 13  	# I should stop the script here and start the debugger:
+ 14  	pdb.set_trace()
+ 15  	
+ 16  ->	start_dt  = datetime.datetime(2016,  1,  1)
+ 17  	end_dt    = datetime.datetime(2026, 12, 31)
+ 18  	prices_df = pdr.DataReader('IBM', 'google', start_dt, end_dt)
+ 19  	print(prices_df.head())
+ 20  	
+ 21  	# I should write the prices to a CSV file in /tmp:
+
+
+
 (Pdb) n
-> /home/dan/py4us/public/class01/yahoo500.py(15)&lt;module>()
--> prices_df.head()
+> /home/dan/py4/public/class01/pdr1.py(17)&lt;module>()
+-> end_dt    = datetime.datetime(2026, 12, 31)
+
+
+
 (Pdb) n
-> /home/dan/py4us/public/class01/yahoo500.py(18)&lt;module>()
--> prices_df.to_csv('/tmp/prices_gspc.csv', float_format='%4.2f', index=False)
+> /home/dan/py4/public/class01/pdr1.py(18)&lt;module>()
+-> prices_df = pdr.DataReader('IBM', 'google', start_dt, end_dt)
+
+
+
+(Pdb) n
+> /home/dan/py4/public/class01/pdr1.py(19)&lt;module>()
+-> print(prices_df.head())
+
+
+
+(Pdb) n
+              Open    High     Low   Close   Volume
+Date                                               
+2016-01-04  135.60  135.97  134.24  135.95  5208900
+2016-01-05  136.76  136.89  134.85  135.85  3924793
+2016-01-06  134.38  135.58  133.62  135.17  4310939
+2016-01-07  133.70  135.02  132.43  132.86  7025760
+2016-01-08  133.18  133.82  131.32  131.63  4762706
+> /home/dan/py4/public/class01/pdr1.py(22)&lt;module>()
+-> prices_df.to_csv('/tmp/prices_ibm.csv', float_format='%4.3f')
+
+
+
 (Pdb) prices_df.tail()
-             Date   Open   High    Low  Close   Volume  Adj Close
-16832  1950-01-09  17.08  17.08  17.08  17.08  2520000      17.08
-16833  1950-01-06  16.98  16.98  16.98  16.98  2010000      16.98
-16834  1950-01-05  16.93  16.93  16.93  16.93  2550000      16.93
-16835  1950-01-04  16.85  16.85  16.85  16.85  1890000      16.85
-16836  1950-01-03  16.66  16.66  16.66  16.66  1260000      16.66
-(Pdb) n
-> /home/dan/py4us/public/class01/yahoo500.py(23)&lt;module>()
--> 'bye'
+              Open    High     Low   Close   Volume
+Date                                               
+2017-05-25  153.25  153.73  152.95  153.20  2582815
+2017-05-26  152.85  153.00  152.06  152.49  2443507
+2017-05-30  151.95  152.67  151.59  151.73  3666032
+2017-05-31  152.03  152.80  151.65  152.63  3543404
+2017-06-01  152.80  152.87  151.63  152.67  2918126
+
+
+
 (Pdb) c
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ head /tmp/prices_gspc.csv 
-Date,Open,High,Low,Close,Volume,Adj Close
-2016-11-29,2200.76,2210.46,2198.15,2204.66,3706560000,2204.66
-2016-11-28,2210.21,2211.14,2200.36,2201.72,3505650000,2201.72
-2016-11-25,2206.27,2213.35,2206.27,2213.35,1584600000,2213.35
-2016-11-23,2198.55,2204.72,2194.51,2204.72,3418640000,2204.72
-2016-11-22,2201.56,2204.80,2194.51,2202.94,3957940000,2202.94
-2016-11-21,2186.43,2198.70,2186.43,2198.18,3607010000,2198.18
-2016-11-18,2186.85,2189.89,2180.38,2181.90,3572400000,2181.90
-2016-11-17,2178.61,2188.06,2176.65,2187.12,3809160000,2187.12
-2016-11-16,2177.53,2179.22,2172.20,2176.94,3830590000,2176.94
-dan@e80:~/py4us/public/class01 $ 
-dan@e80:~/py4us/public/class01 $ 
+dan@h78:~/py4/public/class01 $ 
+dan@h78:~/py4/public/class01 $ 
+
+
+
+dan@h78:~/py4/public/class01 $ head /tmp/prices_ibm.csv 
+Date,Open,High,Low,Close,Volume
+2016-01-04,135.600,135.970,134.240,135.950,5208900
+2016-01-05,136.760,136.890,134.850,135.850,3924793
+2016-01-06,134.380,135.580,133.620,135.170,4310939
+2016-01-07,133.700,135.020,132.430,132.860,7025760
+2016-01-08,133.180,133.820,131.320,131.630,4762706
+2016-01-11,131.810,133.820,131.760,133.230,4974436
+2016-01-12,133.650,133.780,131.130,132.900,5078678
+2016-01-13,133.500,134.280,131.100,131.170,4675089
+2016-01-14,131.930,133.790,131.220,132.910,5708301
+dan@h78:~/py4/public/class01 $ 
+dan@h78:~/py4/public/class01 $ 
+dan@h78:~/py4/public/class01 $
 </code>
 
