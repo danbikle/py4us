@@ -1,13 +1,15 @@
-# class02ibm4.py
+"""
+class02ibm4.py
 
-# This script should Create a list of 2016-11 IBM prices.
-# I should Copy the prices.
+This script should Create a list of 2016-11 IBM prices.
+I should Copy the prices.
 
-# Ref:
-# https://finance.yahoo.com/quote/IBM/history?p=IBM
+Ref:
+https://finance.yahoo.com/quote/IBM/history?p=IBM
 
-# Demo:
-# python class02ibm4.py
+Demo:
+python class02ibm4.py
+"""
 
 import pdb
 
@@ -48,4 +50,3 @@ print(copy1_l)
 print(copy2_l)
 
 'bye'
-
