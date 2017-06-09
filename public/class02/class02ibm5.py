@@ -1,13 +1,15 @@
-# class02ibm5.py
+"""
+class02ibm5.py
 
-# This script should Create a list of 2016-11 IBM prices.
-# I should List the first 4 prices.
+This script should Create a list of 2016-11 IBM prices.
+I should List the first 4 prices.
 
-# Ref:
-# https://finance.yahoo.com/quote/IBM/history?p=IBM
+Ref:
+https://finance.yahoo.com/quote/IBM/history?p=IBM
 
-# Demo:
-# python class02ibm5.py
+Demo:
+python class02ibm5.py
+"""
 
 import pdb
 
@@ -41,4 +43,3 @@ print(prices_l[0:4])
 print(prices_l[ :4])
 
 'bye'
-
