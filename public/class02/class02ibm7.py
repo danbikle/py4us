@@ -1,14 +1,16 @@
-# class02ibm7.py
+"""
+class02ibm7.py
 
-# This script should Create a list of 2016-11 IBM prices.
-# I should Copy the prices.
-# I should Delete the last price
+This script should Create a list of 2016-11 IBM prices.
+I should Copy the prices.
+I should Delete the last price
 
-# Ref:
-# https://finance.yahoo.com/quote/IBM/history?p=IBM
+Ref:
+https://finance.yahoo.com/quote/IBM/history?p=IBM
 
-# Demo:
-# python class02ibm7.py
+Demo:
+python class02ibm7.py
+"""
 
 import pdb
 
@@ -56,4 +58,3 @@ print(copy1_l[ -4:])
 print(copy2_l[ -4:])
 
 'bye'
-
