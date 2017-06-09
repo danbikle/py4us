@@ -1,9 +1,11 @@
-# class02ibm1.py
+"""
+class02ibm1.py
 
-# This script should Create a list of 2016-11 IBM prices
+This script should Create a list of 2016-11 IBM prices.
 
-# Ref:
-# https://finance.yahoo.com/quote/IBM/history?p=IBM
+Ref:
+https://finance.yahoo.com/quote/IBM/history?p=IBM
+"""
 
 import pdb
 prices_l = [
