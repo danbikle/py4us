@@ -3,7 +3,8 @@ class02ibm9.py
 
 This script should Create a list of 2016-11 IBM prices.
 I should Copy the prices.
-I should Delete the last price
+I should Delete the last price.
+I should undo the delete with append()
 
 Ref:
 https://finance.yahoo.com/quote/IBM/history?p=IBM
