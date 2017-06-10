@@ -1,9 +1,11 @@
-# class02co1.py
+"""
+class02co1.py
 
-# This script should Compare a Python Comprehension to a For-Loop
+This script should Compare a Python Comprehension to a For-Loop
 
-# Demo:
-# python class02co1.py
+Demo:
+python class02co1.py
+"""
 
 import pdb
 
