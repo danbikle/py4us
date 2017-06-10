@@ -1,12 +1,14 @@
-# class02fb11.py
+"""
+class02fb11.py
 
-# This script should Drive a For-Loop using the price-list
+This script should Drive a For-Loop using the price-list
 
-# Ref:
-# https://finance.yahoo.com/quote/FB/history?p=FB
+Ref:
+https://finance.yahoo.com/quote/FB/history?p=FB
 
-# Demo:
-# python class02fb11.py
+Demo:
+python class02fb11.py
+"""
 
 import pdb
 
