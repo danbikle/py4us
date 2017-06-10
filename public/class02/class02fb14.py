@@ -1,12 +1,14 @@
-# class02fb14.py
+"""
+class02fb14.py
 
-# This script should Plot FB prices vs dates
+This script should Plot FB prices vs dates
 
-# Ref:
-# https://finance.yahoo.com/quote/FB/history?p=FB
+Ref:
+https://finance.yahoo.com/quote/FB/history?p=FB
 
-# Demo:
-# python class02fb14.py
+Demo:
+python class02fb14.py
+"""
 
 import pdb
 
