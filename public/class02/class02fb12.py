@@ -1,12 +1,14 @@
-# class02fb12.py
+"""
+claass02fb12.py
 
-# This script should Use a For-Loop to sort the prices for plotting
+This script should Use a For-Loop to sort the prices for plotting
 
-# Ref:
-# https://finance.yahoo.com/quote/FB/history?p=FB
+Ref:
+https://finance.yahoo.com/quote/FB/history?p=FB
 
-# Demo:
-# python class02fb12.py
+Demo:
+python class02fb12.py
+"""
 
 import pdb
 
