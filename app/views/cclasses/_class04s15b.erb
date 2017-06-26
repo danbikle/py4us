@@ -34,7 +34,7 @@ class Demo15(fr.Resource):
     algo_s = 'Linear Regression'
 
     # I should get prices for tkr:
-    prices0_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s='+tkr)
+    prices0_df = pd.read_csv('http://tkrprice.herokuapp.com/static/CSV/history/'+tkr+'.csv')
 
     # See diagram: py4.us/cclasses/class04#r2
     prices1_df = prices0_df[['Date','Close']].sort_values(['Date'])

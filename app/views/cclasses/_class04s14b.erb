@@ -11,7 +11,7 @@
 # Demo:
 # export FLASK_DEBUG=1
 # ~/anaconda3/bin/python demo14.py
-# curl localhost:5000/demo14/^GSPC/9/2017-12-31
+# curl localhost:5000/demo14/IBM/9/2017-12-31
 import pdb
 import os
 import flask         as fl
@@ -35,7 +35,7 @@ class Demo14(fr.Resource):
     k5_s   = '5. And the prediction is '
     k6_s   = '6. Most recent price is '
     # I should get prices for tkr:
-    prices0_df = pd.read_csv('http://ichart.finance.yahoo.com/table.csv?s='+tkr)
+    prices0_df = pd.read_csv('http://tkrprice.herokuapp.com/static/CSV/history/'+tkr+'.csv')
     # I should get most recent price:
     recent_price_f = prices0_df.Close[0]
 
