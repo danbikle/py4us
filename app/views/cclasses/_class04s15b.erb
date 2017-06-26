@@ -1,17 +1,21 @@
 <code class='python'>
-# demo15.py
+"""
+demo15.py
 
-# This script should demonstrate:
-# flask_restful.Resource
-# flask_restful.Api
-# api.add_resource()
-# URL-path-tokens
-# sklearn LinearRegression
+This script should demonstrate:
+flask_restful.Resource
+flask_restful.Api
+api.add_resource()
+URL-path-tokens
+sklearn LinearRegression
 
-# Demo:
-# export FLASK_DEBUG=1
-# ~/anaconda3/bin/python demo15.py
-# curl localhost:5000/demo15/IBM/2016/9
+Demo:
+export FLASK_DEBUG=1
+export PORT=5015
+~/anaconda3/bin/python demo15.py
+curl localhost:5015/demo15/IBM/2016/9
+"""
+
 import pdb
 import os
 import flask         as fl
@@ -42,6 +46,10 @@ class Demo15(fr.Resource):
     
     # Create feat_df from prices1_df, pctlead, pctlag1    
     # See diagram: py4.us/cclasses/class04#r2
+    
+    import pdb
+    pdb.set_trace()
+    
     feat_df = prices1_df.copy()
     feat_df['pctlead'] = (100.0 * (feat_df.Price.shift(-1) - feat_df.Price) / feat_df.Price).fillna(0)
     feat_df['pctlag1'] = feat_df.pctlead.shift(1).fillna(0)
@@ -103,7 +111,7 @@ class Demo15(fr.Resource):
     }
 # I should declare URL-path-tokens, and I should constrain them:
 api.add_resource(Demo15, '/demo15/&lt;tkr>/&lt;yr2predict>/&lt;int:yrs2train>')
-# curl localhost:5000/demo15/SPY/2016/25
+# curl localhost:5015/demo15/SPY/2016/25
 
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", 5000))
