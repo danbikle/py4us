@@ -1,19 +1,23 @@
 <code class='bash'>
-# demo13.py
+"""
+demo13.py
 
-# This script should demonstrate:
-# flask_restful.Resource
-# flask_restful.Api
-# api.add_resource()
-# URL-path-tokens
-# URL-parameters
+This script should demonstrate:
+flask_restful.Resource
+flask_restful.Api
+api.add_resource()
+URL-path-tokens
+URL-parameters
 
-# Demo:
-# export FLASK_DEBUG=1
-# ~/anaconda3/bin/python demo13.py
-# curl localhost:5000/demo13/IBM/2017/30?features=pctlag1,slope2,dow,moy
-# The above URL has path-tokens: IBM/2017/30
-# The above URL has a URL-parameter named 'features'
+Demo:
+export FLASK_DEBUG=1
+export PORT=5013
+~/anaconda3/bin/python demo13.py
+curl localhost:5013/demo13/IBM/2017/30?features=pctlag1,slope2,dow,moy
+The above URL has path-tokens: IBM/2017/30
+The above URL has a URL-parameter named 'features'
+"""
+
 import os
 import flask         as fl
 import flask_restful as fr
@@ -32,7 +36,7 @@ class Demo13(fr.Resource):
     return {k1_s:tkr, k2_s:yr2predict, k3_s:yrs2train, k4_s:features}
 # I should declare URL-path-tokens, and I should constrain them:
 api.add_resource(Demo13, '/demo13/&lt;tkr>/&lt;int:yr2predict>/&lt;int:yrs2train>')
-# curl localhost:5000/demo13/IBM/2017/30?features=pctlag1,slope2,dow,moy
+# curl localhost:5013/demo13/IBM/2017/30?features=pctlag1,slope2,dow,moy
 
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", 5000))
