@@ -1,17 +1,21 @@
 <code class='bash'>
-# demo14.py
+"""
+demo14.py
 
-# This script should demonstrate:
-# flask_restful.Resource
-# flask_restful.Api
-# api.add_resource()
-# URL-path-tokens
-# sklearn LinearRegression
+This script should demonstrate:
+flask_restful.Resource
+flask_restful.Api
+api.add_resource()
+URL-path-tokens
+sklearn LinearRegression
 
-# Demo:
-# export FLASK_DEBUG=1
-# ~/anaconda3/bin/python demo14.py
-# curl localhost:5000/demo14/IBM/9/2017-12-31
+Demo:
+export FLASK_DEBUG=1
+export PORT=5014
+~/anaconda3/bin/python demo14.py
+curl localhost:5014/demo14/IBM/9/2017-12-31
+"""
+
 import pdb
 import os
 import flask         as fl
@@ -37,7 +41,7 @@ class Demo14(fr.Resource):
     # I should get prices for tkr:
     prices0_df = pd.read_csv('http://tkrprice.herokuapp.com/static/CSV/history/'+tkr+'.csv')
     # I should get most recent price:
-    recent_price_f = prices0_df.Close[0]
+    recent_price_f = prices0_df.iloc[-1].Close
 
     # See diagram: py4.us/cclasses/class04#r1
     prices1_df = prices0_df[['Date','Close']].sort_values(['Date'])
@@ -84,7 +88,7 @@ class Demo14(fr.Resource):
     }
 # I should declare URL-path-tokens, and I should constrain them:
 api.add_resource(Demo14, '/demo14/&lt;tkr>/&lt;int:yrs2train>/&lt;date2predict>')
-# curl localhost:5000/demo14/^GSPC/9/2017-12-31
+# curl localhost:5014/demo14/IBM/9/2017-12-31
 
 if __name__ == "__main__":
   port = int(os.environ.get("PORT", 5000))
