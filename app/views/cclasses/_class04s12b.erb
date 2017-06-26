@@ -1,18 +1,22 @@
 <code class='bash'>
-# demo12.py
+"""
+~ann/fr10/demo12.py
 
-# This script should demonstrate:
-# flask_restful.Resource
-# flask_restful.Api
-# api.add_resource()
-# URL-path-tokens
+This script should demonstrate:
+flask_restful.Resource
+flask_restful.Api
+api.add_resource()
+URL-path-tokens
 
-# Demo:
-# export FLASK_DEBUG=1
-# ~/anaconda3/bin/python demo12.py
-# curl localhost:5000/demo12a/IBM/2017/30
-# curl localhost:5000/demo12b/IBM/2017/30
-# The above URL has path-tokens: IBM/2017/30
+Demo:
+export FLASK_DEBUG=1
+export PORT=5012
+~/anaconda3/bin/python demo12.py
+curl localhost:5012/demo12a/IBM/2017/30
+curl localhost:5012/demo12b/IBM/2017/30
+The above URL has path-tokens: IBM/2017/30
+"""
+
 import os
 import flask
 import flask_restful as fr
