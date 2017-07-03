@@ -1,9 +1,7 @@
 <code class='bash'>
-ann@ub16feb:~$ 
-ann@ub16feb:~$ cd ~/keras10
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$ bash -x curlem.bash
-+ curl localhost:5010/skservice/SPY/2016/25
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ bash -x curlem.bash 
++ /usr/bin/curl localhost:5010/skservice/SPY/2016/25
 {
     "1. You want to predict": "SPY",
     "2. For this year": "2016",
@@ -11,42 +9,43 @@ ann@ub16feb:~/keras10$ bash -x curlem.bash
     "4. With ": "Linear Regression",
     "5. Accuracy": 55.55555555555556,
     "6. Long Only Accuracy": 54.36507936507937,
-    "7. Effectiveness": 28.21438991556794,
-    "8. Long Only Effectiveness": 12.23161707633516
+    "7. Effectiveness": 28.214406721983003,
+    "8. Long Only Effectiveness": 12.231617153302961
 }
-+ curl 'localhost:5010/keras/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
++ /usr/bin/curl 'localhost:5010/keras/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
+{
+    "1. You want to predict": "SPY",
+    "2. For this year": "2016",
+    "3. By learning from this many years": 25,
+    "4. With ": "Keras Classifier (ReLU+Softmax)",
+    "5. Effectiveness": 20.725000000000016,
+    "6. Long Only Effectiveness": 12.22899999999999,
+    "7. Accuracy": 55.95238095238095,
+    "8. Long Only Accuracy": 54.36507936507937
+}
++ /usr/bin/curl 'localhost:5010/db/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
 {
     "1. You want to predict": "SPY",
     "2. For this year": "2016",
     "3. By learning from this many years": 25,
     "4. With ": "Keras Logistic Regression",
-    "5. Effectiveness": 17.058000000000014,
-    "6. Long Only Effectiveness": 12.229999999999992,
-    "7. Accuracy": 54.36507936507937,
+    "5. Effectiveness": 20.725000000000012,
+    "6. Long Only Effectiveness": 12.228999999999997,
+    "7. Accuracy": 55.95238095238095,
     "8. Long Only Accuracy": 54.36507936507937
 }
-+ curl 'localhost:5010/db/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
++ /usr/bin/curl 'localhost:5010/dbkeras/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
 {
     "1. You want to predict": "SPY",
     "2. For this year": "2016",
     "3. By learning from this many years": 25,
     "4. With ": "Keras Logistic Regression",
-    "5. Effectiveness": 17.058000000000014,
-    "6. Long Only Effectiveness": 12.229999999999995,
-    "7. Accuracy": 54.36507936507937,
+    "5. Effectiveness": 20.725000000000012,
+    "6. Long Only Effectiveness": 12.228999999999997,
+    "7. Accuracy": 55.95238095238095,
     "8. Long Only Accuracy": 54.36507936507937
 }
-+ curl 'localhost:5010/dbkeras/SPY/2016/25?features=pctlag1,pctlag2,slope2,slope4,dow,moy'
-{
-    "1. You want to predict": "SPY",
-    "2. For this year": "2016",
-    "3. By learning from this many years": 25,
-    "4. With ": "Keras Logistic Regression",
-    "5. Effectiveness": 17.058000000000014,
-    "6. Long Only Effectiveness": 12.229999999999995,
-    "7. Accuracy": 54.36507936507937,
-    "8. Long Only Accuracy": 54.36507936507937
-}
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
 </code>
