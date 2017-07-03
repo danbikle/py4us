@@ -1,16 +1,72 @@
 <code class='bash'>
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$ cd ~/keras10
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$ python import_keras10.py
-Using Theano backend.
+ann@ub16jun:~$ rm -rf keras10
+ann@ub16jun:~$ 
+ann@ub16jun:~$ 
+
+
+
+ann@ub16jun:~$ git clone https://github.com/danbikle/keras10
+Cloning into 'keras10'...
+remote: Counting objects: 186, done.        
+remote: Compressing objects: 100% (4/4), done.        
+remote: Total 186 (delta 2), reused 6 (delta 2), pack-reused 180        
+Receiving objects: 100% (186/186), 28.69 KiB | 0 bytes/s, done.
+Resolving deltas: 100% (114/114), done.
+Checking connectivity... done.
+ann@ub16jun:~$ 
+ann@ub16jun:~$ 
+ann@ub16jun:~$ 
+
+
+
+
+ann@ub16jun:~$ cd keras10
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ python import_keras10.py
+Using TensorFlow backend.
 Epoch 1/2
-5774/5774 [==============================] - 1s - loss: 0.6958     
+2017-07-02 17:34:12.085031: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-02 17:34:12.085068: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-02 17:34:12.085077: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+5774/5774 [==============================] - 4s - loss: 0.7028     
 Epoch 2/2
-5774/5774 [==============================] - 1s - loss: 0.6915     
+5774/5774 [==============================] - 4s - loss: 0.6931     
 I should get predictions from DB.
-{'3. By learning from this many years': 24, '8. Long Only Accuracy': 50.19762845849802, '7. Accuracy': 50.19762845849802, '6. Long Only Effectiveness': -35.858000000000004, '4. With ': 'Keras Logistic Regression', '1. You want to predict': 'SPY', '5. Effectiveness': 28.391999999999992, '2. For this year': '2008'}
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$ 
-ann@ub16feb:~/keras10$ 
+{'1. You want to predict': 'SPY', '3. By learning from this many years': 24, '6. Long Only Effectiveness': -35.858000000000004, '5. Effectiveness': 28.391999999999992, '4. With ': 'Keras Logistic Regression', '7. Accuracy': 50.19762845849802, '8. Long Only Accuracy': 50.19762845849802, '2. For this year': '2008'}
+Exception ignored in: <function _ConnectionRecord.checkout.<locals>.<lambda> at 0x7fbfbd4bba60>
+Traceback (most recent call last):
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/pool.py", line 493, in <lambda>
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/pool.py", line 650, in _finalize_fairy
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/pool.py", line 510, in checkin
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/pool.py", line 400, in _return_conn
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/pool.py", line 1032, in _do_return_conn
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/sqlalchemy/util/queue.py", line 118, in put
+  File "/home/ann/anaconda3/lib/python3.5/threading.py", line 345, in notify
+TypeError: 'NoneType' object is not callable
+Exception ignored in: <bound method BaseSession.__del__ of <tensorflow.python.client.session.Session object at 0x7fbfb995ecf8>>
+Traceback (most recent call last):
+  File "/home/ann/anaconda3/lib/python3.5/site-packages/tensorflow/python/client/session.py", line 587, in __del__
+AttributeError: 'NoneType' object has no attribute 'TF_NewStatus'
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
+
+
+
+
+ann@ub16jun:~/keras10$ python import_keras10.py
+Using TensorFlow backend.
+Epoch 1/2
+2017-07-02 17:35:15.730614: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-02 17:35:15.731960: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-02 17:35:15.731987: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+5774/5774 [==============================] - 4s - loss: 0.7370     
+Epoch 2/2
+5774/5774 [==============================] - 4s - loss: 0.6922     
+I should get predictions from DB.
+{'2. For this year': '2008', '6. Long Only Effectiveness': -35.858000000000004, '4. With ': 'Keras Logistic Regression', '8. Long Only Accuracy': 50.19762845849802, '5. Effectiveness': 28.391999999999992, '1. You want to predict': 'SPY', '7. Accuracy': 50.19762845849802, '3. By learning from this many years': 24}
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
+ann@ub16jun:~/keras10$ 
 </code>
