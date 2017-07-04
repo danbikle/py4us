@@ -66,7 +66,7 @@
   %li What is a URL-parameter?
 
 %hr/
-%h2#lab1 Lab 1 (Do at Home)
+%h2#lab1 Lab 1
 
 %ul
   %li Ensure that you have VirtualBox installed
@@ -329,7 +329,7 @@
   %li For each ticker, with chromedriver, I GET a URL like this:
   %li https://finance.yahoo.com/quote/AAPL/history?p=AAPL
   %li Yahoo serves a cookie to chromedriver which authenticates me
-  %li I GET  a URL like this:
+  %li Once authenticated, I GET  a URL like this:
   %li https://query1.finance.yahoo.com/v7/finance/download/AAPL?period1=315561600&period2=1499151600&interval=1d&events=history&crumb=jQiy69gT/lR
   %li Yahoo serves me a CSV file which looks like this: AAPL.csv
   %li I copy the CSV file to a folder in my price server
@@ -344,3 +344,31 @@
   %li The script supplies a ticker value to appropriate GET request
   %li My price server responds with a CSV file full of prices
   
+
+%hr/
+%h2#lab3 Lab 3
+
+%ul
+  %li Ensure that you are running this VirtualBox instance:
+  %li ub16jul02.ova (Ubuntu 16.04 VirtualBox Instance 10.4 GB):
+  %li
+    %a(href='https://drive.google.com/file/d/0Bx3iDDAtxxI4YW1YNmp3b2FoVWc' target='x')
+      https://drive.google.com/file/d/0Bx3iDDAtxxI4YW1YNmp3b2FoVWc
+  %li Start the appliance and login as ann, passwd: a
+  %li After you login, start a shell
+  %li Clone the yprice repo with this shell syntax:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~
+          rm -rf yprice
+          git clone https://github.com/danbikle/yprice
+  %li Run the first demo with a simple shell command:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~/yprice
+	  bin/top10.bash
+	
