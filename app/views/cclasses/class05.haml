@@ -1,6 +1,6 @@
 %h1 Class05
 %p
-  In Class05 we work with SQLAlchemy, Keras, and Flask-RESTful
+  In Class05 we work with SQLAlchemy, Keras, Flask-RESTful, and Selenium
 
 %h2#uc Use Cases: Time Series Prediction Recipes
 
@@ -320,3 +320,27 @@
     .syntax
       %pre
         =render 'class05d3'
+	
+%h2#r2 Recipe 2: "Fill my price server with Yahoo prices"
+
+%p Main idea:
+%ul
+  %li I create a list of tickers which declare the prices I want
+  %li For each ticker, with chromedriver, I GET a URL like this:
+  %li https://finance.yahoo.com/quote/AAPL/history?p=AAPL
+  %li Yahoo serves a cookie to chromedriver which authenticates me
+  %li I GET  a URL like this:
+  %li https://query1.finance.yahoo.com/v7/finance/download/AAPL?period1=315561600&period2=1499151600&interval=1d&events=history&crumb=jQiy69gT/lR
+  %li Yahoo serves me a CSV file which looks like this: AAPL.csv
+  %li I copy the CSV file to a folder in my price server
+  %li My price server can then serve AAPL.csv
+  
+
+%h2#r3 Recipe 3: "Get stock prices from my price server"
+
+%p Main idea:
+%ul
+  %li A Machine Learning script needs stock prices
+  %li The script supplies a ticker value to appropriate GET request
+  %li My price server responds with a CSV file full of prices
+  
