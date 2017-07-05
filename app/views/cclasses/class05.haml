@@ -488,4 +488,19 @@
     .syntax
       %pre
         =render 'class05yp20'
-        
+
+  %li Next, I tested the server:
+  %li
+    .syntax
+      %pre
+        %code
+          \/usr/bin/curl https://yprice.herokuapp.com/static/CSV/history/AMZN.csv > /tmp/AMZN.csv
+          head /tmp/AMZN.csv
+
+  %li I captured some output:
+  %li
+    .syntax
+      %pre
+        =render 'class05yp21'
+
+
