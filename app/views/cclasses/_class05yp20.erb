@@ -1,0 +1,100 @@
+<code class='bash'>
+ann@ub16jul:~$ cd ~/yprice
+ann@ub16jul:~/yprice$ heroku auth:login
+Enter your Heroku credentials:
+Email: yprice2017@outlook.com
+Password: ************
+Logged in as yprice2017@outlook.com
+ann@ub16jul:~/yprice$ heroku apps
+=== yprice2017@outlook.com Apps
+yprice
+
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+
+
+
+
+ann@ub16jul:~/yprice$ heroku apps:destroy yprice
+ ▸    WARNING: This will
+ ▸    delete yprice including
+ ▸    all add-ons.
+ ▸    To proceed, type yprice
+ ▸    or re-run this command
+ ▸    with --confirm yprice
+
+> yprice
+Destroying yprice (including all add-ons)... done
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+
+
+
+
+ann@ub16jul:~/yprice$ heroku create yprice
+Creating yprice... done
+https://yprice.herokuapp.com/ | https://git.heroku.com/yprice.git
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ git commit -am hello-heroku
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+
+
+
+ann@ub16jul:~/yprice$ git push heroku master
+Counting objects: 345, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (183/183), done.
+Writing objects: 100% (345/345), 6.60 MiB | 749.00 KiB/s, done.
+Total 345 (delta 91), reused 345 (delta 91)
+remote: Compressing source files... done.        
+remote: Building source:        
+remote: 
+remote: -----> Python app detected        
+remote: -----> Installing python-3.6.1        
+remote: -----> Installing pip        
+remote: -----> Installing requirements with pip        
+remote:        Collecting flask (from -r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading Flask-0.12.2-py2.py3-none-any.whl (83kB)        
+remote:        Collecting gunicorn (from -r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 2))        
+remote:          Downloading gunicorn-19.7.1-py2.py3-none-any.whl (111kB)        
+remote:        Collecting Werkzeug>=0.7 (from flask->-r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading Werkzeug-0.12.2-py2.py3-none-any.whl (312kB)        
+remote:        Collecting click>=2.0 (from flask->-r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading click-6.7-py2.py3-none-any.whl (71kB)        
+remote:        Collecting itsdangerous>=0.21 (from flask->-r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading itsdangerous-0.24.tar.gz (46kB)        
+remote:        Collecting Jinja2>=2.4 (from flask->-r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading Jinja2-2.9.6-py2.py3-none-any.whl (340kB)        
+remote:        Collecting MarkupSafe>=0.23 (from Jinja2>=2.4->flask->-r /tmp/build_fdbb11a3844bf333e219826abafa104c/requirements.txt (line 1))        
+remote:          Downloading MarkupSafe-1.0.tar.gz        
+remote:        Installing collected packages: Werkzeug, click, itsdangerous, MarkupSafe, Jinja2, flask, gunicorn        
+remote:          Running setup.py install for itsdangerous: started        
+remote:            Running setup.py install for itsdangerous: finished with status 'done'        
+remote:          Running setup.py install for MarkupSafe: started        
+remote:            Running setup.py install for MarkupSafe: finished with status 'done'        
+remote:        Successfully installed Jinja2-2.9.6 MarkupSafe-1.0 Werkzeug-0.12.2 click-6.7 flask-0.12.2 gunicorn-19.7.1 itsdangerous-0.24        
+remote: 
+remote: -----> Discovering process types        
+remote:        Procfile declares types -> web        
+remote: 
+remote: -----> Compressing...        
+remote:        Done: 64M        
+remote: -----> Launching...        
+remote:        Released v3        
+remote:        https://yprice.herokuapp.com/ deployed to Heroku        
+remote: 
+remote: Verifying deploy... done.        
+To https://git.heroku.com/yprice.git
+ * [new branch]      master -> master
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$ 
+ann@ub16jul:~/yprice$
+</code>

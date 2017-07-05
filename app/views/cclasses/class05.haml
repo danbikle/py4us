@@ -343,6 +343,7 @@
   %li A Machine Learning script needs stock prices
   %li The script supplies a ticker value to appropriate GET request
   %li My price server responds with a CSV file full of prices
+  %li I deploy the server to Heroku so you can use it
   
 
 %hr/
@@ -461,4 +462,30 @@
     .syntax
       %pre
         =render 'class05yp12'
+  %li To deploy the server to Heroku I need to create an account:
+  %li
+    %a(href='https://signup.heroku.com/login' target='x')
+      https://signup.heroku.com/login
+  %li Next, I login:
+  %li
+    .syntax
+      %pre
+        %code
+          cd ~/yprice
+          heroku auth:login
+
+  %li Then, I create the app and deploy it to heroku.com
+  %li
+    .syntax
+      %pre
+        %code
+          heroku create yprice
+          git commit -am hello-heroku
+          git push heroku master
+
+  %li I followed the above steps and captured some output:
+  %li
+    .syntax
+      %pre
+        =render 'class05yp20'
         
