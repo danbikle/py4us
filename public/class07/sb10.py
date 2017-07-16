@@ -1,9 +1,11 @@
-# sb10.py
+"""
+sb10.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html
 
-# This demo does not use seaborn.
+This demo does not use seaborn.
+"""
 
 import numpy as np
 import matplotlib as mpl

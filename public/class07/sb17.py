@@ -1,7 +1,9 @@
-# sb17.py
+"""
+sb17.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#overriding-elements-of-the-seaborn-styles
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#overriding-elements-of-the-seaborn-styles
+"""
 
 import seaborn as sns
 

@@ -1,7 +1,10 @@
-# sb15.py
+"""
+sb15.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#removing-spines-with-despine
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#removing-spines-with-despine
+"""
+
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt

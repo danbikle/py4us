@@ -1,9 +1,11 @@
-# sb11.py
+"""
+sb11.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html
 
-# This demo does use seaborn.
+This demo does use seaborn.
+"""
 
 import seaborn as sns
 

@@ -1,7 +1,9 @@
-# sb13.py
+"""
+sb13.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-style-and-set-style
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-style-and-set-style
+"""
 
 import seaborn as sns
 

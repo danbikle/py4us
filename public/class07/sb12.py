@@ -1,7 +1,9 @@
-# sb12.py
+"""
+sb12.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-style-and-set-style
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-style-and-set-style
+"""
 
 import numpy as np
 import matplotlib as mpl
@@ -15,3 +17,4 @@ data = np.random.normal(size=(20, 6)) + np.arange(6) / 2
 sns.boxplot(data=data)
 plt.show()
 'bye'
+

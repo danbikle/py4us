@@ -1,7 +1,9 @@
-# sb16.py
+"""
+sb16.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#temporarily-setting-figure-style
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#temporarily-setting-figure-style
+"""
 
 import seaborn as sns
 

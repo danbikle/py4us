@@ -1,7 +1,9 @@
-# sb14.py
+"""
+sb14.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#removing-spines-with-despine
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#removing-spines-with-despine
+"""
 
 import seaborn as sns
 
@@ -20,4 +22,3 @@ sinplot()
 sns.despine()
 plt.show()
 'bye'
-

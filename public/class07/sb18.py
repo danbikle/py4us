@@ -1,7 +1,9 @@
-# sb18.py
+"""
+sb18.py
 
-# Ref:
-# https://seaborn.pydata.org/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context
+Ref:
+https://seaborn.pydata.org/tutorial/aesthetics.html#scaling-plot-elements-with-plotting-context-and-set-context
+"""
 
 import seaborn as sns
 
