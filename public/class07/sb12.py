@@ -6,7 +6,6 @@ https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-st
 """
 
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 import seaborn as sns
@@ -16,4 +15,3 @@ data = np.random.normal(size=(20, 6)) + np.arange(6) / 2
 sns.boxplot(data=data)
 plt.show()
 'bye'
-
