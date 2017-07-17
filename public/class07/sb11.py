@@ -10,7 +10,6 @@ This demo does use seaborn.
 import seaborn as sns
 
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 def sinplot(flip=1):
