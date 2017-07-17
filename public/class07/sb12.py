@@ -8,7 +8,6 @@ https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-st
 import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
-np.random.seed(sum(map(ord, "aesthetics")))
 
 import seaborn as sns
 
