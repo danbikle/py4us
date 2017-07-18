@@ -8,7 +8,6 @@ https://seaborn.pydata.org/tutorial/aesthetics.html#temporarily-setting-figure-s
 import seaborn as sns
 
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 def sinplot(flip=1):
