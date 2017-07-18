@@ -8,7 +8,6 @@ https://seaborn.pydata.org/tutorial/aesthetics.html#overriding-elements-of-the-s
 import seaborn as sns
 
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 print(sns.axes_style())
