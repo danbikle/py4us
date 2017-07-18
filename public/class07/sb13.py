@@ -8,9 +8,7 @@ https://seaborn.pydata.org/tutorial/aesthetics.html#styling-figures-with-axes-st
 import seaborn as sns
 
 import numpy as np
-import matplotlib as mpl
 import matplotlib.pyplot as plt
-np.random.seed(sum(map(ord, "aesthetics")))
 
 def sinplot(flip=1):
     x = np.linspace(0, 14, 100)
@@ -21,3 +19,4 @@ sns.set_style("ticks")
 sinplot()
 plt.show()
 'bye'
+
