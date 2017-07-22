@@ -1,0 +1,36 @@
+%h2 Class09 Answer:
+%h2 In Django, what does this syntax do:
+
+.syntax
+  %pre
+    %code {% extends "base.html" %}
+
+%p I found the above syntax in this file:
+
+%p
+  %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/templates/index.html' target='x')
+    https://github.com/heroku/python-getting-started/blob/master/hello/templates/index.html
+
+%p When I see the above syntax I think of an HTML sandwich.
+
+%p I have HTML-bread on the outside and HTML-syntax inside.
+
+%p I place the above syntax in the inside file and it helps me declare that "base.html" is the bread.
+
+%p If I want to see the actual HTML-bread, I look here:
+%p
+  %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/templates/base.html' target='x')
+    https://github.com/heroku/python-getting-started/blob/master/hello/templates/base.html
+    
+%p When I study the above file, I see syntax near the bottom which declares where "index.html" gets inserted inside the HTML-sandwich.
+
+%p To answer the original question I say,
+
+.syntax
+  %pre
+    %code {% extends "base.html" %}
+%p allows me to reuse the syntax inside "base.html" to surround any HTML-template.
+
+%p
+  %a(href='class09')
+    Class09
