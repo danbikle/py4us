@@ -4,6 +4,8 @@
 .syntax
   %pre
     %code {% include "contact/coc_form.html" %}
+    
+%p The above syntax is a very simple example of how to reuse HTML within Django templates.
 
 %p I found the above syntax in this file:
 %p
@@ -12,6 +14,16 @@
 
 %p I use that syntax to copy HTML from contact/coc_form.html to the location of the declaration.
 
+%p The actual HTML being reused is located at this URL:
+%p
+  %a(href='https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/coc_form.html' target='x')
+    https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/coc_form.html
+%p This syntax is not new to us; we saw it in Class03 while working with Flask:
+
+%p
+  %a(href='class03tm14') Class03 Flask Demo of {% include 'mylinks.html' %}
+
+%hr/
 %p
   %a(href='class09')
     Class09
