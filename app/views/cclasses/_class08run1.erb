@@ -1,0 +1,261 @@
+<code class='bash'>
+dan@a78:~/tensorflow/tensorflow $ find . -name word2vec_basic.py -print
+./examples/tutorials/word2vec/word2vec_basic.py
+
+
+dan@a78:~/tensorflow/tensorflow $ cd examples/tutorials/word2vec/
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+
+
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ python word2vec_basic.py 
+Found and verified text8.zip
+Data size 17005207
+Most common words (+UNK) [['UNK', 418391], ('the', 1061396), ('of', 593677), ('and', 416629), ('one', 411764)]
+Sample data [5234, 3081, 12, 6, 195, 2, 3134, 46, 59, 156] ['anarchism', 'originated', 'as', 'a', 'term', 'of', 'abuse', 'first', 'used', 'against']
+3081 originated -> 12 as
+3081 originated -> 5234 anarchism
+12 as -> 6 a
+12 as -> 3081 originated
+6 a -> 12 as
+6 a -> 195 term
+195 term -> 2 of
+195 term -> 6 a
+2017-07-23 01:36:47.525144: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-23 01:36:47.525202: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-23 01:36:47.525217: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-23 01:36:47.525228: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-07-23 01:36:47.525240: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+Initialized
+Average loss at step  0 :  262.210510254
+Nearest to called: monorail, brubaker, trial, openbsd, consoles, romagna, inasmuch, virginals,
+Nearest to when: remembered, staunchly, franchised, nemesis, orford, encrusted, sailor, lustrous,
+Nearest to time: spirit, django, ramone, pontic, eastenders, cru, subliminal, wap,
+Nearest to they: laser, admitted, rial, peregrine, rotunda, anglicized, real, abused,
+Nearest to this: olimp, capitan, previous, faire, endogenous, honour, adored, dependable,
+Nearest to war: harpo, caledonians, disputation, nem, visconti, zhuang, soso, quitting,
+Nearest to seven: preeminent, usually, proctor, nighthawk, ogg, punctuation, writable, danville,
+Nearest to two: kisses, homeostatic, fidesz, bremerhaven, otherwise, destry, psychiatric, sling,
+Nearest to history: latin, dumping, artworks, straddles, brooding, ss, wold, mecca,
+Nearest to it: securities, pink, relegated, pectoral, supplements, torr, yazoo, import,
+Nearest to united: paternalistic, maslow, martian, holidays, ganglion, severing, clunies, lowell,
+Nearest to not: totaling, inquisition, occurrences, kindly, stuffing, heresies, pelvic, backpacker,
+Nearest to his: emulators, merwara, incentives, occidental, veterans, enlarging, esther, sayyaf,
+Nearest to would: housekeeping, armouries, hippocrates, reilly, argument, cao, benefit, tim,
+Nearest to the: overlap, thalamus, pulling, kj, murdering, gower, robberies, incurable,
+Nearest to one: although, cg, cortisol, apportioned, bag, pharisee, proper, cubes,
+Average loss at step  2000 :  113.854484525
+Average loss at step  4000 :  52.385028815
+Average loss at step  6000 :  33.2717056711
+Average loss at step  8000 :  23.536045072
+Average loss at step  10000 :  18.0624711401
+Nearest to called: trial, canaris, regions, coke, presented, means, requirements, vowels,
+Nearest to when: remembered, and, nemesis, machines, planet, sailor, one, invaded,
+Nearest to time: spirit, newly, queensland, urban, spring, gland, cherry, vilayet,
+Nearest to they: admitted, laser, coke, princes, sherman, simplified, diameter, he,
+Nearest to this: a, archie, previous, the, honour, parade, bang, application,
+Nearest to war: alien, deism, de, calling, issues, blown, malinowski, iraq,
+Nearest to seven: nine, zero, archie, six, one, eight, lymphoma, usually,
+Nearest to two: one, lymphoma, gb, vs, nine, three, archie, tunnel,
+Nearest to history: latin, coke, ss, unit, knights, den, blonde, mathbf,
+Nearest to it: not, relegated, pink, bckgr, he, gland, receive, trench,
+Nearest to united: holidays, agave, patients, sulfide, hank, archie, mexican, arab,
+Nearest to not: it, frac, chemistry, priced, objected, phrase, inquisition, alexandria,
+Nearest to his: the, mya, a, tora, prisoner, mo, impossible, pronunciation,
+Nearest to would: archie, benefit, rwanda, to, were, migration, understands, get,
+Nearest to the: a, refrigerator, lymphoma, and, one, gb, his, archie,
+Nearest to one: two, lymphoma, archie, nine, zero, agave, mathbf, gland,
+Average loss at step  12000 :  13.9080411406
+Average loss at step  14000 :  11.8120843093
+Average loss at step  16000 :  9.93817855167
+Average loss at step  18000 :  8.54509685969
+Average loss at step  20000 :  8.07308476985
+Nearest to called: trial, dasyprocta, presented, regions, canaris, locked, park, coke,
+Nearest to when: remembered, and, batll, in, machines, hbox, as, planet,
+Nearest to time: spirit, agouti, queensland, newly, recommendation, dasyprocta, spring, urban,
+Nearest to they: he, who, operatorname, admitted, laser, ammonia, princes, not,
+Nearest to this: the, dasyprocta, it, a, archie, that, which, circ,
+Nearest to war: alien, deism, calling, clovis, blown, circ, mathbb, density,
+Nearest to seven: nine, eight, zero, six, four, five, three, two,
+Nearest to two: one, three, dasyprocta, eight, nine, six, four, zero,
+Nearest to history: latin, operatorname, knights, coke, unit, den, circ, ss,
+Nearest to it: he, not, this, dasyprocta, relegated, agouti, pink, bckgr,
+Nearest to united: vivaldi, dasyprocta, holidays, sdi, patients, agave, agouti, sulfide,
+Nearest to not: it, to, frac, mendelssohn, fantasy, pelvic, chemistry, they,
+Nearest to his: the, their, its, s, her, a, peptide, dasyprocta,
+Nearest to would: to, archie, benefit, were, may, can, pursue, rwanda,
+Nearest to the: a, his, dasyprocta, agouti, circ, this, lymphoma, its,
+Nearest to one: two, three, dasyprocta, agouti, lymphoma, eight, circ, nine,
+Average loss at step  22000 :  6.93069420266
+Average loss at step  24000 :  6.89720418704
+Average loss at step  26000 :  6.72651800394
+Average loss at step  28000 :  6.40765478659
+Average loss at step  30000 :  5.92620412993
+Nearest to called: consoles, trial, dasyprocta, canaris, presented, considered, and, altenberg,
+Nearest to when: remembered, and, in, as, but, batll, hbox, aorta,
+Nearest to time: spirit, recommendation, wiles, agouti, aediles, queensland, newly, spring,
+Nearest to they: he, who, not, there, almighty, it, she, admitted,
+Nearest to this: it, which, the, dasyprocta, that, archie, a, circ,
+Nearest to war: alien, lossless, deism, clovis, calling, tow, blown, centauri,
+Nearest to seven: eight, nine, six, four, five, three, zero, two,
+Nearest to two: three, four, six, seven, one, eight, five, dasyprocta,
+Nearest to history: latin, knights, operatorname, unit, coke, reuptake, den, stead,
+Nearest to it: he, this, not, dasyprocta, there, she, which, agouti,
+Nearest to united: vivaldi, holidays, dasyprocta, arab, assemblies, sulfide, messagepad, signified,
+Nearest to not: it, to, they, mendelssohn, frac, fantasy, finally, bones,
+Nearest to his: their, its, the, her, s, pronunciation, dasyprocta, peptide,
+Nearest to would: can, to, may, were, should, could, archie, benefit,
+Nearest to the: its, a, their, circ, this, agouti, dasyprocta, his,
+Nearest to one: two, seven, eight, four, agouti, dasyprocta, lymphoma, three,
+Average loss at step  32000 :  5.96870855093
+Average loss at step  34000 :  5.69658347905
+Average loss at step  36000 :  5.74176106918
+Average loss at step  38000 :  5.51744215024
+Average loss at step  40000 :  5.27394794142
+Nearest to called: consoles, trial, dasyprocta, and, considered, UNK, altenberg, histoire,
+Nearest to when: and, remembered, in, but, as, hbox, machines, on,
+Nearest to time: spirit, recommendation, aediles, agouti, wiles, queensland, revisionism, nutation,
+Nearest to they: he, who, there, not, we, it, she, almighty,
+Nearest to this: which, that, the, it, dasyprocta, archie, a, one,
+Nearest to war: lossless, deism, tow, clovis, alien, loup, metroid, niels,
+Nearest to seven: six, eight, four, five, nine, zero, three, one,
+Nearest to two: three, one, four, five, six, eight, seven, zero,
+Nearest to history: latin, knights, operatorname, coke, unit, albury, recitative, stead,
+Nearest to it: he, this, there, not, which, she, dasyprocta, that,
+Nearest to united: vivaldi, dasyprocta, holidays, zero, arab, assemblies, sulfide, messagepad,
+Nearest to not: it, they, to, fantasy, mendelssohn, finally, uhf, dioceses,
+Nearest to his: their, its, her, the, s, dasyprocta, antoninus, a,
+Nearest to would: can, may, should, could, will, to, were, archie,
+Nearest to the: its, his, circ, any, this, their, a, dasyprocta,
+Nearest to one: two, seven, eight, four, dasyprocta, zero, agouti, three,
+Average loss at step  42000 :  5.36462244952
+Average loss at step  44000 :  5.23243181896
+Average loss at step  46000 :  5.23772950685
+Average loss at step  48000 :  5.22350458467
+Average loss at step  50000 :  4.9837138679
+Nearest to called: consoles, dasyprocta, trial, openbsd, considered, and, altenberg, canaris,
+Nearest to when: and, remembered, but, as, in, hbox, commodore, though,
+Nearest to time: spirit, recommendation, solicitation, aediles, agouti, username, nutation, five,
+Nearest to they: he, we, who, there, not, it, you, she,
+Nearest to this: which, it, the, that, dasyprocta, some, archie, sponsors,
+Nearest to war: tow, deism, lossless, clovis, loup, metroid, alien, mathbb,
+Nearest to seven: six, eight, four, five, three, nine, zero, one,
+Nearest to two: three, four, one, six, five, dasyprocta, seven, eight,
+Nearest to history: knights, operatorname, latin, albury, recitative, reuptake, coke, franchisee,
+Nearest to it: he, this, she, there, which, dasyprocta, not, solicitation,
+Nearest to united: vivaldi, holidays, arab, dasyprocta, assemblies, leper, lowell, signified,
+Nearest to not: it, they, to, kapoor, we, finally, mendelssohn, solicitation,
+Nearest to his: their, its, her, the, s, pairings, kapoor, dasyprocta,
+Nearest to would: can, may, will, could, should, to, must, archie,
+Nearest to the: its, their, his, this, a, circ, agouti, abakan,
+Nearest to one: two, three, four, seven, six, eight, five, dasyprocta,
+Average loss at step  52000 :  5.04050324678
+Average loss at step  54000 :  5.20632722664
+Average loss at step  56000 :  5.04666806614
+Average loss at step  58000 :  5.08043089378
+Average loss at step  60000 :  4.96709042037
+Nearest to called: consoles, trial, corum, dasyprocta, considered, openbsd, altenberg, southey,
+Nearest to when: but, remembered, hbox, as, if, five, and, after,
+Nearest to time: spirit, recommendation, solicitation, aediles, five, agouti, username, nutation,
+Nearest to they: he, who, we, there, you, not, it, she,
+Nearest to this: which, it, that, the, dasyprocta, archie, some, sponsors,
+Nearest to war: renouf, tow, deism, lossless, clovis, loup, excepting, metroid,
+Nearest to seven: eight, six, five, nine, four, three, zero, michelob,
+Nearest to two: three, four, six, one, five, dasyprocta, eight, seven,
+Nearest to history: knights, operatorname, latin, pulau, albury, recitative, reuptake, coke,
+Nearest to it: he, this, she, there, which, dasyprocta, not, struggle,
+Nearest to united: vivaldi, dasyprocta, leper, assemblies, arab, holidays, lowell, signified,
+Nearest to not: they, it, bugzilla, michelob, to, we, still, finally,
+Nearest to his: their, her, its, the, s, kapoor, pairings, dasyprocta,
+Nearest to would: can, may, will, could, should, must, to, might,
+Nearest to the: its, their, his, a, agouti, recitative, circ, dasyprocta,
+Nearest to one: two, three, six, four, seven, five, eight, agouti,
+Average loss at step  62000 :  5.01804943645
+Average loss at step  64000 :  4.8489383927
+Average loss at step  66000 :  4.60627371156
+Average loss at step  68000 :  4.97360813594
+Average loss at step  70000 :  4.91622953725
+Nearest to called: consoles, considered, trial, dasyprocta, openbsd, corum, altenberg, ishi,
+Nearest to when: but, if, before, microcebus, as, in, and, hbox,
+Nearest to time: spirit, solicitation, recommendation, aediles, nutation, username, callithrix, six,
+Nearest to they: he, we, there, who, you, not, it, she,
+Nearest to this: which, it, the, that, thaler, dasyprocta, archie, some,
+Nearest to war: renouf, tow, lossless, deism, clovis, loup, cologne, metroid,
+Nearest to seven: six, eight, five, four, nine, three, zero, callithrix,
+Nearest to two: three, four, six, five, one, eight, seven, dasyprocta,
+Nearest to history: knights, operatorname, pulau, albury, latin, recitative, dasyprocta, reuptake,
+Nearest to it: he, this, she, there, which, cebus, struggle, dasyprocta,
+Nearest to united: vivaldi, clunies, leper, assemblies, dasyprocta, arab, lowell, holidays,
+Nearest to not: they, michelob, bugzilla, it, cebus, to, kapoor, we,
+Nearest to his: their, her, its, the, kapoor, s, pairings, antoninus,
+Nearest to would: can, may, will, could, should, must, might, to,
+Nearest to the: its, their, this, a, thaler, circ, his, any,
+Nearest to one: six, two, three, four, seven, five, eight, agouti,
+Average loss at step  72000 :  4.7514445678
+Average loss at step  74000 :  4.80053962386
+Average loss at step  76000 :  4.72045842338
+Average loss at step  78000 :  4.79530739555
+Average loss at step  80000 :  4.79147982377
+Nearest to called: consoles, considered, dasyprocta, trial, altenberg, openbsd, corum, callithrix,
+Nearest to when: if, but, before, microcebus, though, in, hbox, after,
+Nearest to time: spirit, solicitation, recommendation, iit, callithrix, aediles, way, nutation,
+Nearest to they: he, we, there, who, you, it, she, not,
+Nearest to this: which, it, that, the, thaler, dasyprocta, some, archie,
+Nearest to war: tow, renouf, loup, clovis, cologne, cradle, lossless, deism,
+Nearest to seven: six, eight, five, four, nine, three, one, zero,
+Nearest to two: three, four, six, five, one, seven, dasyprocta, eight,
+Nearest to history: knights, operatorname, pulau, latin, albury, reuptake, unit, recitative,
+Nearest to it: he, this, there, she, which, they, struggle, cebus,
+Nearest to united: vivaldi, clunies, leper, lowell, arab, assemblies, holidays, disarming,
+Nearest to not: they, bugzilla, michelob, it, cebus, we, still, to,
+Nearest to his: their, her, its, the, s, kapoor, pairings, antoninus,
+Nearest to would: can, may, will, could, should, must, might, to,
+Nearest to the: their, a, thaler, its, agouti, circ, his, mitral,
+Nearest to one: six, seven, two, four, five, three, eight, callithrix,
+Average loss at step  82000 :  4.77090498507
+Average loss at step  84000 :  4.74814585519
+Average loss at step  86000 :  4.77001238573
+Average loss at step  88000 :  4.75453707445
+Average loss at step  90000 :  4.73199630034
+Nearest to called: considered, consoles, UNK, dasyprocta, peacocks, altenberg, openbsd, ishi,
+Nearest to when: if, before, after, microcebus, but, where, and, though,
+Nearest to time: spirit, solicitation, way, eastenders, recommendation, kepler, nutation, halves,
+Nearest to they: he, we, there, who, you, not, it, she,
+Nearest to this: which, it, the, that, dasyprocta, thaler, some, archie,
+Nearest to war: tow, renouf, harpo, loup, cologne, clovis, edward, deism,
+Nearest to seven: eight, five, six, four, nine, three, zero, one,
+Nearest to two: three, four, one, five, six, seven, eight, dasyprocta,
+Nearest to history: knights, operatorname, pulau, albury, reuptake, recitative, dasyprocta, latin,
+Nearest to it: he, this, there, she, which, struggle, they, cebus,
+Nearest to united: vivaldi, clunies, leper, arab, lowell, assemblies, holidays, dasyprocta,
+Nearest to not: they, bugzilla, michelob, we, cebus, it, kapoor, to,
+Nearest to his: their, her, its, the, s, kapoor, pairings, them,
+Nearest to would: can, may, will, could, should, must, might, to,
+Nearest to the: its, this, their, thaler, circ, a, his, agouti,
+Nearest to one: two, four, three, seven, six, eight, five, michelob,
+Average loss at step  92000 :  4.67087501192
+Average loss at step  94000 :  4.71793671036
+Average loss at step  96000 :  4.69549621344
+Average loss at step  98000 :  4.58896014118
+Average loss at step  100000 :  4.71841355264
+Nearest to called: considered, consoles, dasyprocta, peacocks, altenberg, used, cluster, conform,
+Nearest to when: if, before, microcebus, but, after, though, where, as,
+Nearest to time: spirit, way, solicitation, mesoplodon, headshot, eastenders, nutation, halves,
+Nearest to they: he, we, there, you, who, she, it, these,
+Nearest to this: it, which, the, that, some, dasyprocta, thaler, archie,
+Nearest to war: tow, loup, renouf, cologne, harpo, pendants, clovis, cradle,
+Nearest to seven: six, eight, five, four, nine, three, zero, one,
+Nearest to two: three, four, five, six, one, seven, dasyprocta, eight,
+Nearest to history: knights, operatorname, albury, pulau, recitative, dasyprocta, reuptake, franchisee,
+Nearest to it: he, this, she, there, which, cebus, struggle, they,
+Nearest to united: vivaldi, clunies, leper, arab, lowell, assemblies, usa, holidays,
+Nearest to not: they, bugzilla, michelob, to, cebus, kapoor, it, still,
+Nearest to his: their, her, its, the, s, kapoor, pairings, them,
+Nearest to would: can, may, will, could, should, might, must, to,
+Nearest to the: his, its, their, thaler, a, any, agouti, this,
+Nearest to one: six, two, seven, four, three, eight, five, callithrix,
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+dan@a78:~/tensorflow/tensorflow/examples/tutorials/word2vec $
+</code>
