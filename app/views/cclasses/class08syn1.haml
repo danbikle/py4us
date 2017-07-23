@@ -8,6 +8,34 @@
 %p As of today, 2017-07-23, the above script is 263 lines long.
 %p I consider it readable and easy to understand.
 
+%p Near the top of the script I see this syntax:
+
+.syntax
+  %pre
+    %code.python
+      from __future__ import absolute_import
+      from __future__ import division
+      from __future__ import print_function
+
+%p The above syntax is an attempt to make the script runnable from both Python2 and Python3.
+
+%p
+  %a(href='https://www.google.com/search?q=In+python+what+does+dunder+future+do?' target='x')
+    https://www.google.com/search?q=In+python+what+does+dunder+future+do?
+
+%p Next, I see some common imports:
+
+.syntax
+  %pre
+    %code.python
+      import collections
+      import math
+      import os
+      import random
+      import zipfile
+      import numpy as np
+
+
 %hr/
 %p
   %a(href='class08#lab')
