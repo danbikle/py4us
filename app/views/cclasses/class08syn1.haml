@@ -111,6 +111,25 @@
   %pre
     =render 'class08syn1b'
 
+%p The next step, Step 2, starts with a comment:
+.syntax
+  %pre
+    %code.python # Step 2: Build the dictionary and replace rare words with UNK token.
+
+%p An obvious question is then, "What is the dictionary?"
+
+%p The next step, Step 2, depends on a function-call to build_dataset().
+
+%p With the above question in mind, I studied inputs to the call and outputs of the call using pdb.set_trace():
+
+.syntax
+  %pre
+    =render 'class08syn1c'
+
+%p I can see above that build_dataset() is fed two inputs.
+%p First is a list of 17,005,207 words called vocabulary.
+%p Next is vocabulary_size which is 5,000 and might be intended to act as a cluster controller.
+%p Perhaps the intent is to create 5,000 clusters of words.
 
 %hr/
 %p
