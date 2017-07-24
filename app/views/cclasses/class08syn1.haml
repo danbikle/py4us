@@ -131,6 +131,18 @@
 %p Next is vocabulary_size which is 5,000 and might be intended to act as a cluster controller.
 %p Perhaps the intent is to create 5,000 clusters of words.
 
+%p Next, I studied a variable named, "data" which is the first output of build_dataset():
+
+.syntax
+  %pre
+    =render 'class08syn1d'
+
+%p It appears that "data" is a simple list of integers.  The length of the list is the same as the length of the list called: "vocabulary".
+
+%p Since the two lists are the same length, I could match them element to element if I want.
+
+%p Perhaps later, I will see why this list named "data" is useful.
+
 %hr/
 %p
   %a(href='class08#lab')
