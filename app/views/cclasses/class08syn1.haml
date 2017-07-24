@@ -112,8 +112,8 @@
 
 %p I can see above that build_dataset() is fed two inputs.
 %p First is a list of 17,005,207 words called vocabulary.
-%p Next is vocabulary_size which is 5,000 and might be intended to act as a cluster controller.
-%p Perhaps the intent is to create 5,000 clusters of words.
+%p Next is vocabulary_size which is 50,000 and might be intended to act as a cluster controller.
+%p Perhaps the intent is to create 50,000 clusters of words.
 
 %p Next, I studied a variable named, "data" which is the first output of build_dataset():
 
@@ -125,7 +125,7 @@
 
 %p Since the two lists are the same length, I could match them element to element if I want.
 
-%p Also I see that many of the integers in "data" repeat and that I have 5,000 unique integers.
+%p Also I see that many of the integers in "data" repeat and that I have 50,000 unique integers.
 
 %p This might be similar to the distribution of words in the list: "vocabulary".
 
@@ -137,7 +137,7 @@
   %pre
     =render 'class08syn1e'
 
-%p I see that "count" is a simple list of 5,000 tuples.
+%p I see that "count" is a simple list of 50,000 tuples.
 
 %p Each tuple assigns an integer to word.
 
@@ -154,7 +154,7 @@
   %pre
     =render 'class08syn1f'
 
-%p I see above that dictionary is a Python dict with 5,000 pairs.
+%p I see above that dictionary is a Python dict with 50,000 pairs.
 %p Each key is a word which points to an integer, perhaps unique.
 
 %p Next, I studied a variable named, "reverse_dictionary" which is the fourth, and last, output of build_dataset():
@@ -174,13 +174,15 @@
       %li vocabulary:
       %li A Python list of 17,005,207 words
       %li vocabulary_size:
-      %li An integer: 5,000 [Perhaps a cluster controller?]
+      %li An integer: 50,000 [Perhaps a cluster controller?]
   %li Outputs:
   %li
     %ul
       %li data:
       %li A Python list of 17,005,207 integers
-      %li The count of unique integers is 5,000
+      %li The count of unique integers is 50,000
+      %li count:
+      %li A Python list of 50,000 tuples
 
 %hr/
 %p
