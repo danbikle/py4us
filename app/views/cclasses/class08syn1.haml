@@ -175,7 +175,16 @@
   %pre
     =render 'class08syn1f'
 
-%p I see above that dictionary is a Python dict
+%p I see above that dictionary is a Python dict with 5,000 pairs.
+%p Each key is a word which points to an integer, perhaps unique.
+
+%p Next, I studied a variable named, "reverse_dictionary" which is the fourth output of build_dataset():
+
+.syntax
+  %pre
+    =render 'class08syn1g'
+
+%p The variable, "reverse_dictionary" is aptly named.  It is the same as "dictionary" but with keys and values reversed.  So obviously, the integers in "dictionary" are unique.
 
 %hr/
 %p
