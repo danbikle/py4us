@@ -72,35 +72,10 @@
       >>> 
 
 %p I can use collections.deque() to implement a queue:
-
+    
 .syntax
   %pre
-    %code.python
-      >>> my_q = collections.deque(maxlen=9)
-      >>> my_q.extend([0])
-      >>> my_q
-      deque([0], maxlen=9)
-      >>> my_q.extend([0,1])
-      >>> my_q
-      deque([0, 0, 1], maxlen=9)
-      >>> my_q.extend([0,1,2])
-      >>> my_q
-      deque([0, 0, 1, 0, 1, 2], maxlen=9)
-      >>> my_q.append(55)
-      >>> my_q
-      deque([0, 0, 1, 0, 1, 2, 55], maxlen=9)
-      >>> my_q.appendleft(66)
-      >>> my_q
-      deque([66, 0, 0, 1, 0, 1, 2, 55], maxlen=9)
-      >>> my_q.pop()
-      55
-      >>> my_q
-      deque([66, 0, 0, 1, 0, 1, 2], maxlen=9)
-      >>> my_q.popleft()
-      66
-      >>> my_q
-      deque([0, 0, 1, 0, 1, 2], maxlen=9)
-      >>> 
+    =render 'class08syn1a2'
 
 %p The author of word2vec_basic.py divides the script into 6 steps:
 
@@ -150,6 +125,10 @@
 
 %p Since the two lists are the same length, I could match them element to element if I want.
 
+%p Also I see that many of the integers in "data" repeat and that I have 5,000 unique integers.
+
+%p This might be similar to the distribution of words in the list: "vocabulary".
+
 %p Perhaps later, I will see why this list named "data" is useful.
 
 %p Next, I studied a variable named, "count" which is the second output of build_dataset():
@@ -178,13 +157,30 @@
 %p I see above that dictionary is a Python dict with 5,000 pairs.
 %p Each key is a word which points to an integer, perhaps unique.
 
-%p Next, I studied a variable named, "reverse_dictionary" which is the fourth output of build_dataset():
+%p Next, I studied a variable named, "reverse_dictionary" which is the fourth, and last, output of build_dataset():
 
 .syntax
   %pre
     =render 'class08syn1g'
 
 %p The variable, "reverse_dictionary" is aptly named.  It is the same as "dictionary" but with keys and values reversed.  So obviously, the integers in "dictionary" are unique.
+
+%p To summarize my study of build_dataset() I list observations:
+
+%ul
+  %li Inputs:
+  %li
+    %ul
+      %li vocabulary:
+      %li A Python list of 17,005,207 words
+      %li vocabulary_size:
+      %li An integer: 5,000 [Perhaps a cluster controller?]
+  %li Outputs:
+  %li
+    %ul
+      %li data:
+      %li A Python list of 17,005,207 integers
+      %li The count of unique integers is 5,000
 
 %hr/
 %p

@@ -1,0 +1,42 @@
+<code class='python'>
+>>> my_q = collections.deque(maxlen=9)
+>>> my_q.extend([0])
+>>> my_q
+deque([0], maxlen=9)
+
+
+>>> my_q.extend([0,1])
+>>> my_q
+deque([0, 0, 1], maxlen=9)
+
+
+>>> my_q.extend([0,1,2])
+>>> my_q
+deque([0, 0, 1, 0, 1, 2], maxlen=9)
+
+
+>>> my_q.append(55)
+>>> my_q
+deque([0, 0, 1, 0, 1, 2, 55], maxlen=9)
+
+
+>>> my_q.appendleft(66)
+>>> my_q
+deque([66, 0, 0, 1, 0, 1, 2, 55], maxlen=9)
+
+
+>>> my_q.pop()
+55
+
+
+>>> my_q
+deque([66, 0, 0, 1, 0, 1, 2], maxlen=9)
+
+
+>>> my_q.popleft()
+66
+
+
+>>> my_q
+deque([0, 0, 1, 0, 1, 2], maxlen=9)
+</code>
