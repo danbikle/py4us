@@ -1,0 +1,22 @@
+<code class='bash'>
+-> batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
+
+
+(Pdb) n
+
+
+(Pdb) type(batch)
+&lt;class 'numpy.ndarray'>
+
+
+(Pdb) batch.size
+8
+
+
+(Pdb) type(batch[0])
+&lt;class 'numpy.int32'>
+
+
+(Pdb) batch
+array([3081, 3081,   12,   12,    6,    6,  195,  195], dtype=int32)
+</code>
