@@ -95,6 +95,7 @@
   %pre
     =render 'class08syn1b'
 
+%hr/
 %p The next step, Step 2, starts with a comment:
 .syntax
   %pre
@@ -102,7 +103,7 @@
 
 %p An obvious question is then, "What is the dictionary?"
 
-%p The next step, Step 2, depends on a function-call to build_dataset().
+%p I can see that Step 2 depends on a function-call to build_dataset().
 
 %p With the above question in mind, I studied inputs to the call and outputs of the call using pdb.set_trace():
 
@@ -165,7 +166,7 @@
 
 %p The variable, "reverse_dictionary" is aptly named.  It is the same as "dictionary" but with keys and values reversed.  So obviously, the integers in "dictionary" are unique.
 
-%p To summarize my study of build_dataset() I list observations:
+%p To summarize my study of build_dataset() I list my observations:
 
 %ul
   %li Inputs:
@@ -185,8 +186,26 @@
       %li A Python list of 50,000 tuples
       %li Each tuple matches a word to its frequency count.
       %li Most common word is: 'the'
+      %li dictionary:
+      %li A Python dict of 50,000 words acting as keys.
+      %li Each word points to an integer.
+      %li reverse_dictionary:
+      %li A simple reverse of "dictionary"
+
 
 %hr/
+%p The next step, Step 3, starts with a comment:
+
+.syntax
+  %pre
+    %code.python # Step 3: Function to generate a training batch for the skip-gram model.
+
+
+%p I can see that Step 3 depends on a function-call to generate_batch().
+
+
+%hr/
+
 %p
   %a(href='class08#lab')
     Class08
