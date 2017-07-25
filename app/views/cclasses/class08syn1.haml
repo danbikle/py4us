@@ -200,9 +200,29 @@
   %pre
     %code.python # Step 3: Function to generate a training batch for the skip-gram model.
 
-
 %p I can see that Step 3 depends on a function-call to generate_batch().
 
+%p I studied inputs to the call:
+
+.syntax
+  %pre
+    %code.python batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
+
+%p Obviously, the only inputs are three integers.
+
+%p The above comment says: "Function to generate a training batch"
+
+%p That comment suggests to me that generate_batch() is interacting with data which is not passed in as a parameter.
+
+%p After I study generate_batch(), I see it interacts with "data" which is the first output of build_dataset().
+
+%p Remember that "data" is a Python list of 17,005,207 integers.
+
+%p Using pdb.set_trace(), I studied outputs of the call:
+
+.syntax
+  %pre
+    %code.python batch, labels = generate_batch(batch_size=8, num_skips=2, skip_window=1)
 
 %hr/
 
