@@ -1,0 +1,21 @@
+<code class='bash'>
+
+129  ->	for i in range(8):
+130  	  print(batch[i], reverse_dictionary[batch[i]],
+131  	        '->', labels[i, 0], reverse_dictionary[labels[i, 0]])
+
+
+(Pdb) b 135
+Breakpoint 2 at /home/dan/tensorflow/tensorflow/examples/tutorials/word2vec/word2vec_basic.py:135
+
+
+(Pdb) c
+3081 originated -> 12 as
+3081 originated -> 5234 anarchism
+12 as -> 6 a
+12 as -> 3081 originated
+6 a -> 12 as
+6 a -> 195 term
+195 term -> 2 of
+195 term -> 6 a
+</code>

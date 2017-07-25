@@ -227,6 +227,15 @@
 %p So the first output, "batch", is just a simple NumPy Array of 8 integers.
 %p The second output, "labels", is also a NumPy Array of 8 integers but with a shape of (8,1).
 
+%p After generate_batch() fills "batch" and "labels", the script runs some syntax to help me visualize interaction between batch, labels, and reverse_dictionary:
+
+
+.syntax
+  %pre
+    =render 'class08syn1i'
+
+The visualization shows that the script is forming relationships between words on the left with words on the right.
+
 %hr/
 
 %p
