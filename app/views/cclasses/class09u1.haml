@@ -5,7 +5,108 @@
     https://github.com/django/djangoproject.com/blob/master/contact/urls.py
     
 %p The above syntax is a very simple example of Django routing.
-	
+
+%p I use the English below to describe the above script:
+
+%ul
+  %li urls.py declares two routes
+  %li The first  route is "foundation"
+  %li The second route is "sent"
+  %li The foundation-route routes a user to:
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/contact/views.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/contact/views.py
+  %li then:
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/foundation.html' target='x')
+      https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/foundation.html
+  %li The sent-route routes a user to:
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/sent.html' target='x')
+      https://github.com/django/djangoproject.com/blob/master/djangoproject/templates/contact/sent.html
+  
+%p Also note that route-declarations depend on a type of language called: "Regular-Expressions".
+
+%p This Regular-Expression language is way for me to declare how I want a string to be formated.
+
+%p For example the Regular-Expression: r'^foundation/$'
+
+%p declares I want a string to look EXACTLY like this: 'foundation/'
+
+%p It says that I want 'f' to be the first character and I want '/' to be the last.
+
+%p This Regular-Expression language can be simple or very complicated depending on your skill.
+
+%p Google offers many links towards learning Regular-Expressions:
+
+%p
+  %a(href='https://www.google.com/search?q=regular+expression+examples' target='x')
+    https://www.google.com/search?q=regular+expression+examples
+%p  
+  %a(href='https://www.google.com/search?q=python+regular+expression+examples' target='x')
+    https://www.google.com/search?q=python+regular+expression+examples
+  
+
+%p You will see more Regular-Expression examples in the routing links listed below:
+
+%ul
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/accounts/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/accounts/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/aggregator/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/aggregator/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/blog/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/blog/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/dashboard/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/dashboard/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/docs/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/docs/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/fundraising/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/fundraising/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/legacy/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/legacy/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/members/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/members/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/releases/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/releases/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/svntogit/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/svntogit/urls.py
+      
+    
+  %li
+    %a(href='https://github.com/django/djangoproject.com/blob/master/tracdb/urls.py' target='x')
+      https://github.com/django/djangoproject.com/blob/master/tracdb/urls.py
+  
+
+
+
 %p Remember, routing is one of the main features of Django:
 %p
   %a(href='class09mf') Django Main Features
