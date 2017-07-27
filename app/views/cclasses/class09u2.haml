@@ -1,0 +1,74 @@
+%h2 Class09 Answer:
+%h2 In Django, what does this file do:
+%p
+  %a(href='https://github.com/heroku/python-getting-started/blob/master/gettingstarted/urls.py    ' target='x')
+    https://github.com/heroku/python-getting-started/blob/master/gettingstarted/urls.py
+    
+%p The above syntax is a another simple example of Django routing.
+
+
+%p I use the English below to describe the above script:
+
+%ul
+  %li urls.py declares three routes
+  %li
+    %p If you want to see the actual end-points, click the links below:
+    %p
+      %a(href='https://dj101.herokuapp.com' target='x')
+        https://dj101.herokuapp.com
+    %p
+      %a(href='https://dj101.herokuapp.com/db' target='x')
+        https://dj101.herokuapp.com/db
+    %p
+      %a(href='https://dj101.herokuapp.com/admin/' target='x')
+        https://dj101.herokuapp.com/admin/
+    
+  %li The first  route is, nothing.
+  %li The second route is "db"
+  %li The third route is "admin/"
+  %li The nothing-route routes a user to:
+  %li
+    %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/views.py' target='x')
+      https://github.com/heroku/python-getting-started/blob/master/hello/views.py
+  
+  %li then:
+  %li
+    %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/templates/index.html' target='x')
+      https://github.com/heroku/python-getting-started/blob/master/hello/templates/index.html
+
+  %li The db-route routes a user to:
+  %li
+    %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/views.py' target='x')
+      https://github.com/heroku/python-getting-started/blob/master/hello/views.py
+  %li then:
+  %li
+    %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/templates/db.html' target='x')
+      https://github.com/heroku/python-getting-started/blob/master/hello/templates/db.html
+  
+  %li The admin-route routes a user to:
+  %li
+    %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/admin.py' target='x')
+      https://github.com/heroku/python-getting-started/blob/master/hello/admin.py
+  %li then somewhere in here:
+  %li
+    %a(href='https://github.com/django/django/tree/master/django/contrib/admin/' target='x')
+      https://github.com/django/django/tree/master/django/contrib/admin/
+  
+%p Also note that route-declarations depend on a type of language called: "Regular-Expressions".
+
+%p This Regular-Expression language is way for me to declare how I want a string to be formated.
+
+%p For example the Regular-Expression: r'^$'
+
+%p declares I want a string to look EXACTLY like this: ''
+
+%p It says that I want an empty string.
+
+%p Remember, routing is one of the main features of Django:
+%p
+  %a(href='class09mf') Django Main Features
+%hr/
+
+%p
+  %a(href='class09') Class09
+
