@@ -1,0 +1,74 @@
+%h2 Class09 Answer:
+%h2 In Django, what does this file do:
+%p
+  %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/views.py' target='x')
+    https://github.com/heroku/python-getting-started/blob/master/hello/views.py
+  
+%p
+  In this app, after Django finds a route for the db-route, Django sends a request object to views.py
+
+%p Inside that script the request object is passed to a method called db():
+
+.syntax
+  %pre
+    =render 'class09v1a'
+    
+%p As a developer I am very interested in the request object.
+
+%p It is the primary conduit of data passed into Django from the end-user.
+
+%p A common way for an end-user to place data in the request object is to type text into a form and  then press the submit-button.
+
+%p In this example about views.py we do nothing with the request object (perhaps because the end-user was not served a form asking for data) but it easy to see that it is passed in as a parameter and then we return it, unchanged, inside a method called render().
+
+%p While the db() method is in direct communication with the end-user, it is also communicating with a database.
+
+%p The method inserts a row in a table called hello_greeting every time a user sends a GET request to the db-route.
+
+%p Any easy way for you to send a GET request is to refresh the page.
+
+%p The actual insert is done by this line of syntax:
+
+.syntax
+  %pre
+    %code.python greeting.save()
+
+%p The next line of syntax demonstrates how to query rows from the hello_greeting table into a Python object called: 'greetings'
+
+
+.syntax
+  %pre
+    %code.python greetings = Greeting.objects.all()
+
+%p Next, the db() method asks Django to render a template named 'db.html'.
+
+%p While doing this, the method asks Django pass two Python objects to the template:
+
+%ul
+  %li request
+  %li greetings
+
+%p The syntax of the db.html template can be seen in this URL:
+
+%p
+  %a(href='https://github.com/heroku/python-getting-started/blob/master/hello/templates/db.html' target='x')
+    https://github.com/heroku/python-getting-started/blob/master/hello/templates/db.html
+  
+%p In that template I see no evidence that the request object is used.
+
+%p I do, however, see the greetings object:
+
+.syntax
+  %pre
+    =render 'class09v1b'
+
+%p The above syntax is a simple example of how you can mix a Python object full of data with HTML syntax designed to display repeating strings.
+
+%p Remember, data passage is a main feature of Django:
+%p
+  %a(href='class09mf') Django Main Features
+%hr/
+
+%p
+  %a(href='class09') Class09
+
