@@ -1,0 +1,11 @@
+<code class='bash'>
+cd ~ann
+git clone https://github.com/danbikle/dj101
+cd dj101
+
+pip install -r requirements.txt
+
+python manage.py migrate
+python manage.py collectstatic
+gunicorn gettingstarted.wsgi
+</code>
