@@ -1,2 +1,10 @@
 <code class='bash'>
+cd ~ann
+git clone https://github.com/danbikle/dj101
+cd dj101
+
+heroku auth:login
+heroku create dj102
+git push heroku master
+heroku run python manage.py migrate
 </code>
