@@ -1,0 +1,140 @@
+%h2 Class09 Answer:
+%h2 
+  Deploy
+  %a(href='https://github.com/django/djangoproject.com' target='x')
+    https://github.com/django/djangoproject.com
+  to Ubuntu 16.04 VirtualBox host
+     	
+%p I did this lab from a VirtualBox instance inside my laptop.
+
+%p The instructions below are an enhancement of the instructions I found at this URL:
+
+%p
+  %a(href='https://github.com/django/djangoproject.com/blob/master/README.rst' target='x')
+    https://github.com/django/djangoproject.com/blob/master/README.rst
+
+%p I was using a windows 10 laptop so I enabled virtualization inside the BIOS:
+
+%p
+  %a(href='https://www.google.com/search?q=BIOS+enable+virtualization' target='x')
+    https://www.google.com/search?q=BIOS+enable+virtualization
+%p
+  %a(href='https://www.google.com/search?q=BIOS+enable+virtualization&tbm=vid' target='x')
+    https://www.google.com/search?q=BIOS+enable+virtualization&tbm=vid
+  
+
+%p I continued by installing VirtualBox on my laptop.
+
+%p
+  %a(href='https://www.virtualbox.org/wiki/Downloads' target='x')
+    https://www.virtualbox.org/wiki/Downloads
+
+%p Then, I downloaded a 10GB file: ub16jul21.ova
+
+%p
+  %a(href='https://drive.google.com/file/d/0Bx3iDDAtxxI4MmNNLXM4RTZvYTA' target='x')
+    https://drive.google.com/file/d/0Bx3iDDAtxxI4MmNNLXM4RTZvYTA
+    
+%p I installed the above file into VirtualBox by clicking on it.
+
+%p After I booted the resulting host, I saw a login screen.
+
+%p I authenticated with this:
+
+%p User: ann, Password: a
+
+%p After I logged in as ann, I created another Linux account using some shell commands:
+
+.syntax
+  %pre
+    %code.bash
+      sudo useradd -m -s /bin/bash -G sudo djangoproject
+      sudo passwd djangoproject
+
+%p Then, I logged in as djangoproject.
+
+.syntax
+  %pre
+    %code.bash ssh -AY djangoproject@localhost
+
+%p Next as djangoproject, I ran some shell commands:
+
+.syntax
+  %pre
+    %code.bash
+      wget https://www.python.org/ftp/python/3.5.3/Python-3.5.3.tar.xz
+      tar xf Python-3.5.3.tar.xz
+      cd Python-3.5.3
+      \./configure --enable-optimizations --prefix=/home/djangoproject/py353
+      make
+      make install
+      cd /home/djangoproject/py353/bin
+      ln -s pip3 pip
+      ln -s python3.5 python
+      cd ~djangoproject
+      echo 'export PATH=${HOME}/py353/bin:$PATH' >> ~djangoproject/.bashrc
+      wget https://nodejs.org/dist/v8.2.1/node-v8.2.1-linux-x64.tar.xz
+      tar xf node-v8.2.1-linux-x64.tar.xz
+      ln -s  node-v8.2.1-linux-x64 node
+      echo 'export PATH=${HOME}/node/bin:$PATH' >> ~djangoproject/.bashrc
+      bash
+      git clone https://github.com/django/djangoproject.com
+      cd ~djangoproject/djangoproject.com/
+      pip install -r requirements/dev.txt
+      npm install
+      mkdir -p ~/.djangoproject/config
+%p Next I used emacs to create a file:
+
+.syntax
+  %pre
+    %code.bash ~djangoproject/.djangoproject/config/secrets.json
+
+%p I put this syntax into that file:
+
+.syntax
+  %pre
+    =render 'class09djp10a'
+
+%p I ran two shell commands:
+
+.syntax
+  %pre
+    %code.bash
+      echo 'export DJANGOPROJECT_DATA_DIR=~/.djangoproject' >> ~djangoproject/.bashrc
+      bash
+
+%p I opened another shell in order to run some Postgres commands:
+
+.syntax
+  %pre
+    %code.bash
+      sudo su - postgres
+      createuser -d djangoproject
+      createdb -O djangoproject djangoproject
+      createuser -d code.djangoproject
+      createdb -O code.djangoproject code.djangoproject
+      psql
+%p I ran two Postgres SQL commands
+
+.syntax
+  %pre
+    %code.sql
+      ALTER USER djangoproject        WITH superuser PASSWORD 'secret';
+      ALTER USER "code.djangoproject" WITH superuser PASSWORD 'secret';
+
+%p I exited both psql and the postgres shell.
+
+%p I returned to the djangoproject shell.
+
+%p I ran some shell commands:
+
+.syntax
+  %pre
+    =render 'class09djp10b'
+
+%p I should see my new site at this URL:
+
+%p www.djangoproject.dev:8000
+
+%p
+  %a(href='class09') Class09

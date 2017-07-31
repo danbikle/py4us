@@ -1,0 +1,27 @@
+<code class='bash'>
+cd ~djangoproject/djangoproject.com/
+psql -d code.djangoproject &lt; tracdb/trac.sql
+./manage.py migrate
+/manage.py createsuperuser
+
+#I should use this info: "superfeedr_creds": ["dan@py4.us", "hellodan123"],
+
+./manage.py loaddata dev_sites
+./manage.py loaddata doc_releases
+
+./manage.py loaddata doc_releases
+./manage.py update_docs
+
+
+./manage.py loaddata dashboard_production_metrics
+./manage.py update_metrics
+
+# enter root shell
+sudo bash
+sed -i '/127.0.0.1/d' /etc/hosts
+echo '127.0.0.1  localhost lh docs.djangoproject.dev www.djangoproject.dev dashboard.djangoproject.dev' >> /etc/hosts
+# exit root shell
+
+make compile-scss
+make run
+</code>
