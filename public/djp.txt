@@ -22,6 +22,8 @@ cd /home/djangoproject/py353/bin
 ln -s pip3 pip
 ln -s python3.5 python
 
+cd ~djangoproject
+
 echo 'export PATH=${HOME}/py353/bin:$PATH' >> ~djangoproject/.bashrc
 bash
 
