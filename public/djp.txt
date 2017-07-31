@@ -41,6 +41,7 @@ git clone https://github.com/django/djangoproject.com
 cd ~djangoproject/djangoproject.com/
 
 pip install -r requirements/dev.txt
+npm install
 
 mkdir -p ~/.djangoproject/config
 
