@@ -10,6 +10,8 @@ psql -d code.djangoproject &lt; tracdb/trac.sql
 ./manage.py loaddata doc_releases
 ./manage.py update_docs
 
+# be patient here
+
 ./manage.py loaddata dashboard_production_metrics
 ./manage.py update_metrics
 
