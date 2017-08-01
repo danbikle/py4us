@@ -4,14 +4,11 @@ psql -d code.djangoproject &lt; tracdb/trac.sql
 ./manage.py migrate
 ./manage.py createsuperuser
 
-#I should use this info: "superfeedr_creds": ["dan@py4.us", "hellodan123"],
+#I should use info in secrets.json
 
 ./manage.py loaddata dev_sites
 ./manage.py loaddata doc_releases
-
-./manage.py loaddata doc_releases
 ./manage.py update_docs
-
 
 ./manage.py loaddata dashboard_production_metrics
 ./manage.py update_metrics
