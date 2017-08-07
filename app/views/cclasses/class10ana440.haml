@@ -1,0 +1,19 @@
+%h2 Class10 Answer:
+%h2 Install Anaconda3-4.4.0-Linux-x86_64.sh
+
+%p I did this exercise from the reqp account I had just created.
+
+%p I used a terminal window rather than an Emacs shell.
+
+.syntax
+  %pre
+    %code.bash
+      cd ~reqp
+      wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+      bash Anaconda3-4.4.0-Linux-x86_64.sh
+      echo 'export PATH=${HOME}/anaconda3/bin:$PATH' >> ~reqp/.bashrc
+      bash
+      
+%p
+  %a(href='class10#lab')
+    Class10
