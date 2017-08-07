@@ -1,0 +1,29 @@
+%h2 Class10 Answer:
+%h2 Serve the prices using Flask
+
+%p I did this exercise from the reqp account in my Ubuntu 16 virtualbox:
+
+%p Shell 1:
+
+.syntax
+  %pre
+    %code.bash
+      cd ~reqp/reqp/
+      \./fflask.bash
+
+%p The above shell command 'locked' Shell 1.
+
+%p Do not be confused. Shell 1 is not busy.  Shell 1 is running a server which is ready to serve prices.
+
+%p I started Shell 2.
+
+%p I ran a simple test with a curl shell command in Shell 2:
+.syntax
+  %pre
+    %code.bash
+      curl localhost:5047/static/csv/history/FB.csv > /tmp/FB.csv
+      head /tmp/FB.csv
+
+%p
+  %a(href='class10#lab')
+    Class10
