@@ -39,9 +39,9 @@
     .syntax
       %pre
         %code
-	  mkdir -p ~/flaskstatic/static
-	  cd       ~/flaskstatic/static
-          echo '<html><h1>Blog</h1>Python is better than R but more difficult to spell. </html>' > blog.html	  
+          mkdir -p ~/flaskstatic/static
+          cd       ~/flaskstatic/static
+          echo '&lt;html>&lt;h1>Blog&lt;/h1>Python is better than R but more difficult to spell. &lt;/html>' > blog.html      
           cd       ~/flaskstatic/
   %li Create a Python script: ~/flaskstatic/fl10.py
   %li Put this syntax in it:
@@ -82,7 +82,7 @@
     .syntax
       %pre
         %code.bash curl http://flask11.herokuapp.com/favicon.ico > ~/fl11/static/favicon.ico
-	  
+          
   %li In static, create a file   named: "blog.html"
   %li In fl11,   create a python script named: "fl11.py"
   %li Put this syntax in it:
@@ -90,7 +90,7 @@
     .syntax
       %pre
         =render 'class03fl11a'
-	
+        
   %li Run the python script:
   %li
     .syntax
