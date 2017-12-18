@@ -65,18 +65,63 @@ list_rev = list(reversed(list1))
 list_sorted = sorted([9,3,7,4,8,1,6])
 
 # Loop through lines in a text file to create List of strings
+with open('/etc/group', 'r') as fh:
+    list_str = [line_s for line_s in fh]
+
 # Write a simple example of using loc[] with a Pandas Series
+sr0 = pd.Series([10,11,12,13,14,15,16,17,18,19])
+sr_booleans = sr0 > 15
+sr1 = sr0.loc[sr_booleans]
 # Write a simple example of using iloc[] with a Pandas Series
+list_ints = [0,3,1,6]
+sr2 = sr0.iloc[list_ints]
+sr3 = sr0.iloc[5]
+
+# Implicit loc[]:
+sr4 = sr0[sr_booleans]
+# Implicit iloc[]:
+sr5 = sr0[list_ints]
+
 # Describe how loc is different than iloc
+print('loc takes booleans, iloc takes integers')
+
 # Write an example of the filter() function
+list1         = [0,1,2,3,3,4,4,5,5]
+list_filtered = list(filter(lambda x_i: x_i > 2, list1))
 # Write an example of the map() function
+list_mapped = list(map(lambda x_i: x_i ** 2, list1))
+
 # Write an example of the reduce() function
+from functools import reduce
+int_reduced = reduce(lambda a_i, b_i: a_i+b_i, list1)
+
 # Write an example of the Pandas apply() function
+sr0 = pd.Series([10,11,12,13,14,15,16,17,18,19])
+sr6 = sr0.apply(np.sqrt)
+
 # With one line of syntax, square all numbers in a List
+list2 = np.square(list1).tolist()
+
 # With one line of syntax, read py4.us/gspc.csv into a DataFrame
+gspc_df = pd.read_csv('http://py4.us/gspc.csv')
 # Use the CSV module to read a CSV file into a list of lists
+import csv
+with open('some.csv') as f:
+  csv_l = [row for row in csv.reader(f)]
+print(csv_l)
+
 # Use modules: CSV, io, and Requests to read py4.us/gspc.csv into a List of Lists
+import io
+import requests
+csv_req = requests.get('http://py4.us/some.csv')
+s_io    = io.StringIO(csv_req.text)
+csv_l   = [row for row in csv.reader(s_io)]
+
 # Read all filenames from /etc-folder into a list
+import glob
+list_fn = glob.glob('/etc/*')
+
+'bye'
 
   
 
