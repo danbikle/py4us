@@ -1,42 +1,42 @@
 %h2 Class03 Answer:
-%h2 Deploy fl10 to Heroku
+%h2 Deploy flaskstatic folder to Heroku
 
 %p I did this lab and it required several steps.
 
 %p Each step was simple.
 
-%p I added a file named: "runtime.txt" to the fl10 folder:
+%p I added a file named: "runtime.txt" to the flaskstatic folder:
 
 .syntax
   %pre
     %code.bash
-      cd ~/fl10
-      echo python-3.5.2 > runtime.txt
+      cd ~/flaskstatic
+      echo python-3.6.3 > runtime.txt
 
 %p The above file declares the version of Python which Heroku should use to run my app.
 
-%p I added another file named: "requirements.txt" to the fl10 folder:
+%p I added another file named: "requirements.txt" to the flaskstatic folder:
 
 .syntax
   %pre
     %code.bash
-      cd ~/fl10
+      cd ~/flaskstatic
       echo flask >     requirements.txt
       echo gunicorn >> requirements.txt
 
 %p The above file declares that I want Heroku to install the above packages.
 
-%p I added another file named: "Procfile" to the fl10 folder:
+%p I added another file named: "Procfile" to the flaskstatic folder:
 
 .syntax
   %pre
     %code.bash
-      cd ~/fl10
+      cd ~/flaskstatic
       echo web: gunicorn wsgi > Procfile
 
 %p The above file declares that I want Heroku to run the Gunicorn webserver to serve my app.
 
-%p I added another file named: "wsgi.py" to the fl10 folder:
+%p I added another file named: "wsgi.py" to the flaskstatic folder:
 
 .syntax
   %pre
@@ -44,26 +44,26 @@
 
 %p The above file helps Gunicorn to find and serve my app.
 
-%p Then I commited the fl10 folder to a git repository:
+%p Then I commited the flaskstatic folder to a git repository:
 
 .syntax
   %pre
     %code.bash
-      cd ~/fl10
+      cd ~/flaskstatic
       echo __pycache__ > .gitignore
       git init
       git add .
       git commit -am hello
 
-%p I created an account at heroku.com which allows me to deploy small apps there for free.
+%p Using my browser, I created an account at heroku.com which allows me to deploy small apps there for free.
 
-%p Next, I installed the Heroku CLI:
+%p Next, using a terminal rather than emacs-shell, I installed the Heroku CLI:
 
 .syntax
   %pre
     =render 'class03her2'
 
-%p Then, I deployed fl10 to Heroku:
+%p Then, I deployed flaskstatic folder to Heroku:
 
 .syntax
   %pre
@@ -77,12 +77,12 @@
 
 %p I tried this URL:
 %p
-  %a(href='https://frozen-dawn-30599.herokuapp.com/static/blog.html' target='x')
-    https://frozen-dawn-30599.herokuapp.com/static/blog.html
+  %a(href='https://afternoon-everglades-98611.herokuapp.com/static/blog.html' target='x')
+    https://afternoon-everglades-98611.herokuapp.com/static/blog.html
+  
 %p I saw this:
 %img(src='/class03/h305.png')
 %hr/
 %p
   %a(href='class03#fs')
     Class03 Lab
-
