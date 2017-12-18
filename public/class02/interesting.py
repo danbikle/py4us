@@ -17,19 +17,53 @@ import pandas as pd
 import numpy as np
 import io
 
+list0 = [0,1,2,3]
 # Create a Tuple from a List
+tuple0 = tuple(list0)
+
 # Create a Set from a List
+set0 = set(list0)
+
 # Use a Set to get unique items from a List
+list1     = [0,1,2,3,3,4,4,5,5]
+list_uniq = list(set(list1))
+
 # Create a Pandas Series from a List
+series0 = pd.Series(list1)
+
 # Create a Pandas DataFrame, then add a List to it
+df0 = pd.DataFrame()
+df0['col0'] = list1
+df0['col1'] = list1
+
 # Create a NumPy Array from a List
+a0 = np.array(list0)
+
 # Write a simple example of the zip() function
+list_zip = list(zip(list1,list1))
+
 # Create a dictionary, then create a List from its keys
+d0 = {'k1':1, 'k2':'v2', 'k3': [3]}
+list_keys = list(d0.keys())
+
 # Create a dictionary, then create a List from its values
+list_values = list(d0.values())
+
 # Find all values in list1 which are in list2
+list1   = [0,1,2,3,3,4,4,5,5]
+list2   = [4,5,5,6,7,7]
+set1    = set(list1)
+set2    = set(list2)
+list_in = list(set1 & set2) # intersection of two sets
 # Find all values in list1 which are not in list2
+list_notin = list(set1 - set2) # difference of two sets
+
 # Reverse the order of a List
+list_rev = list(reversed(list1))
+
 # Sort the items in a List
+list_sorted = sorted([9,3,7,4,8,1,6])
+
 # Loop through lines in a text file to create List of strings
 # Write a simple example of using loc[] with a Pandas Series
 # Write a simple example of using iloc[] with a Pandas Series
