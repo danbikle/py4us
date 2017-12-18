@@ -113,7 +113,7 @@ with open('some.csv') as f:
 # Use modules: CSV, io, and Requests to read py4.us/gspc.csv into a List of Lists
 import io
 import requests
-csv_req = requests.get('http://py4.us/some.csv')
+csv_req = requests.get('http://py4.us/gspc.csv')
 s_io    = io.StringIO(csv_req.text)
 csv_l   = [row for row in csv.reader(s_io)]
 
