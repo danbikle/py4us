@@ -34,10 +34,16 @@
 %ul
   %li See if you have Anaconda installed in your Dev-Env
   %li See if you have Flask installed in your Anaconda Env
-  %li Create a folder named "fl10" to hold a new Flask app
-  %li In fl10,   create a folder named: "static"
-  %li In static, create a file   named: "blog.html"
-  %li In fl10,   create a python script named: "fl10.py"
+  %li Run these shell commands:
+  %li
+    .syntax
+      %pre
+        %code
+	  mkdir -p ~/flaskstatic/static
+	  cd       ~/flaskstatic/static
+          echo '<html><h1>Blog</h1>Python is better than R but more difficult to spell. </html>' > blog.html	  
+          cd       ~/flaskstatic/
+  %li Create a Python script: ~/flaskstatic/fl10.py
   %li Put this syntax in it:
   %li
     .syntax
