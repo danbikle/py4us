@@ -108,7 +108,6 @@ gspc_df = pd.read_csv('http://py4.us/gspc.csv')
 import csv
 with open('some.csv') as f:
   csv_l = [row for row in csv.reader(f)]
-print(csv_l)
 
 # Use modules: CSV, io, and Requests to read py4.us/gspc.csv into a List of Lists
 import io
@@ -122,6 +121,3 @@ import glob
 list_fn = glob.glob('/etc/*')
 
 'bye'
-
-  
-
