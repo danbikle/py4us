@@ -29,8 +29,8 @@
 %p I like to do my development in an account named ann on on an Ubuntu 16 host.
 %p If you want to do it my way, you can find a suitable VirtualBox OVA file at the URL listed below:
 %p
-  %a(href='https://drive.google.com/open?id=0Bx3iDDAtxxI4WkttQl84UTN4bVk' target='x')
-    https://drive.google.com/open?id=0Bx3iDDAtxxI4WkttQl84UTN4bVk
+  %a(href='https://drive.google.com/open?id=1uqhG7LLJl76DS6Mu8BNe5hnzX5URgXVL' target='x')
+    https://drive.google.com/open?id=1uqhG7LLJl76DS6Mu8BNe5hnzX5URgXVL
 
 %p After you start it with the VirtualBox GUI you should see a login screen.
 
@@ -53,23 +53,34 @@
 .syntax
   %pre
     %code.bash
-      ann@ub16aug:~$ 
-      ann@ub16aug:~$ python
-      Python 3.5.2 |Anaconda 4.1.1 (64-bit)| (default, Jul  2 2016, 17:53:06) 
-      [GCC 4.4.7 20120313 (Red Hat 4.4.7-1)] on linux
+      $ python
+      Python 3.6.3 |Anaconda, Inc.| (default, Oct 13 2017, 12:02:49) 
+      [GCC 7.2.0] on linux
       Type "help", "copyright", "credits" or "license" for more information.
-      >>> 
+      >>>
 
-%p I can see in the above banner that we have Anaconda 4.1.1 inside the ann account.
-%p It was created during the summer of 2016 and it gives us Python 3.5.2
+%p I can see in the above banner that we have Anaconda giving us Python 3.6.3.
 %p That combination of Anaconda and Python is well suited for the exercises in this lab.
 
-%p If, however, you want to use a more recent version of Anaconda then run the shell commands listed below:
+%p I installed Anaconda with the shell commands listed below:
 
 .syntax
   %pre
     =render 'class01ana2'
 
+
+%p The labs in this class were written in 2016.
+
+%p They work well on this version of Bokeh: 0.12.6
+
+%p I followed these steps to install Bokeh 0.12.6 on my linux host:
+%p
+  .syntax
+    %pre
+      %code.bash
+        conda remove bokeh
+	conda install bokeh=0.12.6
+  
 %p Next I created the file listed below:
 
 .syntax
