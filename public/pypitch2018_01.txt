@@ -1,0 +1,67 @@
+Hello World,
+I invite you to my Project Based Python Programming class.
+
+It is offered by Santa Clara Adult Education.
+
+It meets on Monday night 7pm to 10pm.
+
+The location is Santa Clara Adult Education Campus.
+
+Address: 1840 Benton St. Room F4
+
+The class has 10 meetings: Feb 26 through May 7
+
+Cost: $329 [ covers class and significant e-mail support ]
+
+Class pace is FAST and topic list is VAST; you will get your money's worth.
+
+If you fall behind, dont worry; I will answer help-requests during the session and after May 7.
+
+Also the class offers an online forum to help you connect with the instructor and other students.
+
+Format:
+
+  * Lectures cover Python syntax and techniques
+  * Homework is: Build Projects with Python
+Lecture Topics:
+  * Python 3.x
+  * Anaconda Python
+  * Jupyter
+  * Pycharm
+  * Spyder
+  * Simple Linux
+  * Python-Linux Development Environments
+  * Python-Linux Production Environments
+  * Common type conversions
+  * Pandas
+  * datetime
+  * strftime(),strptime()
+  * pdb
+  * matplotlib
+  * Lists, Loops, Comprehensions, range()
+  * Strings, "Python Dunders"
+  * CSV files
+  * Python Class Inheritance
+  * Functions vs Methods
+  * Flask web-apps
+  * Simple HTML, CSS, JavaScript
+  * Jinja2 template engine for Python
+  * Web scraping with Requests and BeautifulSoup
+  * Deploy Python-app to Heroku for $0
+  * The "os" package
+  * Team collaboration with github.com
+  * Flask-RESTul web-apps
+  * Intro JSON
+  * Intro Machine Learning: Scikit-Learn
+  * NumPy + Pandas + Machine Learning
+  * Keras Machine Learning
+  * SQLAlchemy + Postgres
+  * Selenium
+  * Data Visualization: Bokeh
+  * Data Visualization: Seaborn
+  * Natural Language Processing (NLP): Word2vec
+  * TensorFlow Python API + Machine Learning
+  * Python Collections Package
+  * Django web-apps
+  * Python + Regular Expressions
+If you have questions, e-me: bikle101 at gmail
