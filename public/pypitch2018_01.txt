@@ -1,7 +1,12 @@
+
+
 Hello World,
+
 I invite you to my Project Based Python Programming class.
 
 It is offered by Santa Clara Adult Education.
+
+https://www.google.com/search?q=Santa+Clara+Adult+Education+Project+Based+Python
 
 It meets on Monday night 7pm to 10pm.
 
