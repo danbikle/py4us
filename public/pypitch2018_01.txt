@@ -29,43 +29,29 @@ Format:
   * Lectures cover Python syntax and techniques
   * Homework is: Build Projects with Python
 Lecture Topics:
-  * Python 3.x
-  * Anaconda Python
-  * Jupyter
-  * Pycharm
-  * Spyder
+  * Python 3.x, pdb, Anaconda Python
+  * Jupyter, Pycharm, Spyder
   * Simple Linux
-  * Python-Linux Development Environments
-  * Python-Linux Production Environments
   * Common type conversions
   * Pandas
-  * datetime
-  * strftime(),strptime()
-  * pdb
-  * matplotlib
-  * Lists, Loops, Comprehensions, range()
+  * datetime, strftime(),strptime()
+  * Lists, Loops, Comprehensions, range(), CSV files
   * Strings, "Python Dunders"
-  * CSV files
   * Python Class Inheritance
   * Functions vs Methods
-  * Flask web-apps
-  * Simple HTML, CSS, JavaScript
+  * Flask web-apps, Simple HTML, CSS, JavaScript
   * Jinja2 template engine for Python
   * Web scraping with Requests and BeautifulSoup
   * Deploy Python-app to Heroku for $0
   * The "os" package
   * Team collaboration with github.com
-  * Flask-RESTul web-apps
-  * Intro JSON
+  * Flask-RESTul web-apps, Intro JSON
   * Intro Machine Learning: Scikit-Learn
-  * NumPy + Pandas + Machine Learning
-  * Keras Machine Learning
+  * NumPy + Pandas + Machine Learning, Keras Machine Learning, TensorFlow
   * SQLAlchemy + Postgres
   * Selenium
-  * Data Visualization: Bokeh
-  * Data Visualization: Seaborn
+  * Data Visualization: Bokeh, Seaborn, matplotlib
   * Natural Language Processing (NLP): Word2vec
-  * TensorFlow Python API + Machine Learning
   * Python Collections Package
   * Django web-apps
   * Python + Regular Expressions
