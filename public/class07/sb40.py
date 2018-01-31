@@ -1,0 +1,40 @@
+"""
+sb40.py
+
+This script should demo seaborn.lmplot()
+Ref:
+https://seaborn.pydata.org/generated/seaborn.lmplot.html
+https://seaborn.pydata.org/tutorial/regression.html
+
+Demo:
+python sb40.py
+"""
+
+import numpy as np
+import pandas as pd
+import matplotlib as mpl
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# What does this do:
+sns.set(color_codes=True)
+# read this:
+# http://seaborn.pydata.org/generated/seaborn.set.html#seaborn.set
+# If True and palette is a seaborn palette,
+# remap the shorthand color codes (e.g. “b”, “g”, “r”, etc.)
+# to the colors from this palette.
+
+# I should run ord() against each char in "regression" to get a list of integers:
+my_l = map(ord, "regression")
+
+# I should get random number from sum of ints in my_l:
+np.random.seed(sum(my_l))
+
+# I should get a dataframe called tips from Seaborn data sets:
+tips = sns.load_dataset("tips")
+
+sns.regplot(x="total_bill", y="tip", data=tips);
+
+plt.show()
+
+'bye'
