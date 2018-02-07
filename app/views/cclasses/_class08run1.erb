@@ -1,254 +1,255 @@
 <code class='bash'>
-dan@h79:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
-dan@h79:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
-dan@h79:~/tensorflow/tensorflow/examples/tutorials/word2vec $ python word2vec_basic.py 
+dan@m78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ python word2vec_basic.py 
 Found and verified text8.zip
 Data size 17005207
 Most common words (+UNK) [['UNK', 418391], ('the', 1061396), ('of', 593677), ('and', 416629), ('one', 411764)]
 Sample data [5234, 3081, 12, 6, 195, 2, 3134, 46, 59, 156] ['anarchism', 'originated', 'as', 'a', 'term', 'of', 'abuse', 'first', 'used', 'against']
-3081 originated -> 5234 anarchism
 3081 originated -> 12 as
+3081 originated -> 5234 anarchism
 12 as -> 6 a
 12 as -> 3081 originated
 6 a -> 12 as
 6 a -> 195 term
 195 term -> 6 a
 195 term -> 2 of
-2017-11-13 18:15:25.923889: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions
-2017-11-13 18:15:25.923912: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions
-2017-11-13 18:15:25.923916: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions
-2017-11-13 18:15:25.923920: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions
-2017-11-13 18:15:25.923923: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions
+2018-02-06 17:32:01.015774: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 FMA
 Initialized
-Average loss at step  0 :  289.845825195
-Nearest to not: sclc, dictum, ascorbic, cot, perilous, hydraulics, haskalah, hbf,
-Nearest to who: encircles, watered, ascalon, juvenile, corporate, delinquency, swells, symbionts,
-Nearest to for: bulbs, schweitzer, wagoner, debuts, gra, heston, removes, decade,
-Nearest to b: heritable, contemplate, diesel, candlemas, indication, naiste, dismiss, aerials,
-Nearest to between: garrick, nyasa, mendelian, noticable, arabia, rhyming, captive, stained,
-Nearest to from: unfolding, demokratische, individualistic, ion, stratigraphy, synchronous, multiverse, unary,
-Nearest to d: oliva, subversive, rohmer, pritchard, phrygia, fix, finger, namo,
-Nearest to other: danmarks, lia, hexen, source, vocal, rw, britannicus, serbo,
-Nearest to its: grotius, frunze, treatment, epr, lecoq, demonolatry, margarine, jardines,
-Nearest to see: picnics, couture, outcry, darkness, remarks, rodr, fen, calvinistic,
-Nearest to UNK: lagi, wherefore, soong, richey, actual, congregationalist, working, philemon,
-Nearest to called: quantifiers, vitro, hemionus, walsingham, molotov, dum, hindering, medians,
-Nearest to was: sued, bipm, storied, reminded, pequod, perth, darrow, britons,
-Nearest to united: endorsement, buckle, yacc, universiti, xena, infrequently, macaroni, albanians,
-Nearest to this: him, biographers, postcolonial, andromeda, hominidae, honduran, agra, khazar,
-Nearest to i: amounted, transgendered, weblog, claudia, dissatisfied, fan, sutras, boric,
-Average loss at step  2000 :  113.762040097
-Average loss at step  4000 :  52.7533609359
-Average loss at step  6000 :  33.0140115511
-Average loss at step  8000 :  23.3993372822
-Average loss at step  10000 :  17.9902489464
-Nearest to not: rhetoric, despair, dictum, searching, perilous, honor, associated, violent,
-Nearest to who: horch, corporate, identify, ran, huns, physicist, modulus, highway,
-Nearest to for: of, in, and, debuts, second, enclave, is, to,
-Nearest to b: reactions, bckgr, indication, diesel, illusory, americans, remarked, qutb,
-Nearest to between: arabia, of, duke, n, ball, nebula, country, publication,
-Nearest to from: in, and, of, during, as, deuterostomes, ion, armed,
-Nearest to d: trench, bckgr, critique, agave, orbitals, cancer, revolt, comedian,
-Nearest to other: source, vocal, dependencies, UNK, mounting, sd, value, bruno,
-Nearest to its: the, hawk, treatment, sadler, quotes, os, athletes, experienced,
-Nearest to see: tuna, darkness, remarks, oriented, deity, outcry, default, will,
-Nearest to UNK: one, and, archie, agave, abu, the, microscopy, coke,
-Nearest to called: call, lymphoma, farming, case, located, launched, theodosius, algebra,
-Nearest to was: is, basins, by, and, in, formed, would, tolstoy,
-Nearest to united: lymphoma, buckle, albanians, endorsement, agave, configuration, native, contributions,
-Nearest to this: the, him, a, lambar, it, archie, mathbf, that,
-Nearest to i: amounted, boric, ray, sliding, aq, archaeologists, dissatisfied, villa,
-Average loss at step  12000 :  14.039730803
-Average loss at step  14000 :  11.8455843962
-Average loss at step  16000 :  10.0628929876
-Average loss at step  18000 :  8.35675126004
-Average loss at step  20000 :  7.99946431112
-Nearest to not: rhetoric, perilous, despair, searching, it, honor, alu, then,
-Nearest to who: horch, he, circ, corporate, identify, and, no, they,
-Nearest to for: in, and, of, with, on, by, circ, to,
-Nearest to b: d, reactions, trinitarian, in, illusory, bckgr, computer, and,
-Nearest to between: arabia, in, of, with, zahn, nebula, duke, nn,
-Nearest to from: in, and, during, of, dasyprocta, as, for, by,
-Nearest to d: b, oliva, and, comedian, tooth, dasyprocta, revolt, agouti,
-Nearest to other: source, vocal, agouti, dependencies, mounting, UNK, bruno, northern,
-Nearest to its: the, his, hawk, grotius, a, circ, ferdinand, os,
-Nearest to see: darkness, oriented, tuna, remarks, will, default, were, deity,
-Nearest to UNK: operatorname, circ, dasyprocta, agouti, two, three, hbox, yin,
-Nearest to called: call, amazonas, theodosius, circ, hindering, and, lymphoma, operatorname,
-Nearest to was: is, by, basins, were, had, has, as, are,
-Nearest to united: buckle, dasyprocta, lymphoma, endorsement, circ, xena, configuration, albanians,
-Nearest to this: the, it, him, a, lambar, that, archie, predicted,
-Nearest to i: amounted, operatorname, sliding, aq, boric, amazonas, railways, ray,
-Average loss at step  22000 :  6.99254838479
-Average loss at step  24000 :  6.82673986459
-Average loss at step  26000 :  6.70450302839
-Average loss at step  28000 :  6.42071223259
-Average loss at step  30000 :  5.95621111131
-Nearest to not: it, then, distributed, to, perilous, circ, also, admitted,
-Nearest to who: he, and, horch, aba, they, circ, corporate, identify,
-Nearest to for: in, and, with, circ, of, at, dasyprocta, to,
-Nearest to b: d, amalthea, trinitarian, computer, illusory, reactions, and, one,
-Nearest to between: in, arabia, of, with, zahn, laminated, ball, into,
-Nearest to from: in, and, during, by, dasyprocta, with, of, on,
-Nearest to d: b, oliva, and, comedian, tooth, dasyprocta, agouti, jeffrey,
-Nearest to other: source, vocal, northern, mounting, bruno, fated, agouti, caterpillars,
-Nearest to its: the, his, their, hawk, ramps, circ, grotius, os,
-Nearest to see: darkness, picnics, tuna, oriented, remarks, six, were, fayetteville,
-Nearest to UNK: circ, dasyprocta, operatorname, agouti, four, two, otimes, trinomial,
-Nearest to called: and, amazonas, call, circ, hindering, rosemary, which, operatorname,
-Nearest to was: is, were, by, had, has, basins, been, be,
-Nearest to united: buckle, dasyprocta, lymphoma, endorsement, xena, at, circ, configuration,
-Nearest to this: it, the, him, a, lambar, enki, that, which,
-Nearest to i: amounted, aq, sliding, operatorname, nephropathy, railways, UNK, boric,
-Average loss at step  32000 :  5.98454289126
-Average loss at step  34000 :  5.71402832651
-Average loss at step  36000 :  5.75510566795
-Average loss at step  38000 :  5.5062629739
-Average loss at step  40000 :  5.2743057425
-Nearest to not: it, often, still, to, then, also, distributed, they,
-Nearest to who: he, they, and, horch, aba, circ, usually, corporate,
-Nearest to for: in, of, with, and, circ, on, zero, at,
-Nearest to b: d, amalthea, zero, trinitarian, illusory, vma, bckgr, reactions,
-Nearest to between: with, in, arabia, zero, zahn, from, laminated, mideast,
-Nearest to from: in, during, and, dasyprocta, at, on, zero, gollancz,
-Nearest to d: b, oliva, comedian, tooth, zero, fossilization, revolt, jeffrey,
-Nearest to other: many, agouti, bruno, caterpillars, fated, northern, source, zero,
-Nearest to its: the, his, their, circ, ramps, a, hawk, federline,
-Nearest to see: darkness, picnics, iata, remarks, zero, fayetteville, tuna, has,
-Nearest to UNK: agouti, circ, dasyprocta, operatorname, zero, four, abet, three,
-Nearest to called: and, amazonas, call, circ, which, rosemary, tel, hindering,
-Nearest to was: is, were, has, had, by, been, became, be,
-Nearest to united: buckle, dasyprocta, lymphoma, endorsement, xena, zero, circ, tangle,
-Nearest to this: it, the, that, which, zero, him, one, amalthea,
-Nearest to i: amounted, UNK, railways, sliding, boric, aq, operatorname, nephropathy,
-Average loss at step  42000 :  5.40230061221
-Average loss at step  44000 :  5.26743321514
-Average loss at step  46000 :  5.24051010585
-Average loss at step  48000 :  5.21977042973
-Average loss at step  50000 :  4.98877210164
-Nearest to not: it, still, they, also, often, distributed, then, to,
-Nearest to who: he, and, they, circ, usually, aba, corporate, identify,
-Nearest to for: in, dasyprocta, of, circ, and, six, eight, with,
-Nearest to b: d, amalthea, trinitarian, six, bckgr, vma, illusory, five,
-Nearest to between: in, with, arabia, zahn, laminated, from, three, into,
-Nearest to from: in, and, during, at, dasyprocta, six, on, eight,
-Nearest to d: b, oliva, comedian, and, six, tooth, payload, dasyprocta,
-Nearest to other: many, caterpillars, windy, cytoskeleton, agouti, fated, northern, three,
-Nearest to its: their, his, the, circ, ramps, agouti, federline, dasyprocta,
-Nearest to see: picnics, darkness, iata, remarks, and, fayetteville, sundial, oriented,
-Nearest to UNK: agouti, circ, dasyprocta, operatorname, four, five, mukherjee, abet,
-Nearest to called: and, circ, amazonas, call, operatorname, tel, lymphoma, which,
-Nearest to was: is, were, has, had, by, became, been, be,
-Nearest to united: buckle, dasyprocta, lymphoma, xena, endorsement, alliterative, tangle, circ,
-Nearest to this: it, the, which, that, a, roshan, amazonas, amalthea,
-Nearest to i: amounted, UNK, operatorname, railways, aq, boric, nephropathy, he,
-Average loss at step  52000 :  5.06759861517
-Average loss at step  54000 :  5.19756011832
-Average loss at step  56000 :  5.05522625077
-Average loss at step  58000 :  5.04479518914
-Average loss at step  60000 :  4.9423040247
-Nearest to not: still, they, it, often, to, also, then, distributed,
-Nearest to who: he, they, usually, circ, which, aba, never, still,
-Nearest to for: of, circ, in, dasyprocta, and, including, six, at,
-Nearest to b: d, amalthea, illusory, UNK, trinitarian, bckgr, vma, reactions,
-Nearest to between: with, in, arabia, from, garrick, zahn, laminated, noticable,
-Nearest to from: in, during, at, and, dasyprocta, into, on, of,
-Nearest to d: b, oliva, comedian, payload, eight, tooth, fossilization, UNK,
-Nearest to other: many, two, windy, caterpillars, agouti, michelob, various, cytoskeleton,
-Nearest to its: their, his, the, ursus, circ, her, any, hecht,
-Nearest to see: picnics, iata, darkness, fayetteville, biomes, remarks, and, staggering,
-Nearest to UNK: ursus, operatorname, dasyprocta, agouti, circ, five, microsite, mukherjee,
-Nearest to called: and, circ, amazonas, hindering, tel, UNK, operatorname, corbett,
-Nearest to was: is, were, had, has, by, been, became, be,
-Nearest to united: dasyprocta, buckle, lymphoma, xena, pulau, alliterative, endorsement, tangle,
-Nearest to this: it, which, that, the, pulau, ursus, amazonas, enki,
-Nearest to i: amounted, UNK, railways, operatorname, aq, boric, we, ursus,
-Average loss at step  62000 :  5.0008807472
-Average loss at step  64000 :  4.81717563552
-Average loss at step  66000 :  4.6079372586
-Average loss at step  68000 :  4.96578436852
-Average loss at step  70000 :  4.89086658216
-Nearest to not: still, they, to, often, also, distributed, it, never,
-Nearest to who: he, they, usually, circ, never, still, which, identify,
-Nearest to for: mitral, biz, of, including, circ, neurologic, dasyprocta, thaler,
-Nearest to b: d, amalthea, UNK, illusory, bckgr, trinitarian, vma, zero,
-Nearest to between: with, in, arabia, laminated, zahn, garrick, from, noticable,
-Nearest to from: in, during, into, at, dasyprocta, and, chalukyas, through,
-Nearest to d: b, oliva, comedian, payload, highs, UNK, michelob, lauder,
-Nearest to other: many, some, microcebus, windy, various, closing, michelob, agouti,
-Nearest to its: their, his, the, cebus, ursus, her, circ, any,
-Nearest to see: picnics, fayetteville, biomes, darkness, iata, amigas, sundial, apex,
-Nearest to UNK: ursus, dasyprocta, agouti, operatorname, circ, thaler, seven, abet,
-Nearest to called: and, amazonas, circ, tel, hindering, operatorname, call, kr,
-Nearest to was: is, were, had, has, became, been, by, does,
-Nearest to united: dasyprocta, buckle, xena, pulau, lymphoma, alliterative, hanja, tangle,
-Nearest to this: it, which, the, that, pulau, ursus, amazonas, one,
-Nearest to i: amounted, UNK, g, we, railways, aq, seven, operatorname,
-Average loss at step  72000 :  4.7560795033
-Average loss at step  74000 :  4.79822048557
-Average loss at step  76000 :  4.72574609447
-Average loss at step  78000 :  4.80187483579
-Average loss at step  80000 :  4.81021348584
-Nearest to not: still, often, they, it, never, to, distributed, also,
-Nearest to who: he, they, circ, usually, never, which, still, identify,
-Nearest to for: crb, circ, in, mitral, thaler, of, ursus, busan,
-Nearest to b: d, UNK, amalthea, illusory, bckgr, trinitarian, vma, agouti,
-Nearest to between: with, in, zahn, laminated, garrick, from, arabia, of,
-Nearest to from: in, during, into, at, through, and, dasyprocta, under,
-Nearest to d: b, oliva, comedian, UNK, payload, michelob, highs, lauder,
-Nearest to other: many, microcebus, windy, various, some, michelob, closing, agouti,
-Nearest to its: their, his, the, her, crb, cebus, ursus, any,
-Nearest to see: picnics, sundial, fayetteville, iata, darkness, biomes, amigas, apex,
-Nearest to UNK: ursus, operatorname, agouti, circ, dasyprocta, thaler, michelob, six,
-Nearest to called: and, circ, tel, amazonas, operatorname, corbett, hindering, lymphoma,
-Nearest to was: is, were, had, has, became, by, been, be,
-Nearest to united: xena, buckle, alliterative, dasyprocta, pulau, lymphoma, hanja, thz,
-Nearest to this: which, it, that, the, pulau, ursus, amazonas, one,
-Nearest to i: UNK, amounted, g, we, ii, aq, railways, celtiberian,
-Average loss at step  82000 :  4.76767618096
-Average loss at step  84000 :  4.75617067957
-Average loss at step  86000 :  4.76462184405
-Average loss at step  88000 :  4.73381320167
-Average loss at step  90000 :  4.73271828568
-Nearest to not: still, they, often, never, it, generally, also, be,
-Nearest to who: he, they, circ, never, usually, which, fracturing, acacia,
-Nearest to for: crb, circ, mitral, in, busan, including, and, dasyprocta,
-Nearest to b: d, amalthea, UNK, illusory, bckgr, trinitarian, contemplate, vma,
-Nearest to between: with, in, zahn, laminated, garrick, into, arabia, from,
-Nearest to from: in, during, into, through, dasyprocta, at, by, and,
-Nearest to d: b, oliva, comedian, UNK, payload, highs, michelob, abet,
-Nearest to other: many, some, windy, microcebus, various, agouti, michelob, closing,
-Nearest to its: their, the, his, her, crb, ursus, cebus, any,
-Nearest to see: fayetteville, picnics, sundial, iata, amigas, darkness, biomes, but,
-Nearest to UNK: ursus, dasyprocta, agouti, circ, operatorname, mukherjee, thaler, abet,
-Nearest to called: and, UNK, circ, operatorname, tyre, tel, hindering, amazonas,
-Nearest to was: is, were, has, had, became, been, by, be,
-Nearest to united: xena, buckle, dasyprocta, alliterative, pulau, lymphoma, hanja, thz,
-Nearest to this: which, it, the, that, pulau, amazonas, ursus, a,
-Nearest to i: amounted, g, ii, we, UNK, hinduism, you, railways,
-Average loss at step  92000 :  4.66398932207
-Average loss at step  94000 :  4.7350055114
-Average loss at step  96000 :  4.68462579691
-Average loss at step  98000 :  4.58985850477
-Average loss at step  100000 :  4.69380336356
-Nearest to not: still, they, never, often, generally, also, to, it,
-Nearest to who: he, they, circ, never, acacia, and, fracturing, usually,
-Nearest to for: crb, circ, mitral, in, biz, of, busan, neurologic,
-Nearest to b: d, amalthea, illusory, trinitarian, vma, bckgr, contemplate, UNK,
-Nearest to between: with, in, laminated, zahn, into, arabia, garrick, from,
-Nearest to from: in, during, into, through, eight, dasyprocta, at, under,
-Nearest to d: b, oliva, comedian, abet, dasyprocta, michelob, amalthea, six,
-Nearest to other: many, windy, various, some, microcebus, closing, howitzer, michelob,
-Nearest to its: their, the, his, her, ursus, crb, cebus, hermitage,
-Nearest to see: picnics, couture, amigas, fayetteville, sundial, mitral, biomes, operatorname,
-Nearest to UNK: ursus, operatorname, agouti, dasyprocta, circ, thaler, three, wideawake,
-Nearest to called: constituci, and, tyre, used, circ, operatorname, arnulf, empowered,
-Nearest to was: is, were, has, had, became, by, been, be,
-Nearest to united: xena, buckle, alliterative, dasyprocta, pulau, lymphoma, stilicho, hanja,
-Nearest to this: which, it, the, pulau, that, some, ursus, amazonas,
-Nearest to i: we, UNK, g, amounted, ii, you, he, aq,
-/home/dan/anaconda3/lib/python3.6/site-packages/matplotlib/font_manager.py:279:
-UserWarning: Matplotlib is building the font cache using fc-list. This may take a moment.
-  'Matplotlib is building the font cache using fc-list. '
-dan@h79:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+Average loss at step  0 :  300.155151367
+Nearest to been: righteousness, salient, bingu, solaris, mez, pitted, optimization, impacted,
+Nearest to so: stripped, coronal, leiden, cellphone, eek, colchis, aquilonia, integer,
+Nearest to three: inserts, decomposers, hephaestus, predicament, drunkenness, thematic, spaghetti, bryn,
+Nearest to used: flight, biomass, hyde, condensed, celebratory, bourne, alleles, luddite,
+Nearest to that: fh, nina, ventricles, robustus, chelsea, fabrication, irgun, accelerator,
+Nearest to five: baxter, interquartile, swnts, mud, emanation, recognising, noisy, betsy,
+Nearest to states: belgrano, highlighted, jotham, macht, woodpecker, hastily, delta, stijl,
+Nearest to which: schlegel, unambiguous, shab, mantra, granddaughter, jurisdiction, doppler, preparation,
+Nearest to by: piro, vg, cernunnos, dagome, gda, bacharach, interrupt, lars,
+Nearest to were: dawning, gte, engels, bootstrapping, centennial, blossoms, precolonial, altos,
+Nearest to s: impairs, heterodox, organs, lei, alger, staunchly, uptown, merril,
+Nearest to known: citizenry, baskets, monsanto, megabytes, ageing, transfusions, footsteps, graviton,
+Nearest to in: dever, dyess, taller, sephardi, showered, milt, formations, structures,
+Nearest to i: contented, arminius, confrontation, wind, disgruntled, triplet, apparently, compares,
+Nearest to first: griffith, heroine, synthesizing, innermost, repressing, confining, aidan, clubhouse,
+Nearest to many: succession, pen, dramatist, sultans, shoshone, summand, newsreels, compilers,
+Average loss at step  2000 :  113.53373782
+Average loss at step  4000 :  53.1582821355
+Average loss at step  6000 :  33.0824953027
+Average loss at step  8000 :  23.568535467
+Average loss at step  10000 :  17.8746632732
+Nearest to been: were, altenberg, atheist, mule, objections, impacted, information, bibliography,
+Nearest to so: stripped, frames, leiden, spend, org, single, integer, martina,
+Nearest to three: two, gland, zero, one, vs, nine, gb, sigma,
+Nearest to used: flight, formal, moderate, markov, coke, ties, gland, england,
+Nearest to that: archie, fh, catherine, constitutional, agave, why, vs, however,
+Nearest to five: nine, zero, one, vs, six, seven, archie, ministry,
+Nearest to states: handbook, solf, delta, hakama, bishops, virus, recount, archie,
+Nearest to which: jurisdiction, trials, preparation, it, techniques, behind, vs, even,
+Nearest to by: in, and, for, prophet, americium, cardinality, falkland, you,
+Nearest to were: are, been, is, pamphlet, nomads, chicago, as, axon,
+Nearest to s: and, the, of, UNK, positive, bound, agave, water,
+Nearest to known: end, dwan, apollo, meant, variety, footsteps, goods, poem,
+Nearest to in: and, of, vs, with, to, for, by, UNK,
+Nearest to i: omnibus, wind, broad, observe, tap, unpaved, murchison, mild,
+Nearest to first: in, main, agave, UNK, heroine, regional, agassi, vs,
+Nearest to many: succession, pen, archie, bckgr, the, your, transcends, dreyfus,
+Average loss at step  12000 :  14.052402468
+Average loss at step  14000 :  11.6408258872
+Average loss at step  16000 :  9.84325729132
+Average loss at step  18000 :  8.54217649931
+Average loss at step  20000 :  7.9232142067
+Nearest to been: were, was, impacted, is, mule, iris, are, atheist,
+Nearest to so: stripped, frames, leiden, spend, integer, circ, responsibility, martina,
+Nearest to three: two, zero, eight, five, nine, seven, six, four,
+Nearest to used: formal, moderate, flight, markov, moor, hyde, coke, heather,
+Nearest to that: fh, however, archie, which, and, constitutional, catherine, nn,
+Nearest to five: nine, zero, six, eight, seven, four, two, three,
+Nearest to states: truetype, delta, operatorname, gum, handbook, recount, misleading, solf,
+Nearest to which: and, that, trials, it, jurisdiction, islet, gollancz, this,
+Nearest to by: in, was, for, and, is, agouti, as, from,
+Nearest to were: are, is, was, been, by, batll, and, pamphlet,
+Nearest to s: the, zero, and, pelagius, of, agouti, operatorname, his,
+Nearest to known: dwan, such, citizenry, footsteps, skepticism, meant, poem, end,
+Nearest to in: and, of, on, with, nine, for, from, by,
+Nearest to i: omnibus, tap, arminius, laurie, confrontation, gollancz, broad, gaulle,
+Nearest to first: main, in, agave, gollancz, agouti, heroine, UNK, aidan,
+Nearest to many: succession, pen, sultans, the, dramatist, commodore, archie, compilers,
+Average loss at step  22000 :  6.98103346801
+Average loss at step  24000 :  6.88322318113
+Average loss at step  26000 :  6.742306301
+Average loss at step  28000 :  6.46622163284
+Average loss at step  30000 :  5.96996662843
+Nearest to been: were, was, by, are, impacted, be, mule, iris,
+Nearest to so: stripped, leiden, frames, spend, rabbit, circ, responsibility, eek,
+Nearest to three: two, four, seven, five, eight, six, nine, zero,
+Nearest to used: formal, moderate, heather, flight, neurotoxicity, markov, moor, hyde,
+Nearest to that: which, however, archie, fh, it, constitutional, gollancz, circ,
+Nearest to five: eight, four, six, seven, zero, three, nine, two,
+Nearest to states: truetype, delta, operatorname, primigenius, handbook, misleading, gum, disparities,
+Nearest to which: that, it, this, and, trials, UNK, islet, but,
+Nearest to by: in, with, from, was, were, for, agouti, is,
+Nearest to were: are, was, is, been, by, batll, had, hempstead,
+Nearest to s: zero, and, pelagius, operatorname, his, the, agouti, or,
+Nearest to known: such, dwan, used, citizenry, skepticism, apollo, meant, puns,
+Nearest to in: and, on, by, with, for, nine, at, from,
+Nearest to i: omnibus, cordoba, tap, confrontation, arminius, laurie, oxidation, four,
+Nearest to first: in, main, agouti, gollancz, agave, abet, apatosaurus, for,
+Nearest to many: some, succession, commodore, pen, sultans, transcends, abet, your,
+Average loss at step  32000 :  5.98732055271
+Average loss at step  34000 :  5.66638768435
+Average loss at step  36000 :  5.77079460633
+Average loss at step  38000 :  5.50570088065
+Average loss at step  40000 :  5.28310299134
+Nearest to been: were, was, be, are, impacted, by, become, iris,
+Nearest to so: stripped, leiden, believe, circ, spend, frames, responsibility, rabbit,
+Nearest to three: four, six, two, seven, five, eight, one, zero,
+Nearest to used: neurotoxicity, known, kifl, moderate, formal, markov, heather, operatorname,
+Nearest to that: which, however, it, this, fh, archie, killer, agave,
+Nearest to five: four, seven, six, eight, three, two, zero, nine,
+Nearest to states: truetype, delta, cdp, operatorname, primigenius, disparities, handbook, gum,
+Nearest to which: that, it, this, and, but, trials, islet, accumulator,
+Nearest to by: was, be, from, in, with, abet, were, agouti,
+Nearest to were: are, was, is, been, had, by, batll, hempstead,
+Nearest to s: zero, operatorname, pelagius, and, his, or, eight, agouti,
+Nearest to known: such, dwan, used, citizenry, skepticism, puns, meant, see,
+Nearest to in: and, on, during, at, from, agouti, of, nine,
+Nearest to i: omnibus, cordoba, tap, you, confrontation, oxidation, four, arminius,
+Nearest to first: agave, main, gollancz, abet, agouti, heroine, in, regional,
+Nearest to many: some, these, commodore, abet, other, pen, succession, the,
+Average loss at step  42000 :  5.37013684738
+Average loss at step  44000 :  5.25145262563
+Average loss at step  46000 :  5.2240322001
+Average loss at step  48000 :  5.20249610782
+Average loss at step  50000 :  5.01045046902
+Nearest to been: were, be, was, become, are, had, by, impacted,
+Nearest to so: believe, stripped, leiden, circ, responsibility, deposit, spend, frames,
+Nearest to three: four, five, six, seven, two, eight, one, circ,
+Nearest to used: kapoor, known, neurotoxicity, debunked, heather, formal, moderate, kifl,
+Nearest to that: which, however, this, fh, archie, killer, it, but,
+Nearest to five: four, six, eight, seven, three, two, one, zero,
+Nearest to states: truetype, delta, operatorname, cdp, primigenius, disparities, misleading, gum,
+Nearest to which: that, this, and, it, but, also, accumulator, who,
+Nearest to by: was, with, six, in, from, be, as, were,
+Nearest to were: are, was, is, been, had, have, batll, by,
+Nearest to s: his, and, pelagius, operatorname, the, zero, four, five,
+Nearest to known: such, used, dwan, citizenry, seen, puns, skepticism, theosophical,
+Nearest to in: during, at, on, from, of, for, and, with,
+Nearest to i: you, tap, omnibus, cordoba, four, oxidation, confrontation, laurie,
+Nearest to first: bitola, johansen, main, second, gollancz, agave, agouti, abet,
+Nearest to many: some, these, other, abet, transcends, three, commodore, icd,
+Average loss at step  52000 :  5.03743339539
+Average loss at step  54000 :  5.17563549018
+Average loss at step  56000 :  5.04773678744
+Average loss at step  58000 :  5.06537615192
+Average loss at step  60000 :  4.93936225879
+Nearest to been: were, be, was, become, by, are, had, iris,
+Nearest to so: believe, leiden, stripped, circ, deposit, spend, frames, responsibility,
+Nearest to three: four, two, six, five, eight, seven, wct, one,
+Nearest to used: known, neurotoxicity, kapoor, debunked, heather, stasi, moderate, kifl,
+Nearest to that: which, however, but, fh, this, pulau, archie, killer,
+Nearest to five: six, four, eight, three, seven, zero, nine, michelob,
+Nearest to states: truetype, michelob, operatorname, delta, primigenius, cdp, gum, disparities,
+Nearest to which: that, this, it, but, also, trials, who, and,
+Nearest to by: was, with, be, in, from, as, agouti, six,
+Nearest to were: are, was, had, been, have, is, be, hempstead,
+Nearest to s: ursus, zero, operatorname, his, pelagius, and, five, dasyprocta,
+Nearest to known: such, used, dwan, citizenry, seen, ursus, puns, meant,
+Nearest to in: during, on, and, at, from, of, ursus, with,
+Nearest to i: you, tap, omnibus, cordoba, ii, confrontation, oxidation, four,
+Nearest to first: bitola, second, ursus, agave, johansen, gollancz, agouti, last,
+Nearest to many: some, these, other, three, abet, thibetanus, most, all,
+Average loss at step  62000 :  5.0144371407
+Average loss at step  64000 :  4.83530858809
+Average loss at step  66000 :  4.60264643645
+Average loss at step  68000 :  4.98518447864
+Average loss at step  70000 :  4.90385930991
+Nearest to been: be, were, was, become, are, had, nine, by,
+Nearest to so: believe, leiden, stripped, circ, deposit, cebus, suitors, frames,
+Nearest to three: six, four, five, two, eight, seven, wct, one,
+Nearest to used: known, neurotoxicity, kapoor, heather, stasi, operatorname, debunked, cebus,
+Nearest to that: which, however, this, fh, pulau, killer, archie, michelob,
+Nearest to five: six, four, three, eight, seven, nine, zero, two,
+Nearest to states: truetype, michelob, cebus, delta, disparities, operatorname, misleading, primigenius,
+Nearest to which: that, this, it, also, but, trials, accumulator, there,
+Nearest to by: was, be, with, were, vg, in, honorius, agouti,
+Nearest to were: are, was, been, had, have, be, hempstead, by,
+Nearest to s: his, ursus, operatorname, pelagius, zero, hbox, thaler, and,
+Nearest to known: such, used, dwan, seen, citizenry, meant, ursus, theosophical,
+Nearest to in: during, ursus, at, agouti, on, and, circ, from,
+Nearest to i: you, tap, upanija, cordoba, omnibus, ii, confrontation, oxidation,
+Nearest to first: second, last, bitola, ursus, agave, johansen, gollancz, agouti,
+Nearest to many: some, these, other, several, abet, most, all, their,
+Average loss at step  72000 :  4.76654169357
+Average loss at step  74000 :  4.8187187475
+Average loss at step  76000 :  4.72713969588
+Average loss at step  78000 :  4.79004642916
+Average loss at step  80000 :  4.80952637649
+Nearest to been: be, were, become, was, by, nine, had, castiglione,
+Nearest to so: believe, leiden, iit, circ, stripped, deposit, if, cebus,
+Nearest to three: four, six, five, two, seven, eight, one, wct,
+Nearest to used: known, neurotoxicity, busan, kapoor, debunked, found, operatorname, heather,
+Nearest to that: which, however, fh, pulau, this, archie, agave, killer,
+Nearest to five: four, six, seven, eight, three, zero, nine, two,
+Nearest to states: michelob, truetype, cebus, delta, disparities, operatorname, busan, primigenius,
+Nearest to which: that, this, it, also, but, and, accumulator, what,
+Nearest to by: was, be, with, in, were, agouti, been, abet,
+Nearest to were: are, was, been, have, had, be, by, michelob,
+Nearest to s: zero, busan, his, ursus, operatorname, thaler, pelagius, symbolics,
+Nearest to known: such, used, seen, dwan, citizenry, meant, ursus, puns,
+Nearest to in: during, and, ursus, at, busan, circ, agouti, of,
+Nearest to i: you, tap, UNK, omnibus, upanija, cordoba, ii, g,
+Nearest to first: second, last, bitola, ursus, agave, johansen, activism, gollancz,
+Nearest to many: some, these, other, several, abet, most, all, upanija,
+Average loss at step  82000 :  4.7539478144
+Average loss at step  84000 :  4.76218236947
+Average loss at step  86000 :  4.77713507473
+Average loss at step  88000 :  4.74255529606
+Average loss at step  90000 :  4.71537842536
+Nearest to been: be, become, were, was, had, by, immortal, are,
+Nearest to so: believe, iit, leiden, circ, if, aquilonia, stripped, cebus,
+Nearest to three: four, five, two, seven, six, eight, one, wct,
+Nearest to used: known, calypso, busan, kapoor, neurotoxicity, referred, debunked, found,
+Nearest to that: which, however, fh, but, killer, this, pulau, michelob,
+Nearest to five: four, seven, eight, six, three, zero, nine, two,
+Nearest to states: cebus, michelob, truetype, nations, disparities, delta, slava, busan,
+Nearest to which: that, this, it, also, but, however, these, there,
+Nearest to by: was, be, with, in, as, were, through, from,
+Nearest to were: are, was, have, had, been, be, is, batll,
+Nearest to s: busan, ursus, operatorname, zero, his, thaler, and, pelagius,
+Nearest to known: such, used, seen, dwan, citizenry, meant, ursus, regarded,
+Nearest to in: during, on, at, ursus, from, agouti, and, busan,
+Nearest to i: you, tap, ii, upanija, omnibus, cordoba, we, g,
+Nearest to first: second, last, bitola, ursus, agave, johansen, activism, osteoblasts,
+Nearest to many: some, these, several, other, all, most, abet, both,
+Average loss at step  92000 :  4.65448843646
+Average loss at step  94000 :  4.72191168582
+Average loss at step  96000 :  4.68573575604
+Average loss at step  98000 :  4.59315825558
+Average loss at step  100000 :  4.68839154959
+Nearest to been: be, become, were, was, had, immortal, by, iris,
+Nearest to so: believe, iit, circ, if, leiden, aquilonia, stripped, cebus,
+Nearest to three: five, four, seven, six, two, eight, wct, zero,
+Nearest to used: known, calypso, referred, neurotoxicity, kapoor, busan, found, debunked,
+Nearest to that: which, however, fh, this, but, pulau, what, stenella,
+Nearest to five: four, three, seven, six, eight, zero, two, nine,
+Nearest to states: michelob, cebus, truetype, nations, busan, operatorname, disparities, delta,
+Nearest to which: that, this, also, it, but, however, what, these,
+Nearest to by: was, be, through, as, with, agouti, eight, busan,
+Nearest to were: are, have, was, had, been, be, is, being,
+Nearest to s: busan, operatorname, his, ursus, thaler, pelagius, leontopithecus, symbolics,
+Nearest to known: such, used, seen, dwan, citizenry, regarded, meant, ursus,
+Nearest to in: during, at, busan, from, agouti, on, ursus, since,
+Nearest to i: you, we, omnibus, tap, ii, upanija, cordoba, they,
+Nearest to first: second, last, bitola, osteoblasts, activism, ursus, agave, johansen,
+Nearest to many: some, these, several, other, all, most, both, abet,
+dan@m78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ ll
+total 32
+drwxrwxr-x 3 dan dan  4096 Feb  6 17:31 ./
+drwxrwxr-x 9 dan dan  4096 Feb  6 16:07 ../
+-rw-rw-r-- 1 dan dan   545 Feb  6 16:07 BUILD
+-rw-rw-r-- 1 dan dan     0 Feb  6 16:07 __init__.py
+drwxrwxr-x 2 dan dan  4096 Feb  6 17:34 log/
+-rw-rw-r-- 1 dan dan 12759 Feb  6 16:07 word2vec_basic.py
+dan@m78:~/tensorflow/tensorflow/examples/tutorials/word2vec $ 
+dan@m78:~/tensorflow/tensorflow/examples/tutorials/word2vec $
+dan@m78:~/tensorflow/tensorflow/examples/tutorials/word2vec $
 </code>
