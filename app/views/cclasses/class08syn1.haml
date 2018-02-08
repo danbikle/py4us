@@ -218,7 +218,11 @@
 
 %p Remember that "data" is a Python list of 17,005,207 integers.
 
-%p Using pdb.set_trace(), I studied outputs of generate_batch():
+%p Also generate_batch() interacts with a global-integer named "data_index".
+
+%p Each time I call generate_batch(), data_index will change depending on some intricate logic.
+
+%p Using pdb.set_trace(), I studied data_index and outputs of generate_batch():
 
 .syntax
   %pre
