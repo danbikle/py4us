@@ -1,0 +1,29 @@
+<code class='bash'>
+255  	  for step in xrange(num_steps):
+256 B->	    batch_inputs, batch_labels = generate_batch(batch_size, num_skips,
+257  	                                                skip_window)
+258  	    feed_dict = {train_inputs: batch_inputs, train_labels: batch_labels}
+259  	
+260  	    # Define metadata variable.
+261  	    run_metadata = tf.RunMetadata()
+(Pdb) batch_size
+128
+(Pdb) num_skips
+2
+(Pdb) skip_window
+1
+(Pdb) n
+> /home/dan/tensorflow/tensorflow/examples/tutorials/word2vec/word2vec_basic.py(257)&lt;module>()
+-> skip_window)
+(Pdb) n
+> /home/dan/tensorflow/tensorflow/examples/tutorials/word2vec/word2vec_basic.py(258)&lt;module>()
+-> feed_dict = {train_inputs: batch_inputs, train_labels: batch_labels}
+(Pdb) batch_inputs[:4]
+array([156, 156, 128, 128], dtype=int32)
+(Pdb) batch_labels[:4]
+array([[128],
+       [ 59],
+       [156],
+       [742]], dtype=int32)
+(Pdb)
+</code>

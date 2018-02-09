@@ -282,6 +282,21 @@
   %a(href='http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model' target='x')
     http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model
 
+%p During my study of generate_batch() I saw that generate_batch() is called immediately after it is defined.
+
+%p The author probably did this to help us understand the mechanics of generate_batch().
+
+%p The author actually uses generate_batch() inside of what he calls:
+%p "# Step 4: Build and train a skip-gram model."
+
+%p I set a break-point near that call to see it happen:
+
+.syntax
+  %pre
+    =render 'class08syn1n'
+
+%p I see that the only difference between the two calls is that the important-call uses a batch_size of 128 instead of 8.
+
 %hr/
 
 %p

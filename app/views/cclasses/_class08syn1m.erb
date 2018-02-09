@@ -1,0 +1,25 @@
+<code class='bash'>
+(Pdb) data_index = 0
+(Pdb) batch, labels = generate_batch(batch_size=16, num_skips=4, skip_window=2)
+(Pdb) batch
+array([ 12,  12,  12,  12,   6,   6,   6,   6, 195, 195, 195, 195,   2,
+         2,   2,   2], dtype=int32)
+(Pdb) labels
+array([[ 195],
+       [3081],
+       [   6],
+       [5234],
+       [  12],
+       [   2],
+       [3081],
+       [ 195],
+       [3134],
+       [  12],
+       [   6],
+       [   2],
+       [  46],
+       [   6],
+       [ 195],
+       [3134]], dtype=int32)
+(Pdb)
+</code>
