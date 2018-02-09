@@ -214,6 +214,8 @@
 
 %p That comment suggests to me that generate_batch() is interacting with data which is not passed in as a parameter.
 
+%p Also, the words: "training batch" and variable "labels" suggest that the author intends to feed batch and labels to a machine learning classification algorithm.
+
 %p After I study generate_batch(), I see it interacts with "data" which is the first output of build_dataset().
 
 %p Remember that "data" is a Python list of 17,005,207 integers.
@@ -231,17 +233,54 @@
 %p So the first output, "batch", is just a simple NumPy Array of 8 integers.
 %p The second output, "labels", is also a NumPy Array of 8 integers but with a shape of (8,1).
 
+%p Both batch and labels are integer arrays; this strengthens my observation that batch and labels will be fed to a machine learning algorithm.
+
 %p After generate_batch() fills "batch" and "labels", the script runs some syntax to help me visualize interaction between batch, labels, and reverse_dictionary:
 
 
 .syntax
   %pre
     =render 'class08syn1i'
+    
 %p I see 8 outputs from a loop; and I ignore the integers.
 %p Each output shows a word on the left matched with a word on the right.
 %p Each word on the left has only two matches.
 
 %p The visualization shows that the script is forming relationships between a word and two other words.
+
+%p Also the visualization shows that the author has a figured out a way to bridge words and numbers.
+
+%p My human brain understands the words.
+
+%p A machine learning classification algorithm will learn from the numbers.
+
+%p If you want a deeper understanding of the intent behind generate_batch(), read the page below:
+
+%p
+  %a(href='http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model' target='x')
+    http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model
+
+%p I called generate_batch() twice too better understand how it changes the global integer: "data_index":
+
+.syntax
+  %pre
+    =render 'class08syn1k'
+
+%p The above output tells me that generate_batch(batch_size=8, num_skips=2, skip_window=1) will usually increment "data_index" by 4.
+
+%p Next, I experimented with generate_batch() to see how outputs would change:
+
+.syntax
+  %pre
+    =render 'class08syn1m'
+
+%p The above output tells me that parameter-value: "skip_window=2" specifies a count of two words to the left and two words to the right of each batch-word.
+
+%p Put another way, "skip_window=2" corresponds to window size of two discussed in the page below:
+
+%p
+  %a(href='http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model' target='x')
+    http://mccormickml.com/2016/04/19/word2vec-tutorial-the-skip-gram-model
 
 %hr/
 
