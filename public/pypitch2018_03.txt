@@ -1,0 +1,60 @@
+
+
+Hello World,
+
+I invite you to my Project Based Python Programming class.
+
+Here is the registration link:
+
+https://register.asapconnected.com/CourseDetail.aspx?CourseId=136006&ext=1
+
+It is offered by Santa Clara Adult Education.
+
+It meets on Monday night 7pm to 10pm.
+
+The location is Santa Clara Adult Education Campus.
+
+Address: 1840 Benton St. Room F4
+
+The class has 10 meetings: Feb 26 through May 7
+
+Cost: $329 [ covers class and significant e-mail support ]
+
+Class pace is FAST and topic list is VAST; you will get your money's worth.
+
+If you fall behind, dont worry; I will answer help-requests during the session and after May 7.
+
+Also the class offers an online forum to help you connect with the instructor and other students.
+
+Format:
+
+  * Lectures cover Python syntax and techniques
+  * Homework is: Build Projects with Python
+Lecture Topics:
+  * Python 3.x, pdb, Anaconda Python
+  * Jupyter, Pycharm, Spyder
+  * Simple Linux
+  * Common type conversions
+  * Pandas
+  * datetime, strftime(),strptime()
+  * Lists, Loops, Comprehensions, range(), CSV files
+  * Strings, "Python Dunders"
+  * Python Class Inheritance
+  * Functions vs Methods
+  * Flask web-apps, Simple HTML, CSS, JavaScript
+  * Jinja2 template engine for Python
+  * Web scraping with Requests and BeautifulSoup
+  * Deploy Python-app to Heroku for $0
+  * The "os" package
+  * Team collaboration with github.com
+  * Flask-RESTul web-apps, Intro JSON
+  * Intro Machine Learning: Scikit-Learn
+  * NumPy + Pandas + Machine Learning, Keras Machine Learning, TensorFlow
+  * SQLAlchemy + Postgres
+  * Selenium
+  * Data Visualization: Bokeh, Seaborn, matplotlib
+  * Natural Language Processing (NLP): Word2vec
+  * Python Collections Package
+  * Django web-apps
+  * Python + Regular Expressions
+If you have questions, e-me: bikle101 at gmail
