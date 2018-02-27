@@ -1,20 +1,61 @@
 <code class='bash'>
-dan@h79:~/py4/public/class01 $ ls -la pdr1.py
--rw-rw-r-- 1 dan dan 774 Dec  6 19:13 pdr1.py
-dan@h79:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $ python pdr1.py 
+Traceback (most recent call last):
+  File "pdr1.py", line 13, in &lt;module>
+    import pandas_datareader as pdr
+ModuleNotFoundError: No module named 'pandas_datareader'
+dan@p95:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $ conda install pandas_datareader
+Fetching package metadata ...........
+
+PackageNotFoundError: Packages missing in current channels:
+            
+  - pandas_datareader
+
+We have searched for the packages in the following channels:
+            
+  - https://repo.continuum.io/pkgs/main/linux-64
+  - https://repo.continuum.io/pkgs/main/noarch
+  - https://repo.continuum.io/pkgs/free/linux-64
+  - https://repo.continuum.io/pkgs/free/noarch
+  - https://repo.continuum.io/pkgs/r/linux-64
+  - https://repo.continuum.io/pkgs/r/noarch
+  - https://repo.continuum.io/pkgs/pro/linux-64
+  - https://repo.continuum.io/pkgs/pro/noarch
+            
+
+dan@p95:~/py4/public/class01 $ conda install pandas-datareader
+Fetching package metadata ...........
+Solving package specifications: .
+
+Package plan for installation in environment /home/dan/anaconda3:
+
+The following NEW packages will be INSTALLED:
+
+    pandas-datareader: 0.6.0-py36_0         
+    requests-file:     1.4.1-py36_0         
+    requests-ftp:      0.3.1-py36_0         
+
+The following packages will be UPDATED:
+
+    anaconda:          5.0.1-py36hd30a520_1  --> custom-py36hbbc8b67_0
+    conda:             4.3.30-py36h5d9f9f4_0 --> 4.4.11-py36_0        
+    pycosat:           0.6.2-py36h1a0ea17_1  --> 0.6.3-py36h0a5515d_0 
+
+Proceed ([y]/n)? 
+
+anaconda-custo 100% || Time: 0:00:00   2.66 MB/s
+pycosat-0.6.3- 100% || Time: 0:00:00   1.07 MB/s
+conda-4.4.11-p 100% || Time: 0:00:00   1.31 MB/s
+requests-file- 100% || Time: 0:00:00   4.39 MB/s
+requests-ftp-0 100% || Time: 0:00:00  10.97 MB/s
+pandas-datarea 100% || Time: 0:00:00   1.43 MB/s
+dan@p95:~/py4/public/class01 $
 
 
-dan@h79:~/py4/public/class01 $ which python
-/home/dan/anaconda3/bin/python
-dan@h79:~/py4/public/class01 $ 
-
-
-dan@h79:~/py4/public/class01 $ python pdr1.py
-> /home/dan/py4/public/class01/pdr1.py(20)&lt;module>()
+dan@p95:~/py4/public/class01 $ python pdr1.py
+> /home/dan/py4us/public/class01/pdr1.py(20)&lt;module>()
 -> start_dt  = datetime.datetime(2016,  1,  1)
-(Pdb) 
-
-
 (Pdb) help
 
 Documented commands (type help &lt;topic>):
@@ -31,7 +72,6 @@ Miscellaneous help topics:
 ==========================
 exec  pdb
 
-
 (Pdb) list
  15  	import pdb
  16  	
@@ -40,83 +80,56 @@ exec  pdb
  19  	
  20  ->	start_dt  = datetime.datetime(2016,  1,  1)
  21  	end_dt    = datetime.datetime(2026, 12, 31)
- 22  	prices_df = pdr.DataReader('IBM', 'yahoo', start_dt, end_dt)
+ 22  	prices_df = pdr.DataReader('IBM', 'google', start_dt, end_dt)
  23  	print(prices_df.head())
  24  	
  25  	# I should write the prices to a CSV file in /tmp:
-
-
-
-(Pdb) 
- 26  	prices_df.to_csv('/tmp/prices_ibm.csv', float_format='%4.3f')
- 27  	
- 28  	# I should end the script with a simple string which might be a
- 29  	# convenient breakpoint for the debugger:
- 30  	
- 31  	'bye'
-[EOF]
-
-
-
 (Pdb) n
-> /home/dan/py4/public/class01/pdr1.py(21)&lt;module>()
+> /home/dan/py4us/public/class01/pdr1.py(21)&lt;module>()
 -> end_dt    = datetime.datetime(2026, 12, 31)
-
-
-
 (Pdb) n
-> /home/dan/py4/public/class01/pdr1.py(22)&lt;module>()
--> prices_df = pdr.DataReader('IBM', 'yahoo', start_dt, end_dt)
-
-
-
+> /home/dan/py4us/public/class01/pdr1.py(22)&lt;module>()
+-> prices_df = pdr.DataReader('IBM', 'google', start_dt, end_dt)
 (Pdb) n
-> /home/dan/py4/public/class01/pdr1.py(23)&lt;module>()
+/home/dan/anaconda3/lib/python3.6/site-packages/pandas_datareader/google/daily.py:40: UnstableAPIWarning: 
+The Google Finance API has not been stable since late 2017. Requests seem
+to fail at random. Failure is especially common when bulk downloading.
+
+  warnings.warn(UNSTABLE_WARNING, UnstableAPIWarning)
+> /home/dan/py4us/public/class01/pdr1.py(23)&lt;module>()
 -> print(prices_df.head())
-
-
-
 (Pdb) n
-                  Open        High         Low       Close   Adj Close  \
-Date                                                                     
-2016-01-04  135.600006  135.970001  134.240005  135.949997  126.069901   
-2016-01-05  136.759995  136.889999  134.850006  135.850006  125.977165   
-2016-01-06  134.380005  135.580002  133.619995  135.169998  125.346573   
-2016-01-07  133.699997  135.020004  132.429993  132.860001  123.204468   
-2016-01-08  133.179993  133.820007  131.320007  131.630005  122.063850   
-
-             Volume  
-Date                 
-2016-01-04  5229400  
-2016-01-05  3924800  
-2016-01-06  4310900  
-2016-01-07  7025800  
-2016-01-08  4762700  
-> /home/dan/py4/public/class01/pdr1.py(26)&lt;module>()
+              Open    High     Low   Close   Volume
+Date                                               
+2016-01-04  135.60  135.97  134.24  135.95  5208900
+2016-01-05  136.76  136.89  134.85  135.85  3924793
+2016-01-06  134.38  135.58  133.62  135.17  4310939
+2016-01-07  133.70  135.02  132.43  132.86  7025760
+2016-01-08  133.18  133.82  131.32  131.63  4762706
+> /home/dan/py4us/public/class01/pdr1.py(26)&lt;module>()
 -> prices_df.to_csv('/tmp/prices_ibm.csv', float_format='%4.3f')
-
-
-
 (Pdb) n
-> /home/dan/py4/public/class01/pdr1.py(31)&lt;module>()
+> /home/dan/py4us/public/class01/pdr1.py(31)&lt;module>()
 -> 'bye'
-
-
 (Pdb) c
-dan@h79:~/py4/public/class01 $ 
-dan@h79:~/py4/public/class01 $ head /tmp/prices_ibm.csv 
-Date,Open,High,Low,Close,Adj Close,Volume
-2016-01-04,135.600,135.970,134.240,135.950,126.070,5229400
-2016-01-05,136.760,136.890,134.850,135.850,125.977,3924800
-2016-01-06,134.380,135.580,133.620,135.170,125.347,4310900
-2016-01-07,133.700,135.020,132.430,132.860,123.204,7025800
-2016-01-08,133.180,133.820,131.320,131.630,122.064,4762700
-2016-01-11,131.810,133.820,131.760,133.230,123.548,4967000
-2016-01-12,133.650,133.780,131.130,132.900,123.242,5078700
-2016-01-13,133.500,134.280,131.100,131.170,121.637,4700100
-2016-01-14,131.930,133.790,131.220,132.910,123.251,5709600
-dan@h79:~/py4/public/class01 $ 
-dan@h79:~/py4/public/class01 $
-dan@h79:~/py4/public/class01 $
+dan@p95:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $ 
+
+
+dan@p95:~/py4/public/class01 $ head /tmp/prices_ibm.csv 
+Date,Open,High,Low,Close,Volume
+2016-01-04,135.600,135.970,134.240,135.950,5208900
+2016-01-05,136.760,136.890,134.850,135.850,3924793
+2016-01-06,134.380,135.580,133.620,135.170,4310939
+2016-01-07,133.700,135.020,132.430,132.860,7025760
+2016-01-08,133.180,133.820,131.320,131.630,4762706
+2016-01-11,131.810,133.820,131.760,133.230,4974436
+2016-01-12,133.650,133.780,131.130,132.900,5078678
+2016-01-13,133.500,134.280,131.100,131.170,4675089
+2016-01-14,131.930,133.790,131.220,132.910,5708301
+dan@p95:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $ 
+dan@p95:~/py4/public/class01 $
 </code>
 
