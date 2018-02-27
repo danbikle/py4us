@@ -1,15 +1,17 @@
-# class01dt2.py
+"""
+class01dt2.py
 
-# This script should Copy Values Between Some Common Data Types.
+This script should Copy Values Between Some Common Data Types.
 
-# Demo:
-# python class01dt2.py
+Demo:
+python class01dt2.py
 
-# Useful converson functions are listed below:
-# float()
-# int()
-# str()
-# bool()
+Useful converson functions are listed below:
+float()
+int()
+str()
+bool()
+"""
 
 import pdb
 # Maybe, I should run this script in the debugger:
