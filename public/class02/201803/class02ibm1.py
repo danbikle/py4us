@@ -1,4 +1,3 @@
-<code class='python'>
 """
 class02ibm1.py
 
@@ -38,4 +37,3 @@ pdb.set_trace()
 print(prices_l)
 
 'bye'
-</code>
